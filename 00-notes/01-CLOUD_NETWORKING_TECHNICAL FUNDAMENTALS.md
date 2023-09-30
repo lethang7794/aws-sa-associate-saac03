@@ -64,28 +64,8 @@ _IP Packets_ are moved step by step from source to destination Via intermediate 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.59.07 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
 _Routers_ (L3) devices, remove frame encapsulation and add new frame encapsulation at every **hop** 1️⃣2️⃣3️⃣4️⃣
 
-<!--
-
-
-
-
-![Alt text](<Screenshot 2023-09-28 at 13.01.32 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-
-
-
-
-
-![Alt text](<Screenshot 2023-09-28 at 13.01.40 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>) -->
-
 ![Alt text](<images/Screenshot 2023-09-28 at 13.02.26 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
 IP v4 package structure
-
-<!--
-
-
-
-
-![Alt text](<Screenshot 2023-09-28 at 13.03.54 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>) -->
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.03.58 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
 IP v6 package structure
@@ -217,11 +197,6 @@ IPv4 vs IPv6 Address Space
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.10.53 - IP_Address_Space_&_Subnetting_-_PART2__learn.cantr.png>)
 Subnetting and CIDR
-
-<!--
-
-
-![Alt text](<Screenshot 2023-09-28 at 19.15.23 - IP_Address_Space_&_Subnetting_-_PART2__learn.cantr.png>) -->
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.16.01 - IP_Address_Space_&_Subnetting_-_PART2__learn.cantr.png>)
 Subnetting - Start and end calculation
@@ -515,8 +490,13 @@ Hashing Summary
 ### Digital Signatures (9:26)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.19.21 - Digital_Signatures__learn.cantrill.io_and_1_more_p.png>)
+Public Key Cryptography
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.21.51 - Digital_Signatures__learn.cantrill.io_and_1_more_p.png>)
+Digital Signatures verifies:
+
+- Integrity (WHAT is sent) 👈 by compare the hash of data
+- Authenticity (WHO sent it) 👈 by using the public key to very the signature
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.24.38 - Digital_Signatures__learn.cantrill.io_and_1_more_p.png>)
 
@@ -525,55 +505,306 @@ Hashing Summary
 ### DNS #1 - What does DNS do (2:56)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.36.20 - DNS_1_-_What_does_DNS_do__learn.cantrill.io_-_Per.png>)
+DNS translates human readable domain names (e.g. www.amazon.com) to machine readable IP addresses (e.g. 192.0.2.44)
 
 ### DNS #2 - Why does DNS need a complex architecture (13:19)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.38.44 - DNS_2_-_Why_does_DNS_need_a_complex_architecture_.png>)
+Why not ONE server?
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.42.51 - DNS_2_-_Why_does_DNS_need_a_complex_architecture_.png>)
+DNS Terms
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.52.26 - DNS_2_-_Why_does_DNS_need_a_complex_architecture_.png>)
+DNS Hierarchical Design
 
 ### DNS #3 - How DNS actually works ... walking the tree (8:46)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 15.59.59 - DNS_3_-_How_DNS_actually_works_..._walking_the_tr.png>)
+The job of DNS is help us get the DNS records we need.
 
 ![Alt text](<images/Screenshot 2023-09-29 at 16.03.54 - DNS_3_-_How_DNS_actually_works_..._walking_the_tr.png>)
+DNS - Walking the tree
 
 ![Alt text](<images/Screenshot 2023-09-29 at 16.04.39 - DNS_3_-_How_DNS_actually_works_..._walking_the_tr.png>)
+DNS - Walking the tree - Behind the scene
 
 ### DNS #4 - What happens when a domain is registered? (4:27)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 16.12.24 - DNS_4_-_What_happens_when_a_domain_is_registered_.png>)
+Domain Registrar - DNS Hosting Provider - TLD Registry
 
 ![Alt text](<images/Screenshot 2023-09-29 at 16.13.29 - DNS_4_-_What_happens_when_a_domain_is_registered_.png>)
+Registering a domain
 
 ### DNSSEC #1 - Why do we need DNSSEC (11:08)
 
+![Alt text](<images/Screenshot 2023-09-29 at 16.30.21 - DNSSEC_1_-_Why_do_we_need_DNSSEC__learn.cantrill..png>)
+DNSSEC Benefits ~ Digital Signature for DNS Records
+
+![Alt text](<images/Screenshot 2023-09-29 at 16.31.48 - DNSSEC_1_-_Why_do_we_need_DNSSEC__learn.cantrill..png>)
+DNSSEC is an extension to DNS. It adds, and doesn't replace DNS.
+
+![Alt text](<images/Screenshot 2023-09-29 at 16.32.27 - DNSSEC_1_-_Why_do_we_need_DNSSEC__learn.cantrill..png>)
+DNSSEC Benefit Example
+
+![Alt text](<images/Screenshot 2023-09-29 at 16.33.33 - DNSSEC_1_-_Why_do_we_need_DNSSEC__learn.cantrill..png>)
+DNS Disrupted
+
 ### DNSSEC #2 - How DNSSEC Works within a Zone (17:34)
+
+![Alt text](<images/Screenshot 2023-09-29 at 18.04.45 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
+DNSSEC - RRSET
+
+> What is a RRSET?
+>
+> A group of all the records with the same type ad same name
+
+![Alt text](<images/Screenshot 2023-09-29 at 18.08.12 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
+DNSSEC - RRSIG & Zone Signing Key (ZSK)
+
+> What is a RRSIG?
+>
+> A digital signature for a RRSET, signed by the private Zone Signing Key (ZSK).
+
+> What is Zone Signing Key (ZSK)?
+>
+> Each zone has a ZSK, which is used to:
+>
+> - sign 👈 the _private ZSK_
+> - verify 👈 the _public ZSK_
+>
+> the RRSETs.
+
+![Alt text](<images/Screenshot 2023-09-29 at 18.11.03 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
+DNSSEC - DNSKEY contains public ZSK to verify all RRSIGs in the zone
+
+> Why the DNSKEY also has an RRSIG?
+>
+> Because someone can fake the DNSKEY too. 🤯
+
+![Alt text](<images/Screenshot 2023-09-29 at 18.13.51 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
+DNSSEC - 2 Keys - Key Signing Key
+
+> What is a KSK?
+>
+> KSK is used to sign and verify the ZSK
+
+> Why do we use separate zone-signing keys and key-signing keys?
+>
+> The KSK is linked to the parent zone.
+>
+> If we use a single key, changes to the ZSK would requires parent zone changes. 🐌🆘
+>
+> By using 2 keys, we can change the ZSK as quired, without impacting parent zone. 🤳
+
+![Alt text](<images/Screenshot 2023-09-29 at 18.16.01 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
+DNSSEC - Summary
 
 ### DNSSEC #3 - DNSSEC Chain of Trust (8:16)
 
+![Alt text](<images/Screenshot 2023-09-30 at 14.48.29 - DNSSEC_3_-_DNSSEC_Chain_of_Trust__learn.cantrill..png>)
+DNSSEC - DS Record
+
+> What is DS Record?
+>
+> DS (Delegation Signer) Record, on a parent zone, contains a hash of the KSK in a child zone.
+
+![Alt text](<images/Screenshot 2023-09-30 at 14.50.57 - DNSSEC_3_-_DNSSEC_Chain_of_Trust__learn.cantrill..png>)
+DNSSEC - Validation Flow
+
 ### DNSSEC #4 - DNSSEC Root Signing Ceremony (7:53)
+
+![Alt text](<images/Screenshot 2023-09-30 at 16.40.55 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
+DNSSEC - Root KSK Private
+
+![Alt text](<images/Screenshot 2023-09-30 at 16.42.20 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
+DNSSEC - Root KSK Public
+
+![Alt text](<images/Screenshot 2023-09-30 at 16.42.20 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
+DNSSEC - The TRUST Anchor (Root KSK)
+
+![Alt text](<images/Screenshot 2023-09-30 at 19.53.30 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
+DNSSEC - The Signing Ceremony
+
+![Alt text](<images/Screenshot 2023-09-30 at 19.54.30 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
+DNSSEC - Key Ceremony
 
 ## Containers & Virtualization (MORE COMING SOON)
 
 ### Kubernetes 101 (11:27)
 
+![Alt text](<images/Screenshot 2023-09-30 at 20.01.29 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
+K8s - Cluster Structure
+
+> What is the basic structure of a K8s cluster?
+>
+> .
+
+> What is a Node in K8s?
+>
+> .
+
+> What is the Control Plan in K8s?
+>
+> .
+
+> What is the `kubelet` in K8s?
+>
+> .
+
+> What is the `containerd` in K8s?
+>
+> .
+
+> How does the container run in K8s?
+>
+> .
+
+> What is the K8s API?
+>
+> .
+
+![Alt text](<images/Screenshot 2023-09-30 at 20.06.24 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
+K8s - Cluster Detail
+
+> What is a `Pod` in K8s?
+
+> What is `kube-scheduler`?
+
+> What is `etcd`?
+
+> What is `cloud-controller-manager`?
+
+> What is `kube-controller-manager`?
+
+> What is `kube-apiserver`
+
+> What is `kube-proxy`
+
+> What is the smallest units of computing in K8s?
+
+> How does K8s know which Pods run on which Nodes?
+
+> How does K8s stores the cluster state?
+
+> How does K8s run on the clouds?
+
+> How does K8s Pods communicate?
+
+> How does K8s manages the cluster?
+
+> What is the front end of K8s Control Plane?
+
+![Alt text](<images/Screenshot 2023-09-30 at 20.08.44 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
+K8s - Summary
+
+> What is K8s Cluster?
+
+> What is K8s Service?
+
+> What is K8s Job?
+
+> What is K8s Ingress?
+
+> What is K8s Ingress Controller?
+
+> What is K8s Persistent Volume?
+
 ## Backups & DR (MORE COMING SOON)
 
 ### Recovery Point Objective (RPO) & Recovery Time Objective (RTO) (16:54)
+
+![Alt text](<images/Screenshot 2023-09-30 at 20.38.29 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
+Recovery Point Objective (RPO)
+
+> What is RPO?
+
+![Alt text](<images/Screenshot 2023-09-30 at 20.43.54 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
+Recovery Time Objective (RTO)
+
+> What is RTO?
+
+> When does RTO begin and end?
+
+> What need to be cautious about RTO?
+>
+> - How long until we know there is an issue?
+> - What is the issue?
+> - Do we need to restore a backup? How to restore the backup?
+
+![Alt text](<images/Screenshot 2023-09-30 at 20.45.40 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
+RPO & RTO - Summary
 
 ## Data Formats & Configuration Formats (MORE COMING SOON)
 
 ### YAML aint markup language (YAML) 101 (6:12)
 
+![Alt text](<images/Screenshot 2023-09-30 at 21.04.25 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
+YAML - key:value
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.05.48 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
+YAML - List
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.07.27 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
+YAML - Structure
+
 ### Javascript Object Notation (JSON) 101 (4:25)
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.13.15 - Javascript_Object_Notation_(JSON)_101__learn.cantr.png>)
+JSON - Introduction
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.13.52 - Javascript_Object_Notation_(JSON)_101__learn.cantr.png>)
+JSON - Object & List
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.14.28 - Javascript_Object_Notation_(JSON)_101__learn.cantr.png>)
+JSON - Nested Object
 
 ## Cloud Computing 101
 
 ### What is Cloud Computing? (13:30)
 
+![Alt text](<images/Screenshot 2023-09-30 at 21.21.59 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
+Cloud Computing Characteristic #1 - On-demand Self-Service 🏧
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.22.51 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
+Cloud Computing Characteristic #2 - Broad Network Access 🌐
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.24.10 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
+Cloud Computing Characteristic #3 - Resource Pooling ⛲
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.26.24 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
+Cloud Computing Characteristic #4 - Rapid Elasticity ↕️
+
+![Alt text](<images/Screenshot 2023-09-30 at 21.28.15 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
+Cloud Computing Characteristic #5 - Measured Service 📏
+
 ### Public vs Private vs Multi vs Hybrid Cloud .. (8:38)
 
+![Alt text](<images/Screenshot 2023-10-01 at 14.36.36 - Public_vs_Private_vs_Multi_vs_Hybrid_Cloud_..__lea.png>)
+Cloud Computing - Deployment Models
+
+![Alt text](<images/Screenshot 2023-10-01 at 14.38.47 - Public_vs_Private_vs_Multi_vs_Hybrid_Cloud_..__lea.png>)
+Cloud Computing - Hydrid Cloud is NOT Public Cloud + Legacy on-premises
+
 ### Cloud Service Models (IAAS, PAAS, SAAS) (10:25)
+
+![Alt text](<images/Screenshot 2023-10-01 at 14.45.38 - Cloud_Service_Models_(IAAS,_PAAS,_SAAS)__learn.can.png>)
+Infrastructure Stack
+
+![Alt text](<images/Screenshot 2023-10-01 at 14.47.53 - Cloud_Service_Models_(IAAS,_PAAS,_SAAS)__learn.can.png>)
+On-Premises vs Data Center Hosted
+
+![Alt text](<images/Screenshot 2023-10-01 at 14.49.57 - Cloud_Service_Models_(IAAS,_PAAS,_SAAS)__learn.can.png>)
+IaaS vs PasS vs SaaS
+
+| APPLICATION    |      | Data Center<br>Hosted | IaaS | PaaS | SaaS |
+| -------------- | ---- | --------------------- | ---- | ---- | ---- |
+| DATA           | 🔟🔟 |                       |      |      | ⬆️   |
+| RUNTIME        | 🛣️   |                       |      | ⬆️   | 💲   |
+| CONTAINER      | 🐋   |                       |      | 💲   | 💲   |
+| OS             | 🪟🐧 |                       | ⬆️   | 💲   | 💲   |
+| VIRTUALIZATION | 📦   |                       | 💲   | 💲   | 💲   |
+| SERVERS        | 🖥️   |                       | 💲   | 💲   | 💲   |
+| INFRASTRUCTURE | ⚡🌐 |                       | 💲   | 💲   | 💲   |
+| FACILITIES     | 🏠   | 💲                    | 💲   | 💲   | 💲   |
