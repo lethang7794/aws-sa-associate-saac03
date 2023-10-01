@@ -68,21 +68,157 @@
 
 ### [_ASSOCIATE_] AWS Public vs Private Services (7:04)
 
+![Alt text](<images/Screenshot 2023-10-01 at 15.19.34 - [ASSOCIATESHARED]_AWS_Public_vs_Private_Services__.png>)
+
 ### [_ASSOCIATE_] AWS Global Infrastructure (14:53)
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.24.39 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
+AWS Regions vs Edge Locations
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.25.12 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.30.07 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
+AWS Regions - Benefits
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.32.52 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
+AWS Regions vs Availability Zones (AZs)
+
+> AWS Region Code vs Region Name
+>
+> How many Data Centers can be in a AZ?
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.34.35 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
+Service Resilient
 
 ### [_ASSOCIATE_] AWS Default Virtual Private Cloud (VPC) (15:19)
 
+![Alt text](<images/Screenshot 2023-10-01 at 15.49.39 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+VPC Basics
+
+> What is a VPC?
+>
+> Virtual Private Cloud (VPC) is a virtual network inside AWS.
+>
+> How many types of VPC are there?
+>
+> There are 2 types of VPC: default VPC & custom VPC.
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.51.10 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+
+> What is the default state of a VPC?
+>
+> By default,a VPC is private and isolated
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.53.16 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+
+![Alt text](<images/Screenshot 2023-10-01 at 15.55.23 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+
+> What is the default VPC?
+>
+> The VPC that AWS created automatically for each region.
+
+> Can we delete the default VPC?
+>
+> We can delete the default VPC, and re-create in the Web Console.
+
+> What is the CIDR of default VPC?
+>
+> 172.31.0.0/16 👉 65535 IPs 👉 16 subnets of /20
+
+> For the default VPC, how many subnets are there in each AZ in each region?
+>
+> The default VPC has 1 subnet for each of its AZ.
+>
+> They are /20 subnets - 4091 (2^12) available IPs
+
+[x] TODO: DEMO - Delete and create default VPC
+
 ### [_ASSOCIATE_] Elastic Compute Cloud (EC2) Basics (14:46)
+
+![Alt text](<images/Screenshot 2023-10-01 at 16.21.17 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+EC2 Features
+
+![Alt text](<images/Screenshot 2023-10-01 at 16.23.53 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+EC2 - Instance Lifecycle
+
+![Alt text](<images/Screenshot 2023-10-01 at 16.26.14 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+EC2 - AMI
+
+![Alt text](<images/Screenshot 2023-10-01 at 16.28.34 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
+EC2 - Connecting to EC2
+
+TODO: DEMO - Connect to an EC2 instance
 
 ### [_ASSOCIATE_, _DEMO_] My First EC2 Instance - PART1 (10:58)
 
 ### [_ASSOCIATE_, _DEMO_] My First EC2 Instance - PART2 (9:40)
 
-### [_ASSOCIATE_]Simple Storage Service (S3) Basics (15:48)
+### [_ASSOCIATE_] Simple Storage Service (S3) Basics (15:48)
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.21.31 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
+S3 - 101
+
+> What is the resilient of S3?
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.23.05 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
+S3 - Objects
+
+> What is S3 object?
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.25.57 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
+S3 - Buckets
+
+> What is S3 bucket?
+>
+> What is the structure of S3 bucket?
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.27.50 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
+S3 - Summary
+
+> What is the limit of S3 object?
+>
+> What is the limit of S3 bucket?
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.29.27 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
+S3 - Pattern & Anti-pattern
+
+> What is the type of S3 store?
 
 ### [_ASSOCIATE_, _DEMO_] My First S3 Bucket (18:34)
 
+TODO: DEMO - S3
+
 ### [_ASSOCIATE_] CloudFormation (CFN) Basics (12:28)
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.55.51 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN - Template Format
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.57.01 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Resources
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.57.46 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Descriptions
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.58.28 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Metadata
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.59.02 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Parameters
+
+![Alt text](<images/Screenshot 2023-10-01 at 17.59.31 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Mappings
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.00.08 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Conditions
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.00.42 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN Template - Outputs
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.02.21 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN - Stack, Logical Resource, Physical Resource
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.03.11 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
+CFN - Create/Update/Delete Stack
 
 ### [_ASSOCIATE_, _DEMO_] Simple Automation With CloudFormation (CFN) (15:52)
 
