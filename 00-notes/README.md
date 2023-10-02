@@ -70,6 +70,18 @@
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.19.34 - [ASSOCIATESHARED]_AWS_Public_vs_Private_Services__.png>)
 
+> How many network zones are there in AWS?
+>
+> What is "Public Internet" Zone?
+>
+> What is "AWS Public" Zone?
+>
+> What is "AWS Private" Zone?
+>
+> How to access services in "AWS Private" Zone?
+>
+> How can on-premise access "AWS Private" Zone?
+
 ### [_ASSOCIATE_] AWS Global Infrastructure (14:53)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.24.39 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
@@ -224,17 +236,92 @@ CFN - Create/Update/Delete Stack
 
 ### [_ASSOCIATE_] CloudWatch (CW) Basics (13:45)
 
+![Alt text](<images/Screenshot 2023-10-01 at 18.48.13 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Metrics, CloudWatch Logs/Events
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.48.59 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Architecture
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.50.30 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Namespace
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.51.16 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Metric
+
+> What is metric?
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.52.08 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Datapoint
+
+> What is datapoint?
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.53.11 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Dimension
+
+> What is dimension?
+
+![Alt text](<images/Screenshot 2023-10-01 at 18.54.26 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
+CloudWatch - Alarm
+
 ### [_ASSOCIATE_, Demo] Simple Monitoring with Cloudwatch (15:31)
 
 ### [_ASSOCIATE_] Shared Responsibility Model (6:20)
 
+![Alt text](<images/Screenshot 2023-10-02 at 10.29.17 - [ASSOCIATESHARED]_Shared_Responsibility_Model__lea.png>)
+Infrastructure Stack
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.31.45 - [ASSOCIATESHARED]_Shared_Responsibility_Model__lea .png>)
+AWS: responsibility for security OF the cloud
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.31.46 - [ASSOCIATESHARED]_Shared_Responsibility_Model__lea.png>)
+CUSTOMER: responsibility for security IN the cloud
+
 ### [_ASSOCIATE_] High-Availability vs Fault-Tolerance vs Disaster Recovery (17:21)
 
+![Alt text](<images/Screenshot 2023-10-02 at 10.37.43 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
+High-Availability (HA)
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.41.03 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
+Fault-Tolerance (FT)
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.43.55 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
+Disaster-Recovery (DR)
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.45.12 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
+HA - FT - DR
+
 ### [_ASSOCIATE_] Route53 (R53) Fundamentals (6:29)
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.52.52 - [ASSOCIATESHARED]_Route53_(R53)_Fundamentals__lear.png>)
+Route 53 - Features
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.54.29 - [ASSOCIATESHARED]_Route53_(R53)_Fundamentals__lear.png>)
+Route 53 - Register Domains
+
+![Alt text](<images/Screenshot 2023-10-02 at 10.56.18 - [ASSOCIATESHARED]_Route53_(R53)_Fundamentals__lear.png>)
+Route 53 - Hosted Zones
 
 ### [_ALL_, _DEMO_] Registering a Domain with route53 (9:49)
 
 ### [_ASSOCIATE_] DNS Record Types (13:25)
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.11.13 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - Nameserver (NS) Record
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.12.11 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - A and AAAA Record
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.13.29 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - CNAME Record
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.15.38 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - MX Record
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.16.54 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - TXT Record
+
+![Alt text](<images/Screenshot 2023-10-02 at 11.20.14 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
+DNS Record - Time To Live (TTL)
 
 ### Fundamentals Section Quiz
 
