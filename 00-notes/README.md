@@ -331,7 +331,7 @@ DNS Record - Time To Live (TTL)
 
 ### [_ASSOCIATE_] IAM Users and ARNs (13:49)
 
-### [ASSOCIATE SHARED, _DEMO_] Simple Identity Permissions in AWS (16:06)
+### [_ASSOCIATE_, _DEMO_] Simple Identity Permissions in AWS (16:06)
 
 ### [_ASSOCIATE_] IAM Groups (7:48)
 
