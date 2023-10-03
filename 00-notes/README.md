@@ -16,7 +16,7 @@
 
 ### COURSE UPGRADES - SAVE $ WHEN ADDING MORE COURSES
 
-### SHARED LESSONS [_ALL_, _ASSOCIATE_] etc...
+### SHARED LESSONS [] etc...
 
 ## COURSE FUNDAMENTALS AND AWS ACCOUNTS
 
@@ -66,7 +66,7 @@
 
 ## AWS FUNDAMENTALS
 
-### [_ASSOCIATE_] AWS Public vs Private Services (7:04)
+### AWS Public vs Private Services (7:04)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.19.34 - [ASSOCIATESHARED]_AWS_Public_vs_Private_Services__.png>)
 
@@ -82,7 +82,7 @@
 >
 > How can on-premise access "AWS Private" Zone?
 
-### [_ASSOCIATE_] AWS Global Infrastructure (14:53)
+### AWS Global Infrastructure (14:53)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.24.39 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
 AWS Regions vs Edge Locations
@@ -102,7 +102,7 @@ AWS Regions vs Availability Zones (AZs)
 ![Alt text](<images/Screenshot 2023-10-01 at 15.34.35 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
 Service Resilient
 
-### [_ASSOCIATE_] AWS Default Virtual Private Cloud (VPC) (15:19)
+### AWS Default Virtual Private Cloud (VPC) (15:19)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.49.39 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
 VPC Basics
@@ -145,7 +145,7 @@ VPC Basics
 
 [x] TODO: DEMO - Delete and create default VPC
 
-### [_ASSOCIATE_] Elastic Compute Cloud (EC2) Basics (14:46)
+### Elastic Compute Cloud (EC2) Basics (14:46)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 16.21.17 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
 EC2 Features
@@ -161,11 +161,11 @@ EC2 - Connecting to EC2
 
 TODO: DEMO - Connect to an EC2 instance
 
-### [_ASSOCIATE_, _DEMO_] My First EC2 Instance - PART1 (10:58)
+### [_DEMO_] My First EC2 Instance - PART1 (10:58)
 
-### [_ASSOCIATE_, _DEMO_] My First EC2 Instance - PART2 (9:40)
+### [_DEMO_] My First EC2 Instance - PART2 (9:40)
 
-### [_ASSOCIATE_] Simple Storage Service (S3) Basics (15:48)
+### Simple Storage Service (S3) Basics (15:48)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.21.31 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - 101
@@ -196,11 +196,11 @@ S3 - Pattern & Anti-pattern
 
 > What is the type of S3 store?
 
-### [_ASSOCIATE_, _DEMO_] My First S3 Bucket (18:34)
+### [_DEMO_] My First S3 Bucket (18:34)
 
 TODO: DEMO - S3
 
-### [_ASSOCIATE_] CloudFormation (CFN) Basics (12:28)
+### CloudFormation (CFN) Basics (12:28)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.55.51 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
 CFN - Template Format
@@ -232,9 +232,9 @@ CFN - Stack, Logical Resource, Physical Resource
 ![Alt text](<images/Screenshot 2023-10-01 at 18.03.11 - [ASSOCIATESHARED]_CloudFormation_(CFN)_Basics__lea.png>)
 CFN - Create/Update/Delete Stack
 
-### [_ASSOCIATE_, _DEMO_] Simple Automation With CloudFormation (CFN) (15:52)
+### [_DEMO_] Simple Automation With CloudFormation (CFN) (15:52)
 
-### [_ASSOCIATE_] CloudWatch (CW) Basics (13:45)
+### CloudWatch (CW) Basics (13:45)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 18.48.13 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Metrics, CloudWatch Logs/Events
@@ -263,9 +263,9 @@ CloudWatch - Dimension
 ![Alt text](<images/Screenshot 2023-10-01 at 18.54.26 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Alarm
 
-### [_ASSOCIATE_, Demo] Simple Monitoring with Cloudwatch (15:31)
+### [Demo] Simple Monitoring with Cloudwatch (15:31)
 
-### [_ASSOCIATE_] Shared Responsibility Model (6:20)
+### Shared Responsibility Model (6:20)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 10.29.17 - [ASSOCIATESHARED]_Shared_Responsibility_Model__lea.png>)
 Infrastructure Stack
@@ -276,7 +276,7 @@ AWS: responsibility for security OF the cloud
 ![Alt text](<images/Screenshot 2023-10-02 at 10.31.46 - [ASSOCIATESHARED]_Shared_Responsibility_Model__lea.png>)
 CUSTOMER: responsibility for security IN the cloud
 
-### [_ASSOCIATE_] High-Availability vs Fault-Tolerance vs Disaster Recovery (17:21)
+### High-Availability vs Fault-Tolerance vs Disaster Recovery (17:21)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 10.37.43 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
 High-Availability (HA)
@@ -290,7 +290,7 @@ Disaster-Recovery (DR)
 ![Alt text](<images/Screenshot 2023-10-02 at 10.45.12 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
 HA - FT - DR
 
-### [_ASSOCIATE_] Route53 (R53) Fundamentals (6:29)
+### Route53 (R53) Fundamentals (6:29)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 10.52.52 - [ASSOCIATESHARED]_Route53_(R53)_Fundamentals__lear.png>)
 Route 53 - Features
@@ -301,9 +301,9 @@ Route 53 - Register Domains
 ![Alt text](<images/Screenshot 2023-10-02 at 10.56.18 - [ASSOCIATESHARED]_Route53_(R53)_Fundamentals__lear.png>)
 Route 53 - Hosted Zones
 
-### [_ALL_, _DEMO_] Registering a Domain with route53 (9:49)
+### [_DEMO_] Registering a Domain with route53 (9:49)
 
-### [_ASSOCIATE_] DNS Record Types (13:25)
+### DNS Record Types (13:25)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 11.11.13 - [ASSOCIATESHARED]_DNS_Record_Types__learn.cantrill.png>)
 DNS Record - Nameserver (NS) Record
@@ -327,35 +327,35 @@ DNS Record - Time To Live (TTL)
 
 ## IAM, ACCOUNTS AND AWS ORGANISATIONS
 
-### [_ASSOCIATE_] IAM Identity Policies (15:52)
+### IAM Identity Policies (15:52)
 
-### [_ASSOCIATE_] IAM Users and ARNs (13:49)
+### IAM Users and ARNs (13:49)
 
-### [_ASSOCIATE_, _DEMO_] Simple Identity Permissions in AWS (16:06)
+### [_DEMO_] Simple Identity Permissions in AWS (16:06)
 
-### [_ASSOCIATE_] IAM Groups (7:48)
+### IAM Groups (7:48)
 
-### [_ASSOCIATE_, _DEMO_] Permissions control using IAM Groups (9:24)
+### [_DEMO_] Permissions control using IAM Groups (9:24)
 
-### [_ASSOCIATE_] IAM Roles - The Tech (8:13)
+### IAM Roles - The Tech (8:13)
 
-### [_ASSOCIATE_] When to use IAM Roles (15:27)
+### When to use IAM Roles (15:27)
 
 ### Service-linked Roles & PassRole (5:16)
 
-### [_ASSOCIATE_] AWS Organizations (12:56)
+### AWS Organizations (12:56)
 
-### [_ALL_, _DEMO_] AWS Organizations (19:48)
+### [_DEMO_] AWS Organizations (19:48)
 
-### [_ASSOCIATE_] Service Control Policies (SCPs) (12:44)
+### Service Control Policies (SCPs) (12:44)
 
-### [_ALL_, _DEMO_] Using Service Control Policies (16:45)
+### [_DEMO_] Using Service Control Policies (16:45)
 
-### [_ASSOCIATE_] CloudWatch Logs (7:16)
+### CloudWatch Logs (7:16)
 
-### [_ASSOCIATE_] CloudTrail (11:40)
+### CloudTrail (11:40)
 
-### [_ALL_, _DEMO_] Implementing an Organizational Trail (18:23)
+### [_DEMO_] Implementing an Organizational Trail (18:23)
 
 ### AWS Control Tower 101 (15:42)
 
@@ -363,51 +363,51 @@ DNS Record - Time To Live (TTL)
 
 ## SIMPLE STORAGE SERVICE (S3)
 
-### [_ASSOCIATE_] S3 Security (Resource Policies & ACLs) (18:19)
+### S3 Security (Resource Policies & ACLs) (18:19)
 
-### [_ASSOCIATE_] S3 Static Hosting (10:36)
+### S3 Static Hosting (10:36)
 
-### [_ALL_, Demo] Creating a static website with S3 (17:55)
+### [Demo] Creating a static website with S3 (17:55)
 
-### [_ASSOCIATE_] Object Versioning & MFA Delete (7:41)
+### Object Versioning & MFA Delete (7:41)
 
-### [_ALL_, _DEMO_] - S3 Versioning (15:45)
+### [_DEMO_] - S3 Versioning (15:45)
 
-### [_ASSOCIATE_] S3 Performance Optimization (11:42)
+### S3 Performance Optimization (11:42)
 
-### [_ASSOCIATE_, _DEMO_] - S3 Performance (5:06)
+### [_DEMO_] - S3 Performance (5:06)
 
-### [_ASSOCIATE_] Key Management Service (KMS) (18:38)
+### Key Management Service (KMS) (18:38)
 
-### [_ALL_, _DEMO_] KMS - Encrypting the battleplans with KMS (12:43)
+### [_DEMO_] KMS - Encrypting the battleplans with KMS (12:43)
 
-### [_ALL_] S3 Object Encryption CSE/SSE (23:31)
+### S3 Object Encryption CSE/SSE (23:31)
 
-### [_ALL_, _DEMO_] Object Encryption and Role Separation (14:50)
+### [_DEMO_] Object Encryption and Role Separation (14:50)
 
 ### S3 Bucket Keys (5:59)
 
-### [_ASSOCIATE_] S3 Object Storage Classes - PART1 (9:23)
+### S3 Object Storage Classes - PART1 (9:23)
 
-### [_ASSOCIATE_] S3 Object Storage Classes - PART2 (11:41)
+### S3 Object Storage Classes - PART2 (11:41)
 
-### [_ASSOCIATE_] S3 Lifecycle Configuration (8:13)
+### S3 Lifecycle Configuration (8:13)
 
-### [_ALL_] S3 Replication (13:59)
+### S3 Replication (13:59)
 
-### [_ALL_, _DEMO_] Cross-Region Replication of an S3 Static Website (19:52)
+### [_DEMO_] Cross-Region Replication of an S3 Static Website (19:52)
 
-### [_ASSOCIATE_] S3 PreSigned URLs (11:11)
+### S3 PreSigned URLs (11:11)
 
-### [_ALL_, _DEMO_] Creating and using PresignedURLs (18:23)
+### [_DEMO_] Creating and using PresignedURLs (18:23)
 
-### [_ASSOCIATE_] S3 Select and Glacier Select (5:32)
+### S3 Select and Glacier Select (5:32)
 
-### [_ASSOCIATE_] S3 Events (4:32)
+### S3 Events (4:32)
 
-### [_ASSOCIATE_] S3 Access Logs (3:05)
+### S3 Access Logs (3:05)
 
-### [_ASSOCIATE_] S3 Object Lock (9:52)
+### S3 Object Lock (9:52)
 
 ### S3 Access Points (5:52)
 
@@ -417,87 +417,87 @@ DNS Record - Time To Live (TTL)
 
 ## VIRTUAL PRIVATE CLOUD (VPC) BASICS
 
-### [_ASSOCIATE_] VPC Sizing and Structure - PART1 (11:48)
+### VPC Sizing and Structure - PART1 (11:48)
 
-### [_ASSOCIATE_] VPC Sizing and Structure - PART2 (11:16)
+### VPC Sizing and Structure - PART2 (11:16)
 
-### [_ALL_] Custom VPCs - PART1 - THEORY (10:10)
+### Custom VPCs - PART1 - THEORY (10:10)
 
-### [_ALL_, _DEMO_] Custom VPCs - PART2 - _DEMO_ (5:40)
+### [_DEMO_] Custom VPCs - PART2 - _DEMO_ (5:40)
 
-### [_ASSOCIATE_] VPC Subnets (10:42)
+### VPC Subnets (10:42)
 
-### [_ALL_, _DEMO_] Implement multi-tier VPC subnets (15:24)
+### [_DEMO_] Implement multi-tier VPC subnets (15:24)
 
-### [_ASSOCIATE_] VPC Routing, Internet Gateway & Bastion Hosts (17:35)
+### VPC Routing, Internet Gateway & Bastion Hosts (17:35)
 
-### [_ASSOCIATE_, _DEMO_] Configuring A4l public subnets and Jumpbox - PART1 (13:45)
+### [_DEMO_] Configuring A4l public subnets and Jumpbox - PART1 (13:45)
 
-### [_ASSOCIATE_, _DEMO_] Configuring A4l public subnets and Jumpbox - PART2 (11:45)
+### [_DEMO_] Configuring A4l public subnets and Jumpbox - PART2 (11:45)
 
-### [_ASSOCIATE_] Stateful vs Stateless Firewalls (14:04)
+### Stateful vs Stateless Firewalls (14:04)
 
-### [_ASSOCIATE_] Network Access Control Lists (NACLs) (12:38)
+### Network Access Control Lists (NACLs) (12:38)
 
-### [_ASSOCIATE_] Security Groups (SG) (11:48)
+### Security Groups (SG) (11:48)
 
-### [_ASSOCIATE_] Network Address Translation (NAT) & NAT Gateway - PART1 (13:43)
+### Network Address Translation (NAT) & NAT Gateway - PART1 (13:43)
 
-### [_ASSOCIATE_] Network Address Translation (NAT) & NAT Gateway - PART2 (11:08)
+### Network Address Translation (NAT) & NAT Gateway - PART2 (11:08)
 
-### [_ASSOCIATE_, _DEMO_] Implementing private internet access using NAT Gateways (19:25)
+### [_DEMO_] Implementing private internet access using NAT Gateways (19:25)
 
 ### VPC Basics Section Quiz
 
 ## ELASTIC COMPUTE CLOUD (EC2) BASICS
 
-### [_ASSOCIATE_] Virtualization 101 (12:27)
+### Virtualization 101 (12:27)
 
-### [_ASSOCIATE_] EC2 Architecture and Resilience (12:36)
+### EC2 Architecture and Resilience (12:36)
 
-### [_ASSOCIATE_] EC2 Instance Types - PART1 (11:52)
+### EC2 Instance Types - PART1 (11:52)
 
-### [_ASSOCIATE_] EC2 Instance Types - PART2 (8:13)
+### EC2 Instance Types - PART2 (8:13)
 
-### [_ASSOCIATE_, _DEMO_] EC2 SSH vs EC2 Instance Connect (17:06)
+### [_DEMO_] EC2 SSH vs EC2 Instance Connect (17:06)
 
-### [_ASSOCIATE_] Storage Refresher (14:16)
+### Storage Refresher (14:16)
 
-### [_ASSOCIATE_] Elastic Block Store (EBS) Service Architecture (8:43)
+### Elastic Block Store (EBS) Service Architecture (8:43)
 
-### [_ASSOCIATE_] EBS Volume Types - General Purpose (9:23)
+### EBS Volume Types - General Purpose (9:23)
 
-### [_ASSOCIATE_] EBS Volume Types - Provisioned IOPS (6:15)
+### EBS Volume Types - Provisioned IOPS (6:15)
 
-### [_ASSOCIATE_] EBS Volume Types - HDD-Based (4:32)
+### EBS Volume Types - HDD-Based (4:32)
 
-### [_ASSOCIATE_] Instance Store Volumes - Architecture (9:00)
+### Instance Store Volumes - Architecture (9:00)
 
-### [_ASSOCIATE_] Choosing between the EC2 Instance Store and EBS (8:49)
+### Choosing between the EC2 Instance Store and EBS (8:49)
 
-### [_ASSOCIATE_] Snapshots, Restore & Fast Snapshot Restore (FSR) (10:55)
+### Snapshots, Restore & Fast Snapshot Restore (FSR) (10:55)
 
-### [_ASSOCIATE_, _DEMO_] EBS Volumes - PART1 (15:16)
+### [_DEMO_] EBS Volumes - PART1 (15:16)
 
-### [_ASSOCIATE_, _DEMO_] EBS Volumes - PART2 (14:13)
+### [_DEMO_] EBS Volumes - PART2 (14:13)
 
-### [_ASSOCIATE_, _DEMO_] EBS Volumes - PART3 (14:27)
+### [_DEMO_] EBS Volumes - PART3 (14:27)
 
-### [_ASSOCIATE_] EBS Encryption (8:22)
+### EBS Encryption (8:22)
 
-### [_ASSOCIATE_] Network Interfaces, Instance IPs and DNS (15:58)
+### Network Interfaces, Instance IPs and DNS (15:58)
 
-### [_ASSOCIATE_, _DEMO_] Manual Install of Wordpress on EC2 - PART1 (12:27)
+### [_DEMO_] Manual Install of Wordpress on EC2 - PART1 (12:27)
 
-### [_ASSOCIATE_, _DEMO_] Manual Install of Wordpress on EC2 - PART2 (12:36)
+### [_DEMO_] Manual Install of Wordpress on EC2 - PART2 (12:36)
 
-### [_ASSOCIATE_] Amazon Machine Images (AMI) (13:58)
+### Amazon Machine Images (AMI) (13:58)
 
-### [_ASSOCIATE_, _DEMO_] Creating an Animals4life AMI - PART1 (9:38)
+### [_DEMO_] Creating an Animals4life AMI - PART1 (9:38)
 
-### [_ASSOCIATE_, _DEMO_] Creating an Animals4life AMI - PART2 (10:57)
+### [_DEMO_] Creating an Animals4life AMI - PART2 (10:57)
 
-### [_ASSOCIATE_, _DEMO_] Copying & Sharing an AMI (8:35)
+### [_DEMO_] Copying & Sharing an AMI (8:35)
 
 ### EC2 Purchase Options - PART1 (9:22)
 
@@ -505,99 +505,99 @@ DNS Record - Time To Live (TTL)
 
 ### Reserved Instances - the rest (11:58)
 
-### [_ASSOCIATE_] Instance Status Checks & Auto Recovery (7:42)
+### Instance Status Checks & Auto Recovery (7:42)
 
-### [_ASSOCIATE_, _DEMO_] Shutdown, Terminate & Termination Protection (5:40)
+### [_DEMO_] Shutdown, Terminate & Termination Protection (5:40)
 
-### [_ASSOCIATE_] Horizontal & Vertical Scaling (11:23)
+### Horizontal & Vertical Scaling (11:23)
 
-### [_ASSOCIATE_] Instance Metadata [THEORY & _DEMO_] (15:46)
+### Instance Metadata [THEORY & _DEMO_] (15:46)
 
 ### EC2 Basics Section Quiz
 
 ## CONTAINERS & ECS
 
-### [_ASSOCIATE_] Introduction to Containers (17:13)
+### Introduction to Containers (17:13)
 
-### [_ALL_, _DEMO_] Creating 'container of cats' Docker Image (18:15)
+### [_DEMO_] Creating 'container of cats' Docker Image (18:15)
 
-### [_ASSOCIATE_] ECS - Concepts (10:25)
+### ECS - Concepts (10:25)
 
-### [_ASSOCIATE_] ECS - Cluster Mode (13:09)
+### ECS - Cluster Mode (13:09)
 
-### [_ALL_, _DEMO_] - Deploying 'container of cats' using Fargate (13:13)
+### [_DEMO_] - Deploying 'container of cats' using Fargate (13:13)
 
 ### Elastic Container Registry (ECR) (4:14)
 
-### [_ALL_] Kubernetes 101 (11:27)
+### Kubernetes 101 (11:27)
 
-### [_ALL_] Elastic Kubernetes Service (EKS) 101 (6:14)
+### Elastic Kubernetes Service (EKS) 101 (6:14)
 
 ### Containers Section Quiz
 
 ## ADVANCED EC2
 
-### [_ASSOCIATE_] Bootstrapping EC2 using User Data (10:25)
+### Bootstrapping EC2 using User Data (10:25)
 
-### [_ASSOCIATE_, _DEMO_] Bootstrapping Wordpress Installation - PART1 (15:00)
+### [_DEMO_] Bootstrapping Wordpress Installation - PART1 (15:00)
 
-### [_ASSOCIATE_, _DEMO_] Bootstrapping Wordpress Installation - PART2 (6:45)
+### [_DEMO_] Bootstrapping Wordpress Installation - PART2 (6:45)
 
 ### Enhanced Bootstrapping with CFN-INIT (11:52)
 
 ### [_DEMO_] CFN-INIT and CFN Creation Policies (12:29)
 
-### [_ASSOCIATE_] EC2 Instance Roles & Profile (4:18)
+### EC2 Instance Roles & Profile (4:18)
 
-### [_ASSOCIATE_, _DEMO_] Using EC2 Instance Roles (13:31)
+### [_DEMO_] Using EC2 Instance Roles (13:31)
 
-### [_ASSOCIATE_] SSM Parameter Store (6:16)
+### SSM Parameter Store (6:16)
 
-### [_ASSOCIATE_, _DEMO_] Parameter Store (16:11)
+### [_DEMO_] Parameter Store (16:11)
 
-### [_ASSOCIATE_] System and Application Logging on EC2 (6:15)
+### System and Application Logging on EC2 (6:15)
 
-### [_ASSOCIATE_, _DEMO_] Logging and Metrics with CloudWatch Agent-PART1 (11:51)
+### [_DEMO_] Logging and Metrics with CloudWatch Agent-PART1 (11:51)
 
-### [_ASSOCIATE_, _DEMO_] Logging and Metrics with CloudWatch Agent-PART2 (8:08)
+### [_DEMO_] Logging and Metrics with CloudWatch Agent-PART2 (8:08)
 
-### [_ASSOCIATE_] EC2 Placement Groups (14:29)
+### EC2 Placement Groups (14:29)
 
 ### Dedicated Hosts (8:56)
 
-### [_ASSOCIATE_] Enhanced Networking & EBS Optimized (6:57)
+### Enhanced Networking & EBS Optimized (6:57)
 
 ### Advanced EC2 Section Quiz
 
 ## ROUTE 53 - GLOBAL DNS
 
-### [_ASSOCIATE_] R53 Public Hosted Zones (6:28)
+### R53 Public Hosted Zones (6:28)
 
-### [_ASSOCIATE_] R53 Private Hosted Zones (5:10)
+### R53 Private Hosted Zones (5:10)
 
-### [_ASSOCIATE_] CNAME vs R53 Alias (5:19)
+### CNAME vs R53 Alias (5:19)
 
-### [_ASSOCIATE_] Simple Routing (2:17)
+### Simple Routing (2:17)
 
-### [_ASSOCIATE_] R53 Health Checks (12:41)
+### R53 Health Checks (12:41)
 
-### [_ASSOCIATE_] Failover Routing (1:53)
+### Failover Routing (1:53)
 
-### [_ALL_, _DEMO_] Using R53 and Failover Routing-PART1 (16:41)
+### [_DEMO_] Using R53 and Failover Routing-PART1 (16:41)
 
-### [_ALL_, _DEMO_] Using R53 and Failover Routing-PART2 (6:28)
+### [_DEMO_] Using R53 and Failover Routing-PART2 (6:28)
 
-### [_ASSOCIATE_] Multi Value Routing (2:32)
+### Multi Value Routing (2:32)
 
-### [_ASSOCIATE_] Weighted Routing (3:24)
+### Weighted Routing (3:24)
 
-### [_ASSOCIATE_] Latency Routing (2:44)
+### Latency Routing (2:44)
 
-### [_ASSOCIATE_] Geolocation Routing (5:02)
+### Geolocation Routing (5:02)
 
-### [_ASSOCIATE_] Geoproximity (4:50)
+### Geoproximity (4:50)
 
-### [_ASSOCIATE_] R53 Interoperability (11:50)
+### R53 Interoperability (11:50)
 
 ### Implementing DNSSEC using Route53 (17:43)
 
@@ -605,61 +605,61 @@ DNS Record - Time To Live (TTL)
 
 ## RELATIONAL DATABASE SERVICE (RDS)
 
-### [_ASSOCIATE_] Database Refresher & MODELS - PART1 (8:51)
+### Database Refresher & MODELS - PART1 (8:51)
 
-### [_ASSOCIATE_] Database Refresher & MODELS - PART2 (14:45)
+### Database Refresher & MODELS - PART2 (14:45)
 
 ### ACID vs BASE (11:02)
 
-### [_ASSOCIATE_] Databases on EC2 (13:08)
+### Databases on EC2 (13:08)
 
-### [_ASSOCIATE_, _DEMO_] Splitting Wordpress Monolith => APP & DB (18:01)
+### [_DEMO_] Splitting Wordpress Monolith => APP & DB (18:01)
 
-### [_ASSOCIATE_] Relational Database Service (RDS) Architecture (11:39)
+### Relational Database Service (RDS) Architecture (11:39)
 
-### [_ASSOCIATE_, _DEMO_] Migrating EC2 DB into RDS - PART1 (18:20)
+### [_DEMO_] Migrating EC2 DB into RDS - PART1 (18:20)
 
-### [_ASSOCIATE_, _DEMO_] Migrating EC2 DB into RDS - PART2 (12:58)
+### [_DEMO_] Migrating EC2 DB into RDS - PART2 (12:58)
 
-### [_ASSOCIATE_] Relational Database Service (RDS) MultiAZ - Instance and Cluster (11:54)
+### Relational Database Service (RDS) MultiAZ - Instance and Cluster (11:54)
 
-### [_ASSOCIATE_] RDS Automatic Backup, RDS Snapshots and Restore (8:52)
+### RDS Automatic Backup, RDS Snapshots and Restore (8:52)
 
-### [_ASSOCIATE_] RDS Read-Replicas (6:36)
+### RDS Read-Replicas (6:36)
 
-### [_ASSOCIATE_, _DEMO_] MultiAZ & Snapshot Restore with RDS - PART1 (14:05)
+### [_DEMO_] MultiAZ & Snapshot Restore with RDS - PART1 (14:05)
 
-### [_ASSOCIATE_, _DEMO_] MultiAZ & Snapshot Restore with RDS - PART2 (12:07)
+### [_DEMO_] MultiAZ & Snapshot Restore with RDS - PART2 (12:07)
 
-### [_ASSOCIATE_] RDS Data Security (7:03)
+### RDS Data Security (7:03)
 
 ### RDS Custom (5:22)
 
-### [_ASSOCIATE_] Aurora Architecture (13:44)
+### Aurora Architecture (13:44)
 
-### [_ASSOCIATE_] Aurora Serverless (9:52)
+### Aurora Serverless (9:52)
 
 ### [_DEMO_] Migrating to Aurora Serverless [DONT DO THIS _DEMO_, IT WON'T WORK, UPDATING to SERVERLESSv2] (14:47)
 
-### [_ASSOCIATE_] Aurora Global Database (5:08)
+### Aurora Global Database (5:08)
 
-### [_ASSOCIATE_] Multi-master writes (7:51)
+### Multi-master writes (7:51)
 
-### [_ASSOCIATE_] Relational Database Service (RDS) - RDS Proxy (9:47)
+### Relational Database Service (RDS) - RDS Proxy (9:47)
 
-### [_ASSOCIATE_] Database Migration Service (DMS) (11:03)
+### Database Migration Service (DMS) (11:03)
 
 ### RDS Section Quiz
 
 ## NETWORK STORAGE & DATA LIFECYCLE
 
-### [_ASSOCIATE_] EFS Architecture (9:05)
+### EFS Architecture (9:05)
 
-### [_ASSOCIATE_, _DEMO_] Implementing EFS - PART1 (8:51)
+### [_DEMO_] Implementing EFS - PART1 (8:51)
 
-### [_ASSOCIATE_, _DEMO_] Implementing EFS - PART2 (11:32)
+### [_DEMO_] Implementing EFS - PART2 (11:32)
 
-### [_ASSOCIATE_, _DEMO_] Using EFS with Wordpress (16:00)
+### [_DEMO_] Using EFS with Wordpress (16:00)
 
 ### AWS Backup (6:36)
 
@@ -667,29 +667,29 @@ DNS Record - Time To Live (TTL)
 
 ## HA & SCALING
 
-### [_ASSOCIATE_] Regional and Global AWS Architecture (10:42)
+### Regional and Global AWS Architecture (10:42)
 
-### [_ASSOCIATE_] Evolution of the Elastic Load Balancer (4:10)
+### Evolution of the Elastic Load Balancer (4:10)
 
-### [_ALL_] Elastic Load Balancer Architecture - PART1 (10:18)
+### Elastic Load Balancer Architecture - PART1 (10:18)
 
-### [_ASSOCIATE_] Elastic Load Balancer Architecture - PART2 (12:32)
+### Elastic Load Balancer Architecture - PART2 (12:32)
 
-### [_ALL_] Application Load balancing (ALB) vs Network Load Balancing (NLB) (16:20)
+### Application Load balancing (ALB) vs Network Load Balancing (NLB) (16:20)
 
-### [_ASSOCIATE_] Launch Configuration and Templates (4:00)
+### Launch Configuration and Templates (4:00)
 
-### [_ASSOCIATE_] Auto-Scaling Groups (16:01)
+### Auto-Scaling Groups (16:01)
 
-### [_ASSOCIATE_] ASG Scaling Policies (10:23)
+### ASG Scaling Policies (10:23)
 
-### [_ASSOCIATE_] ASG Lifecycle Hooks (4:41)
+### ASG Lifecycle Hooks (4:41)
 
-### [_ASSOCIATE_] ASG HealthCheck Comparison - EC2 vs ELB (3:38)
+### ASG HealthCheck Comparison - EC2 vs ELB (3:38)
 
 ### SSL Offload & Session Stickiness (12:11)
 
-### [_ALL_, _DEMO_] Seeing Session Stickiness in Action (12:57)
+### [_DEMO_] Seeing Session Stickiness in Action (12:57)
 
 ### [_ADVANCED_DEMO_] Architecture Evolution - STAGE1 - PART1 (14:24)
 
@@ -713,29 +713,29 @@ DNS Record - Time To Live (TTL)
 
 ## SERVERLESS AND APPLICATION SERVICES
 
-### [_ASSOCIATE_] Architecture Deep Dive - PART1 (8:52)
+### Architecture Deep Dive - PART1 (8:52)
 
-### [_ASSOCIATE_] Architecture Deep Dive - PART2 (13:09)
+### Architecture Deep Dive - PART2 (13:09)
 
-### [_ALL_] AWS Lambda - PART1 (11:25)
+### AWS Lambda - PART1 (11:25)
 
-### [_ALL_] AWS Lambda - PART2 (13:59)
+### AWS Lambda - PART2 (13:59)
 
-### [_ALL_] AWS Lambda - PART3 (17:03)
+### AWS Lambda - PART3 (17:03)
 
-### [_ASSOCIATE_] CloudWatchEvents and EventBridge (6:54)
+### CloudWatchEvents and EventBridge (6:54)
 
-### [_ASSOCIATE_, _DEMO_] Automated EC2 Control using Lambda and Events - PART1 (13:44)
+### [_DEMO_] Automated EC2 Control using Lambda and Events - PART1 (13:44)
 
-### [_ASSOCIATE_, _DEMO_] Automated EC2 Control using Lambda and Events - PART2 (18:49)
+### [_DEMO_] Automated EC2 Control using Lambda and Events - PART2 (18:49)
 
 ### Serverless Architecture (12:56)
 
-### [_ASSOCIATE_] Simple Notification Service (7:49)
+### Simple Notification Service (7:49)
 
-### [_ASSOCIATE_] Step Functions (16:09)
+### Step Functions (16:09)
 
-### [_ALL_] API Gateway 101 (16:27)
+### API Gateway 101 (16:27)
 
 ### [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART1 (5:01)
 
@@ -749,7 +749,7 @@ DNS Record - Time To Live (TTL)
 
 ### [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART6 (2:39)
 
-### [_ASSOCIATE_] Simple Queue Service (15:30)
+### Simple Queue Service (15:30)
 
 ### SQS Standard vs FIFO Queues (3:29)
 
@@ -757,15 +757,15 @@ DNS Record - Time To Live (TTL)
 
 ### SQS Dead-Letter Queues (4:17)
 
-### [_ASSOCIATE_] Kinesis Data Streams (7:52)
+### Kinesis Data Streams (7:52)
 
-### [_ASSOCIATE_] Kinesis Data Firehose (9:11)
+### Kinesis Data Firehose (9:11)
 
-### [_ASSOCIATE_] Kinesis Data Analytics (8:51)
+### Kinesis Data Analytics (8:51)
 
 ### Kinesis Video Streams (5:09)
 
-### [_ASSOCIATE_] Amazon Cognito - User and Identity Pools (14:44)
+### Amazon Cognito - User and Identity Pools (14:44)
 
 ### AWS Glue 101 (6:23)
 
@@ -777,31 +777,31 @@ DNS Record - Time To Live (TTL)
 
 ## GLOBAL CONTENT DELIVERY AND OPTIMIZATION
 
-### [_ASSOCIATE_] Cloudfront Architecture (14:56)
+### Cloudfront Architecture (14:56)
 
-### [_ALL_] CloudFront (CF) - Behaviours (9:21)
+### CloudFront (CF) - Behaviours (9:21)
 
-### [_ALL_] CloudFront - TTL and Invalidations (13:48)
+### CloudFront - TTL and Invalidations (13:48)
 
-### [_ASSOCIATE_] ACM (11:21)
+### ACM (11:21)
 
-### [_ASSOCIATE_] Cloudfront and SSL/TLS (14:59)
+### Cloudfront and SSL/TLS (14:59)
 
-### [_ALL_] CloudFront (CF) - Origin Types & Origin Architecture (10:20)
+### CloudFront (CF) - Origin Types & Origin Architecture (10:20)
 
-### [_ALL_, _DEMO_] CloudFront (CF) - Adding a CDN to a static Website-PART1 (16:23)
+### [_DEMO_] CloudFront (CF) - Adding a CDN to a static Website-PART1 (16:23)
 
-### [_ALL_, _DEMO_] CloudFront (CF) - Adding a CDN to a static Website-PART2 (12:24)
+### [_DEMO_] CloudFront (CF) - Adding a CDN to a static Website-PART2 (12:24)
 
-### [_ALL_, _DEMO_] CloudFront (CF) - Adding an Alternate CNAME and SSL (11:12)
+### [_DEMO_] CloudFront (CF) - Adding an Alternate CNAME and SSL (11:12)
 
-### [_ASSOCIATE_] Securing CF and S3 using OAI (8:50)
+### Securing CF and S3 using OAI (8:50)
 
 ### CloudFront - Private Distribution & Behaviours (7:49)
 
-### [_ALL_, _DEMO_] CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (11:21)
+### [_DEMO_] CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (11:21)
 
-### [_ASSOCIATE_] Lambda@Edge (8:03)
+### Lambda@Edge (8:03)
 
 ### Global Accelerator (10:29)
 
@@ -811,21 +811,21 @@ DNS Record - Time To Live (TTL)
 
 ### VPC Flow Logs (9:56)
 
-### [_ASSOCIATE_] Egress-Only Internet gateway (6:46)
+### Egress-Only Internet gateway (6:46)
 
-### [_ASSOCIATE_] VPC Endpoints (Gateway) (11:14)
+### VPC Endpoints (Gateway) (11:14)
 
-### [_ASSOCIATE_] VPC Endpoints (Interface) (11:26)
+### VPC Endpoints (Interface) (11:26)
 
-### [_ALL_, _DEMO_] VPC Endpoints - Interface - PART1 (11:59)
+### [_DEMO_] VPC Endpoints - Interface - PART1 (11:59)
 
-### [_ALL_, _DEMO_] VPC Endpoints - Gateway - PART2 (9:59)
+### [_DEMO_] VPC Endpoints - Gateway - PART2 (9:59)
 
-### [_ALL_, _DEMO_] Egress-Only Internet Gateway - PART3 (7:57)
+### [_DEMO_] Egress-Only Internet Gateway - PART3 (7:57)
 
-### [_ASSOCIATE_] VPC Peering (9:04)
+### VPC Peering (9:04)
 
-### [_ALL_, _DEMO_] VPC Peering (22:38)
+### [_DEMO_] VPC Peering (22:38)
 
 ### Advanced VPC Section Quiz
 
@@ -869,11 +869,11 @@ DNS Record - Time To Live (TTL)
 
 ### DataSync (9:27)
 
-### [_ASSOCIATE_] FSx for Windows Servers (11:32)
+### FSx for Windows Servers (11:32)
 
-### [_ASSOCIATE_] FSx For Lustre (13:57)
+### FSx For Lustre (13:57)
 
-### [_ASSOCIATE_] AWS Transfer Family (10:24)
+### AWS Transfer Family (10:24)
 
 ### Hybrid and Migration Section Quiz
 
@@ -903,71 +903,71 @@ DNS Record - Time To Live (TTL)
 
 ## INFRASTRUCTURE AS CODE (CLOUDFORMATION)
 
-### [_ASSOCIATE_] CloudFormation Physical & Logical Resources (7:30)
+### CloudFormation Physical & Logical Resources (7:30)
 
-### [_ASSOCIATE_, _DEMO_] Simple Non Portable Template - PART1 (10:28)
+### [_DEMO_] Simple Non Portable Template - PART1 (10:28)
 
-### [_ASSOCIATE_, _DEMO_] Simple Non Portable Template - PART2 (11:28)
+### [_DEMO_] Simple Non Portable Template - PART2 (11:28)
 
-### [_ASSOCIATE_] CloudFormation Template and Pseudo Parameters (6:53)
+### CloudFormation Template and Pseudo Parameters (6:53)
 
-### [_ASSOCIATE_] CloudFormation Intrinsic Functions (14:28)
+### CloudFormation Intrinsic Functions (14:28)
 
-### [_ASSOCIATE_] CloudFormation Mappings (4:30)
+### CloudFormation Mappings (4:30)
 
-### [_ASSOCIATE_] CloudFormation Outputs (3:37)
+### CloudFormation Outputs (3:37)
 
-### [_ASSOCIATE_, _DEMO_] Template v2 - Portable (13:34)
+### [_DEMO_] Template v2 - Portable (13:34)
 
-### [_ASSOCIATE_] CloudFormation Conditions (7:24)
+### CloudFormation Conditions (7:24)
 
-### [_ASSOCIATE_] CloudFormation DependsOn (7:14)
+### CloudFormation DependsOn (7:14)
 
-### [_ASSOCIATE_] CloudFormation Wait Conditions & cfn-signal (11:52)
+### CloudFormation Wait Conditions & cfn-signal (11:52)
 
-### [_ASSOCIATE_] CloudFormation Nested Stacks (13:55)
+### CloudFormation Nested Stacks (13:55)
 
-### [_ASSOCIATE_] CloudFormation Cross-Stack References (10:05)
+### CloudFormation Cross-Stack References (10:05)
 
-### [_ASSOCIATE_] CloudFormation Stack Sets (9:12)
+### CloudFormation Stack Sets (9:12)
 
-### [_ASSOCIATE_] CloudFormation Deletion Policy (5:24)
+### CloudFormation Deletion Policy (5:24)
 
-### [_ASSOCIATE_] CloudFormation Stack Roles (6:47)
+### CloudFormation Stack Roles (6:47)
 
-### [_ASSOCIATE_] CloudFormation Init (CFN-INIT) (8:48)
+### CloudFormation Init (CFN-INIT) (8:48)
 
-### [_ASSOCIATE_] CloudFormation cfn-hup (4:13)
+### CloudFormation cfn-hup (4:13)
 
-### [_ASSOCIATE_, _DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART1 (12:51)
+### [_DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART1 (12:51)
 
-### [_ASSOCIATE_, _DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART2 (14:42)
+### [_DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART2 (14:42)
 
-### [_ASSOCIATE_] CloudFormation ChangeSets [NEW VERSION COMING SOON] (11:03)
+### CloudFormation ChangeSets [NEW VERSION COMING SOON] (11:03)
 
-### [_ASSOCIATE_] CloudFormation Custom Resources (11:03)
+### CloudFormation Custom Resources (11:03)
 
-### [_ASSOCIATE_, _DEMO_] CloudFormation Custom Resources-PART1 (9:12)
+### [_DEMO_] CloudFormation Custom Resources-PART1 (9:12)
 
-### [_ASSOCIATE_, _DEMO_] CloudFormation Custom Resources-PART2 (13:27)
+### [_DEMO_] CloudFormation Custom Resources-PART2 (13:27)
 
 ## NOSQL DATABASES & DYNAMODB
 
-### [_ASSOCIATE_] DynamoDB - Architecture (10:49)
+### DynamoDB - Architecture (10:49)
 
-### [_ASSOCIATE_] DynamoDB - Operations, Consistency and Performance-PART1 (13:06)
+### DynamoDB - Operations, Consistency and Performance-PART1 (13:06)
 
-### [_ASSOCIATE_] DynamoDB - Operations, Consistency and Performance-PART2 (11:24)
+### DynamoDB - Operations, Consistency and Performance-PART2 (11:24)
 
-### [_ASSOCIATE_] DynamoDB Local and Global Secondary Indexes (12:35)
+### DynamoDB Local and Global Secondary Indexes (12:35)
 
-### [_ASSOCIATE_] DynamoDB - Streams & Lambda Triggers (9:10)
+### DynamoDB - Streams & Lambda Triggers (9:10)
 
-### [_ASSOCIATE_] DynamoDB - Global Tables (5:09)
+### DynamoDB - Global Tables (5:09)
 
-### [_ASSOCIATE_] DynamoDB - Accelerator (DAX) (10:58)
+### DynamoDB - Accelerator (DAX) (10:58)
 
-### [_ASSOCIATE_] DynamoDB - TTL (4:49)
+### DynamoDB - TTL (4:49)
 
 ### Amazon Athena (8:19)
 
@@ -1013,11 +1013,11 @@ DNS Record - Time To Live (TTL)
 
 ## EXAM
 
-### [_ALL_] General AWS Exam Technique - 3 Phase Approach (8:56)
+### General AWS Exam Technique - 3 Phase Approach (8:56)
 
-### [_ALL_] General AWS Question Technique - PART1 (14:12)
+### General AWS Question Technique - PART1 (14:12)
 
-### [_ALL_] General AWS Question Technique - PART2 (9:01)
+### General AWS Question Technique - PART2 (9:01)
 
 ### Practice Exam #1
 
