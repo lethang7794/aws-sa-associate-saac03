@@ -1,0 +1,10 @@
+{
+  "yaml.schemas": {
+    "file:///home/lqt/.vscode-server/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i",
+    "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json": [
+      "*-cfn-*.yaml",
+      "file:///home/lqt/go-workspace/src/github.com/lethang7794/aws-sa-associate-saac03/.my_tmp/yaml.yaml"
+    ]
+  },
+  "cSpell.words": ["sadfasdf"]
+}
