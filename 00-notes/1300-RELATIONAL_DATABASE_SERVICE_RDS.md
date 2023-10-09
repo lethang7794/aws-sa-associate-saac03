@@ -284,7 +284,7 @@ RDS Proxy - Why?
 
 > How RDS Proxy works?
 >
-> ![Alt text](<product-page-diagram_RDS Proxy_How-it-works@2x.a18916586f49718a16fd11579d168ab08c83d333.png>)
+> ![Alt text](<images/product-page-diagram_RDS Proxy_How-it-works.png>)
 >
 > [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/):
 >

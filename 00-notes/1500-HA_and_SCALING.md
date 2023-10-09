@@ -10,7 +10,7 @@ The tiers (components) of an application
 
 ## Evolution of the Elastic Load Balancer (4:10)
 
-![Alt text](<Screenshot 2023-10-08 at 19.38.23 - [ASSOCIATESHARED]_Evolution_of_the_Elastic_Load_Ba.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 19.38.23 - [ASSOCIATESHARED]_Evolution_of_the_Elastic_Load_Ba.png>)
 Elastic Load Balancer (ELB) - Evolution
 
 > What are the 3 types of load balancers in AWS?
@@ -41,13 +41,13 @@ ELB - Architecture
 
 ## Elastic Load Balancer Architecture - PART2 (12:32)
 
-![Alt text](<Screenshot 2023-10-08 at 19.55.57 - [ASSOCIATESHARED]_Elastic_Load_Balancer_Architectu.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 19.55.57 - [ASSOCIATESHARED]_Elastic_Load_Balancer_Architectu.png>)
 ELB - Without Cross-Zone LB
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ELB-3.png)
 ELB - With Cross-Zone LB
 
-![Alt text](<Screenshot 2023-10-08 at 19.58.53 - [ASSOCIATESHARED]_Elastic_Load_Balancer_Architectu.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 19.58.53 - [ASSOCIATESHARED]_Elastic_Load_Balancer_Architectu.png>)
 ELB - Summary
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ELB-1.png)
@@ -79,19 +79,19 @@ LB Consolidation 🏳️‍🌈
 >
 > Using an ALB and its rules based on TLS SNI allows consolidation.
 
-![Alt text](<Screenshot 2023-10-08 at 20.43.14 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 20.43.14 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
 ALB
 
-![Alt text](<Screenshot 2023-10-08 at 20.44.41 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 20.44.41 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
 ALB - Rules
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ALBvsNLB-2.png)
 ALB - Rules Example
 
-![Alt text](<Screenshot 2023-10-08 at 20.49.25 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 20.49.25 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
 NLB
 
-![Alt text](<Screenshot 2023-10-08 at 20.50.18 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 20.50.18 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
 NLB vs ALB - Exam Tips
 
 > Which type of ELB can have a static IP?
@@ -100,7 +100,7 @@ NLB vs ALB - Exam Tips
 
 ## Launch Configuration and Templates (4:00)
 
-![Alt text](<Screenshot 2023-10-08 at 23.19.53 - [ASSOCIATESHARED]_Launch_Configuration_and_Templat.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 23.19.53 - [ASSOCIATESHARED]_Launch_Configuration_and_Templat.png>)
 Launch Configuration (LC) & Launch Template (LT)
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/LCandLT.png)
@@ -108,7 +108,7 @@ LC & LT - Architecture
 
 ## Auto-Scaling Groups (16:01)
 
-![Alt text](<Screenshot 2023-10-08 at 23.29.11 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 23.29.11 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
 ASG - Automatic Scaling EC2 instances
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ASG-1.png)
@@ -117,21 +117,21 @@ ASG - Scaling Polices automatically adjust the Desired Capacity
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ASG-2.png)
 ASG - Architecture
 
-![Alt text](<Screenshot 2023-10-08 at 23.33.54 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 23.33.54 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
 ASG - Scaling Polices
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ASG-3.png)
 ASG + LBs
 
-![Alt text](<Screenshot 2023-10-08 at 23.38.31 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 23.38.31 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
 ASG - Scaling Processes
 
-![Alt text](<Screenshot 2023-10-08 at 23.41.22 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-08 at 23.41.22 - [ASSOCIATESHARED]_Auto-Scaling_Groups__learn.cantr.png>)
 ASG - Summary
 
 ## ASG Scaling Policies (10:23)
 
-![Alt text](<Screenshot 2023-10-09 at 00.05.58 - [ASSOCIATESHARED]_ASG_Scaling_Policies__learn.cant.png>)
+![Alt text](<images/Screenshot 2023-10-09 at 00.05.58 - [ASSOCIATESHARED]_ASG_Scaling_Policies__learn.cant.png>)
 ASG Scaling Policies
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ASG-Policies-1.png)
@@ -142,10 +142,10 @@ ASG Scaling Policies - Step Scaling
 
 ## ASG Lifecycle Hooks (4:41)
 
-![Alt text](<Screenshot 2023-10-09 at 00.16.43 - [ASSOCIATESHARED]_ASG_Lifecycle_Hooks__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-09 at 00.16.43 - [ASSOCIATESHARED]_ASG_Lifecycle_Hooks__learn.cantr.png>)
 ASG Lifecycle Hooks
 
-![Alt text](<Screenshot 2023-10-09 at 00.19.43 - [ASSOCIATESHARED]_ASG_Lifecycle_Hooks__learn.cantr.png>)
+![Alt text](<images/Screenshot 2023-10-09 at 00.19.43 - [ASSOCIATESHARED]_ASG_Lifecycle_Hooks__learn.cantr.png>)
 ASG - Without Lifecycle Hooks
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ASG-LifecycleHooks-1.png)
@@ -153,7 +153,7 @@ ASG - With Lifecycle Hooks
 
 ## ASG HealthCheck Comparison - EC2 vs ELB (3:38)
 
-![Alt text](<Screenshot 2023-10-09 at 00.30.49 - [ASSOCIATESHARED]_ASG_HealthCheck_Comparison_-_EC2.png>)
+![Alt text](<images/Screenshot 2023-10-09 at 00.30.49 - [ASSOCIATESHARED]_ASG_HealthCheck_Comparison_-_EC2.png>)
 ASG - 3 types of HealthCheck
 
 > What are 3 types of ASG HealthCheck?
@@ -208,7 +208,7 @@ ELB - Connection Stickiness
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/GWLB-1.png)
 Why GWLB?
 
-![Alt text](<Screenshot 2023-10-09 at 11.34.24 - Gateway_Load_Balancer__learn.cantril_—_Firefox_Dev.png>)
+![Alt text](<images/Screenshot 2023-10-09 at 11.34.24 - Gateway_Load_Balancer__learn.cantril_—_Firefox_Dev.png>)
 What is GWLB?
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/GWLB-2.png)
