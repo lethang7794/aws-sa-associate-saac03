@@ -199,50 +199,150 @@ API Gateway - Caching
 
 ## Simple Queue Service (15:30)
 
+![Alt text](<images/Screenshot 2023-10-10 at 11.02.59 - [ASSOCIATESHARED]_Simple_Queue_Service__lea_—_Fire.png>)
+SQS - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-1.png)
+SQS - Architecture
 
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-2.png)
+SQS & SNS - Architecture
+
+![Alt text](<images/Screenshot 2023-10-10 at 11.12.55 - [ASSOCIATESHARED]_Simple_Queue_Service__lea_—_Fire.png>)
+SQS - Recap
 
 ## SQS Standard vs FIFO Queues (3:29)
 
+![Alt text](<images/Screenshot 2023-10-10 at 11.23.14 - SQS_Standard_vs_FIFO_Queues__lea_—_Firefox_Develop.png>)
+SQS - Standard vs FIFO Queues
+
 ## SQS Delay Queues (4:38)
 
-## SQS Dead-Letter Queues (4:17)
+![Alt text](<images/Screenshot 2023-10-10 at 11.27.20 - SQS_Delay_Queues__lea_—_Firefox_Developer_Edition.png>)
+SQS Visibility Timeout vs SQS Delay Queues
+
+> What is [SQS Visibility Timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html)?
+>
+> - While a SQS message is processing, it won't be visible in the SQS queue.
+> - After the message are processed,
+>   - It needs to be explicitly delete from the queue
+>   - or it will reappear on the queue after the `Visibility Timeout`.
+
+> What is the default value of SQS Visibility Timeout?
+>
+> 30s.
+>
+> It can be varied from 0s -> 12h.
+
+> What is [SQS Delay Queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html)?
+>
+> For an SQS queue which has `DelaySeconds` set, after the messages added to the queue, they will be invisible for `DelaySeconds`.
+
+> What is the limit of SQS `DelaySeconds`?
+>
+> 0s -> 15m
+
+## SQS Dead-Letter Queues (DLQ) (4:17)
+
+![Alt text](<images/Screenshot 2023-10-10 at 11.40.50 - SQS_Dead-Letter_Queues__lea_—_Firefox_Developer_Ed.png>)
+SQS Dead-Letter Queues
+
+> What is [SQS DLQ](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html)?
+>
+> The queue which stores messages that can't be processed (consumed) successfully.
 
 ## Kinesis Data Streams (7:52)
 
+![Alt text](<images/Screenshot 2023-10-10 at 11.46.12 - [ASSOCIATESHARED]_Kinesis_Data_Streams__lea_—_Fire.png>)
+Kinesis - Concept
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Kinesis.png)
+Kinesis - Architecture
+
+![Alt text](<images/Screenshot 2023-10-10 at 11.49.42 - [ASSOCIATESHARED]_Kinesis_Data_Streams__lea_—_Fire.png>)
+SQS vs Kinesis
 
 ## Kinesis Data Firehose (9:11)
 
+![Alt text](<images/Screenshot 2023-10-10 at 12.09.35 - [ASSOCIATESHARED]_Kinesis_Data_Firehose__lea_—_Fir.png>)
+Kinesis Data Firehose - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisFirehose-1.png)
+Kinesis Data Firehose - Architecture
+
+> Can Kinesis Data Firehose offer real-time delivery?
+>
+> No. Although Kinesis Data Firehose can receive data in realtime (200ms), it only delivery data in **NEAR realtime**.
+>
+> The messages are delivered when:
+>
+> - buffer is filled (1MB)
+> - buffer interval passed (60s)
 
 ## Kinesis Data Analytics (8:51)
 
+![Alt text](<images/Screenshot 2023-10-10 at 12.22.19 - [ASSOCIATESHARED]_Kinesis_Data_Analytics__lea_—_Fi.png>)
+Kinesis Data Analytics - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisDataAnalytics-1.png)
+Kinesis Data Analytics - Architecture
+
+![Alt text](<images/Screenshot 2023-10-10 at 12.28.19 - [ASSOCIATESHARED]_Kinesis_Data_Analytics__lea_—_Fi.png>)
+Kinesis Data Analytics - When & Where?
 
 ## Kinesis Video Streams (5:09)
 
+![Alt text](<images/Screenshot 2023-10-10 at 12.32.52 - Kinesis_Video_Streams__lea_—_Firefox_Developer_Edi.png>)
+Kinesis Video Streams - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisVideoStreams.png)
+Kinesis Video Streams - Architecture
 
 ## Amazon Cognito - User and Identity Pools (14:44)
 
+![Alt text](<images/Screenshot 2023-10-10 at 13.54.24 - [ASSOCIATESHARED]_Amazon_Cognito_-_User_and_Identi.png>)
+Cognito - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-1.png)
+Cognito - User Pool (authenticate & authorize users to your _app_ or _API_)
 
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-2.png)
+Cognito - Identity Pool (authorize authenticated/anonymous users to access your _AWS resources_)
 
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-3.png)
+Cognito - User Pool & Identity Pool
 
 ## AWS Glue 101 (6:23)
 
+![Alt text](<images/Screenshot 2023-10-10 at 14.14.56 - AWS_Glue_101__learn.can_—_Firefox_Developer_Editio.png>)
+AWS Glue - Serverless ETL
+
+![Alt text](<images/Screenshot 2023-10-10 at 14.15.52 - AWS_Glue_101__learn.can_—_Firefox_Developer_Editio.png>)
+AWS Glue - Data Catalog
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Glue.png)
+AWS Glue - Architecture
 
 ## Amazon MQ 101 (8:15)
 
+![Alt text](<images/Screenshot 2023-10-10 at 14.25.16 - Amazon_MQ_101__learn.can_—_Firefox_Developer_Editi.png>)
+Amazon MQ - Why?
+
+![Alt text](<images/Screenshot 2023-10-10 at 14.26.20 - Amazon_MQ_101__learn.can_—_Firefox_Developer_Editi.png>)
+Amazon MQ - What?
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonMQ.png)
+Amazon MQ - How?
+
+![Alt text](<images/Screenshot 2023-10-10 at 14.29.09 - Amazon_MQ_101__learn.can_—_Firefox_Developer_Editi.png>)
+Amazon MQ - When?
 
 ## Amazon AppFlow (3:30)
 
+![Alt text](<images/Screenshot 2023-10-10 at 14.33.48 - Amazon_AppFlow__learn.can_—_Firefox_Developer_Edit.png>)
+Amazon AppFlow - Overview
+
 ![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonAppFlow.png)
+Amazon AppFlow - Architecture
 
 ## Serverless and App Services Section Quiz
