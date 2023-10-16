@@ -18,7 +18,7 @@ DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamo
 
 > What is a *partition key*?
 >
-> *Paritition key* is the required part of *primary key*.
+> *Partition key* is the required part of *primary key*.
 >
 > - The *partition key* of an item is also known as its ***hash attribute***.
 >
@@ -31,7 +31,7 @@ DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamo
 > - The *sort key* of an *item* is also known as its ***range attribute***.
 > - The term ***range attribute*** derives from the way DynamoDB stores items with the same partition key physically close together, in **sorted order** by the *sort key* value.
 
-> What is capicity of DynamoDB?
+> What is capacity of DynamoDB?
 
 ![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-2.png)
 DynamoDB On-Demand Backups
@@ -61,10 +61,10 @@ DynamoDB [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide
 DynamoDB Consistency Model
 
 ![Alt text](<images/Screenshot from 2023-10-15 17-59-43.png>)
-DynamoDB - WCU Calcutation
+DynamoDB - WCU Calculation
 
 ![Alt text](<images/Screenshot from 2023-10-15 18-00-47.png>)
-DynamoDB - RCU Calcutation
+DynamoDB - RCU Calculation
 
 ## DynamoDB Local and Global [Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.SecondaryIndexes) (12:35)
 
