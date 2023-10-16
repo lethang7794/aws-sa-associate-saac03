@@ -10,6 +10,8 @@
 
 ## Amazon Rekognition (4:18)
 
+![Alt text](../2300-MACHINE_LEARNING/00_LEARNINGAIDS/AmazonRekognition.png)
+
 ## Amazon Textract (8:42)
 
 ## Amazon Transcribe (4:55)
