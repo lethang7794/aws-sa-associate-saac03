@@ -92,7 +92,7 @@ Route Tables
 > A subnet can be attached with only ONE Route Table.
 
 ![Alt text](<images/Screenshot 2023-10-04 at 12.27.13 - [ASSOCIATESHARED]_VPC_Routing,_Internet_Gateway_&_.png>)
-Internate Gateway (IGW)
+Internat Gateway (IGW)
 
 ![Alt text](<images/Screenshot 2023-10-04 at 12.28.33 - [ASSOCIATESHARED]_VPC_Routing,_Internet_Gateway_&_.png>)
 Using an IGW
@@ -241,7 +241,7 @@ With SG Self reference, the instances can scale easily
 
 > What can NAT can be used for?
 >
-> - IP masquerading 👺: hiding CIDR blocks behinde one IP.
+> - IP masquerading 👺: hiding CIDR blocks behind one IP.
 > - Gives Private CIDR block outgoing internet access.
 
 ![Alt text](<images/Screenshot 2023-10-04 at 16.19.22 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
@@ -275,7 +275,7 @@ NAT Gateways run from a public subnet, uses Elastic IPs
 VPC Design - NATGW Full Resilience
 
 ![Alt text](<images/Screenshot 2023-10-04 at 16.37.34 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
-NAT Intance vs NAT Gateway
+NAT Instance vs NAT Gateway
 
 > What is NAT Instance?
 

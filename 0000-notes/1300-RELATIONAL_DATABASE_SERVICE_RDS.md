@@ -29,7 +29,7 @@ _Document Database_, e.g. MongoDB, Amazon DocumentDB
 _Column Database_, e.g. BigQuery, Amazon Redshift
 
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/DBRefresher-6.png)
-_Graph Database_, e.g. neo4j, Amazone Neptune
+_Graph Database_, e.g. neo4j, Amazon Neptune
 
 ## ACID vs BASE (11:02)
 
@@ -105,14 +105,15 @@ RDS - Multi AZ - Cluster - Summary
 >
 > - Multi AZ **Instance**:
 >
->   - 1 standby replica:
+>   - **1 _Primary_** instance
+>   - **1 _Standby_** replica:
 >     - can't be used for reads / write 👈 not for performance scaling, only for availability
 >     - kept in sync _Synchronously_ with the primary instance
 >
 > - Multi AZ **Cluster**:
 >
->   - 1 Writer DB instance
->   - 2 Reader DB instances:
+>   - **1 _Writer_** DB instance
+>   - **2 _Reader_** DB instances:
 >     - can be used for read 👈 limited read scaling
 >     - kept in sync _Synchronously_ with the Writer instance
 
@@ -173,7 +174,7 @@ RDS Read-Replicas - RPO/RTO Improvement
 > - near 0 RPO.
 > - very low RTO 👈 RRs can be promoted quickly.
 
-> Can Read Replicas solve data corruption?
+> Can Read-Replicas solve data corruption?
 >
 > No. Data corruption will be replicated to RRs.
 
@@ -236,9 +237,9 @@ Aurora Serverless - Architecture
 ![Alt text](<images/Screenshot 2023-10-08 at 15.00.15 - [ASSOCIATESHARED]_Aurora_Serverless__le_—_Firefox_.png>)
 Aurora Serverless - Use Cases
 
-## [_DEMO_] Migrating to Aurora Serverless [DONT DO THIS _DEMO_, IT WON'T WORK, UPDATING to SERVERLESSv2] (14:47)
+## [_DEMO_] Migrating to Aurora Serverless [DENT DO THIS _DEMO_, IT WON'T WORK, UPDATING to SERVERLESSv2] (14:47)
 
-## Aurora Global Database (5:08)
+## Aurora [Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.html) (5:08)
 
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/AuroraGlobalDB.png)
 Aurora Global Database - Architecture

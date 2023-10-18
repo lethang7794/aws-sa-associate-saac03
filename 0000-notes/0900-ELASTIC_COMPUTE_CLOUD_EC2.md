@@ -147,7 +147,7 @@ EBS Encryption - Summary
 ## Network Interfaces, Instance IPs and DNS (15:58)
 
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/EC2networking-1.png>)
-Elastic Network Interface (ENI) & EC2 Network
+[Elastic Network Interface (ENI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) & EC2 Network
 
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/EC2networking-2.png>)
 EC2 Network & DNS Architecture

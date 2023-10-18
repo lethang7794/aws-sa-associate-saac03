@@ -785,7 +785,7 @@ Cloud Computing Characteristic #5 - Measured Service 📏
 Cloud Computing - Deployment Models
 
 ![Alt text](<images/Screenshot 2023-10-01 at 14.38.47 - Public_vs_Private_vs_Multi_vs_Hybrid_Cloud_..__lea.png>)
-Cloud Computing - Hydrid Cloud is NOT Public Cloud + Legacy on-premises
+Cloud Computing - Hybrid Cloud is NOT Public Cloud + Legacy on-premises
 
 ### Cloud Service Models (IAAS, PAAS, SAAS) (10:25)
 

@@ -61,13 +61,13 @@ WAF - Pricing
 AWS Shield - DDOS Protection
 
 ![Alt text](<images/Screenshot from 2023-10-12 20-09-47.png>)
-AWS Shield - Standard - Free - L3/L4/L7
+AWS Shield - Standard - Free - L3/L4
 
 ![Alt text](<images/Screenshot from 2023-10-12 20-11-55.png>)
 AWS Shield - Advanced - Pricing & Benefit
 
 ![Alt text](<images/Screenshot from 2023-10-12 20-13-40.png>)
-AWS Shield - Advanced - WAF Integration (L7) - Realtime + Healh-based
+AWS Shield - Advanced - WAF Integration (L7) - Realtime + Health-based
 
 ## CloudHSM (14:36)
 
