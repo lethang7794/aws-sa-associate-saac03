@@ -14,9 +14,7 @@
 
 ### Connect with other students and your instructor (3:10)
 
-### COURSE UPGRADES - SAVE $ WHEN ADDING MORE COURSES
-
-### SHARED LESSONS [] etc...
+### SHARED LESSONS [] etc
 
 ## COURSE FUNDAMENTALS AND AWS ACCOUNTS
 
@@ -84,7 +82,7 @@
 
 ### Fundamentals Section Quiz
 
-## IAM, ACCOUNTS AND AWS ORGANISATIONS
+## IAM, ACCOUNTS AND AWS ORGANIZATIONS
 
 ### IAM Identity Policies (15:52)
 
@@ -138,7 +136,7 @@
 
 ### Key Management Service (KMS) (18:38)
 
-### [_DEMO_] KMS - Encrypting the battleplans with KMS (12:43)
+### [_DEMO_] KMS - Encrypting the battle-plans with KMS (12:43)
 
 ### S3 Object Encryption CSE/SSE (23:31)
 
@@ -190,9 +188,9 @@
 
 ### VPC Routing, Internet Gateway & Bastion Hosts (17:35)
 
-### [_DEMO_] Configuring A4l public subnets and Jumpbox - PART1 (13:45)
+### [_DEMO_] Configuring A4l public subnets and Jump-box - PART1 (13:45)
 
-### [_DEMO_] Configuring A4l public subnets and Jumpbox - PART2 (11:45)
+### [_DEMO_] Configuring A4l public subnets and Jump-box - PART2 (11:45)
 
 ### Stateful vs Stateless Firewalls (14:04)
 
@@ -352,13 +350,13 @@
 
 ### Latency Routing (2:44)
 
-### Geolocation Routing (5:02)
+### Geo-location Routing (5:02)
 
-### Geoproximity (4:50)
+### Geo-proximity (4:50)
 
 ### R53 Interoperability (11:50)
 
-### Implementing DNSSEC using Route53 (17:43)
+### Implementing DNS-SEC using Route53 (17:43)
 
 ### Route53 Section Quiz
 
@@ -398,7 +396,7 @@
 
 ### Aurora Serverless (9:52)
 
-### [_DEMO_] Migrating to Aurora Serverless [DONT DO THIS _DEMO_, IT WON'T WORK, UPDATING to SERVERLESSv2] (14:47)
+### [_DEMO_] Migrating to Aurora Serverless [DON'T DO THIS _DEMO_, IT WON'T WORK, UPDATING to SERVERLESSv2] (14:47)
 
 ### Aurora Global Database (5:08)
 
@@ -538,7 +536,7 @@
 
 ### Cloudfront Architecture (14:56)
 
-### CloudFront (CF) - Behaviours (9:21)
+### CloudFront (CF) - Behaviors (9:21)
 
 ### CloudFront - TTL and Invalidations (13:48)
 
@@ -556,7 +554,7 @@
 
 ### Securing CF and S3 using OAI (8:50)
 
-### CloudFront - Private Distribution & Behaviours (7:49)
+### CloudFront - Private Distribution & Behaviors (7:49)
 
 ### [_DEMO_] CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (11:21)
 
@@ -564,7 +562,7 @@
 
 ### Global Accelerator (10:29)
 
-### CDN and Optimisation Section Quiz
+### CDN and Optimization Section Quiz
 
 ## ADVANCED VPC NETWORKING
 
@@ -600,7 +598,7 @@
 
 ### [_DEMO_] Simple Site2Site VPN - STAGE1 - AWS VPN (10:01)
 
-### [_DEMO_] Simple Site2Site VPN - STAGE2 - onprep pfSense Config (17:09)
+### [_DEMO_] Simple Site2Site VPN - STAGE2 - on-prep pfSense Config (17:09)
 
 ### [_DEMO_] Simple Site2Site VPN - STAGE3 - Routing & Security (10:29)
 
@@ -642,7 +640,7 @@
 
 ### Application Layer (L7) Firewall (7:44)
 
-### Web Application Firewall (WAF), WEBACLs, Rule Groups and Rules (19:18)
+### Web Application Firewall (WAF), WebACLs, Rule Groups and Rules (19:18)
 
 ### AWS Shield (9:47)
 
@@ -698,9 +696,9 @@
 
 ### CloudFormation cfn-hup (4:13)
 
-### [_DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART1 (12:51)
+### [_DEMO_] wait conditions, cfn-signal, cfn-init and cfn-hup - PART1 (12:51)
 
-### [_DEMO_] wait conditions, cfnsignal, cfninit and cfnhup-PART2 (14:42)
+### [_DEMO_] wait conditions, cfn-signal, cfn-init and cfn-hup - PART2 (14:42)
 
 ### CloudFormation ChangeSets [NEW VERSION COMING SOON] (11:03)
 
@@ -710,7 +708,7 @@
 
 ### [_DEMO_] CloudFormation Custom Resources-PART2 (13:27)
 
-## NOSQL DATABASES & DYNAMODB
+## NoSQL DATABASES & DYNAMODB
 
 ### DynamoDB - Architecture (10:49)
 
@@ -785,5 +783,3 @@
 ## FINISHING UP
 
 ### Thanks! and a favour (3:15)
-
-### COURSE UPGRADES - SAVE $ WHEN ADDING MORE COURSES
