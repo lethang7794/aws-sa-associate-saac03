@@ -36,7 +36,7 @@ SNS -> SQS -> ASG
 
 ## Q46. Which components are needed to create a custom public VPC for an EC2 instance to access public internet?
 
-![Alt text](images/vpc-resource-map.png)
+![Alt text](./images/vpc-resource-map.png)
 VPC Resource Map
 
 - _Virtual Private Cloud (VPC)_
@@ -95,7 +95,7 @@ VPC Resource Map
 
 ---
 
-![Alt text](images/default-vpc.png)
+![Alt text](./images/default-vpc.png)
 
 - [_Default VPC_](https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html): `172.31.0.0/16`
 
@@ -119,17 +119,17 @@ VPC Resource Map
 
     - _Main Route Table_:
 
-      ![Alt text](images/default-vpc-main-route-table.png)
+      ![Alt text](./images/default-vpc-main-route-table.png)
 
       - Send all (`0.0.0.0/0`) traffics to the IGW.
 
   - [_Default NACL_](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#default-network-acl): ALLOW all traffics (~ Has no effect): associated with _default VPC_
 
-    ![Alt text](<images/Screenshot from 2023-10-18 14-15-00.png>)
+    ![Alt text](<./images/Screenshot from 2023-10-18 14-15-00.png>)
 
   - [_Default SG_](https://docs.aws.amazon.com/vpc/latest/userguide/default-security-group.html): associated with _default VPC_
 
-    ![Alt text](<images/Screenshot from 2023-10-18 14-19-05.png>)
+    ![Alt text](<./images/Screenshot from 2023-10-18 14-19-05.png>)
 
   - Associate the _default DHCP options set_ for your AWS account with _default VPC_.
 
@@ -202,18 +202,22 @@ VPC Resource Map
 | Single AZ             | Instance endpoint [1]                               | 🔳                | 🔳                   |
 | Multi-AZ Instance     | Instance endpoint                                   | ⬜                | 🔳                   |
 |                       | (Automatically failover to standby replica [5])     |                   |                      |
+|                       |                                                     |                   |                      |
 | Multi-AZ Cluster [10] | Multiple:                                           | ⬜⬜              | ⬜⬜                 |
 |                       | - _Cluster endpoint_ (_Writer endpoint_)            |                   |                      |
 |                       | - _Reader endpoints_                                |                   |                      |
 |                       | - _Instance endpoints_                              |                   |                      |
+|                       |                                                     |                   |                      |
 | Read Replicas         | Multiple:                                           | ⬜⬜⬜            | ⬜⬜⬜               |
 |                       | - Source DB instance endpoint                       |                   |                      |
 |                       | - Each replica has its own _instance endpoint_ [20] |                   |                      |
+|                       | - (Aurora) Custom endpoints [21]                    |                   |                      |
 
 [1]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html#CHAP_CommonTasks.Connect.EndpointAndPort
 [5]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html#Concepts.MultiAZ.Failover
 [10]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts-connection-management.html#multi-az-db-clusters-concepts-connection-management-endpoint-types
 [20]: https://repost.aws/knowledge-center/requests-rds-read-replicas
+[21]: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html#Aurora.Overview.Endpoints.Types
 
 ## Q50. ENI
 
