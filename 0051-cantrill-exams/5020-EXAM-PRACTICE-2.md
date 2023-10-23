@@ -205,7 +205,7 @@ VPC Resource Map
 |                       |                                                     |                   |                      |
 | Multi-AZ Cluster [10] | Multiple:                                           | ⬜⬜              | ⬜⬜                 |
 |                       | - _Cluster endpoint_ (_Writer endpoint_)            |                   |                      |
-|                       | - _Reader endpoints_                                |                   |                      |
+|                       | - _Reader endpoint_                                |                   |                      |
 |                       | - _Instance endpoints_                              |                   |                      |
 |                       |                                                     |                   |                      |
 | Read Replicas         | Multiple:                                           | ⬜⬜⬜            | ⬜⬜⬜               |
