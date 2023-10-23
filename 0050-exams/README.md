@@ -10,7 +10,7 @@
 | 6   | Tutorials Dojo 3            | 46/65 | 71%           | X      | 00:56:51  | Oct 21, 2023        |
 | 7   | Tutorials Dojo 4            | 46/65 | 71%           | X      | 01:03:39  | Oct 22, 2023        |
 | 8   | Tutorials Dojo 5            | 49/65 | 75%           | Passed | 00:52:07  | Oct 23, 2023, 15h   |
-|     | Tutorials Dojo 6            |       |               |        |           | Oct 23, 2023 (Plan) |
+| 9    | Tutorials Dojo 6            | 48/65 | 74%           | Passed | 00:58:01  | Oct 23, 2023, 20h   |
 |     | Tutorials Dojo Bonus Test   |       |               |        |           | Oct 24, 2023 (Plan) |
 |     | Tutorials Dojo Final Test   |       |               |        |           | Oct 24, 2023 (Plan) |
 |     |                             |       |               |        |           |                     |
