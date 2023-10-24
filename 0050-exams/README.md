@@ -12,6 +12,8 @@
 | 8   | Tutorials Dojo 5            | 49/65 | 75%           | Passed | 00:52:07  | Oct 23, 2023, 15h   |
 | 9   | Tutorials Dojo 6            | 48/65 | 74%           | Passed | 00:58:01  | Oct 23, 2023, 20h   |
 | 10  | Tutorials Dojo Bonus Test   | 34/45 | 75%           | Passed | 00:44:37  | Oct 24, 2023, 10h   |
+| 11  | Tutorials Dojo 3            | 56/65 | 86%           | Passed | 01:10:00  | Oct 24, 2023, 15h   |
+| 7   | Tutorials Dojo 4            | xx/65 | xx%           | xx     | xx:xx:xx  | Oct 24, 2023, 16h   |
 |     | Tutorials Dojo Final Test   |       |               |        |           | Oct 24, 2023 (Plan) |
 |     |                             |       |               |        |           |                     |
 |     | REAL AWS EXAM               |       |               |        |           | Oct 26, 2023        |
