@@ -130,6 +130,21 @@
 
 ## Database (10)
 
+|                                         |                                                               |
+| --------------------------------------- | ------------------------------------------------------------- |
+| Amazon Aurora                           | High performance managed relational database engine           |
+| Amazon DocumentDB                       | Fully managed document database                               |
+| Amazon DynamoDB                         | Managed NoSQL database                                        |
+| Amazon ElastiCache                      | In-memory caching service                                     |
+| Amazon Keyspaces (for Apache Cassandra) | Managed Cassandra-compatible database                         |
+| Amazon MemoryDB for Redis               | Redis-compatible, durable, in-memory database service         |
+| Amazon Neptune                          | Fully managed graph database service                          |
+| Amazon QLDB                             | Fully managed ledger database                                 |
+| Amazon RDS                              | Set up, operate, and scale a relational database in the cloud |
+| Amazon Timestream                       | Fully managed time series database                            |
+
+## Developer Tools (18)
+
 |                                     |                                                                        |
 | ----------------------------------- | ---------------------------------------------------------------------- |
 | AWS Application Composer            | Visually design and build serverless applications quickly              |
@@ -151,7 +166,7 @@
 | Toolkit for .NET Refactoring        | Reduce time and effort to refactor legacy .NET apps for AWS Cloud      |
 | AWS X-Ray                           | Analyze and debug your applications                                    |
 
-## Developer Tools (18)
+## End User Computing (6)
 
 |                        |                                                                      |
 | ---------------------- | -------------------------------------------------------------------- |
@@ -162,7 +177,7 @@
 | Amazon WorkSpaces Core | Virtual desktop infrastructure that works with third-party solutions |
 | Amazon WorkSpaces Web  | Provide secure access to internal websites and SaaS applications     |
 
-## End User Computing (6)
+## Front-End Web & Mobile (8)
 
 |                                          |                                                                       |
 | ---------------------------------------- | --------------------------------------------------------------------- |
@@ -174,15 +189,6 @@
 | Amazon Location Service                  | Securely and easily add location data to applications                 |
 | AWS Mobile SDK for Unity                 | Find .NET classes that enable games written with Unity to utilize AWS |
 | Amazon Silk                              | Create a faster, more responsive mobile browsing experience           |
-
-## Front-End Web & Mobile (8)
-
-|                   |                                                                     |
-| ----------------- | ------------------------------------------------------------------- |
-| AWS GameKit       | Build game backend services with AWS while working in a game engine |
-| Amazon GameLift   | Simple, fast, cost-effective dedicated game server hosting          |
-| Amazon GameSparks | Multi-service backend for game developers                           |
-| Amazon Lumberyard | A free cross-platform 3D game engine (binaries no longer offered)   |
 
 ## Game Development (4)
 

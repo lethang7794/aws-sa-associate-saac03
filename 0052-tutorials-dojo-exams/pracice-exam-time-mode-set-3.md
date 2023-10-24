@@ -52,6 +52,7 @@ Which of the following statements is true regarding EC2 billing? (Select TWO.)
 > - running 💸
 >   - rebooting
 >   - stopping - stopped (EBS-backed instances)
+>     - hibernate 💸
 > - shutting-down
 > - terminated (Terminated Reserver Instances are still billed 💸)
 
