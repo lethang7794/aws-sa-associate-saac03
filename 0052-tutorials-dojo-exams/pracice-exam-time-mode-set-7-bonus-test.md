@@ -212,7 +212,7 @@ Which is the best solution among the following options that can satisfy the requ
 >
 > - CloudTrail Logs: record of actions taken by a user, role, or an AWS service in Amazon S3
 > - S3 server access logs: detailed records for the requests that are made to an S3 bucket
->   - Fields for Object Size, Total Time, Turn-Around Time, and HTTP Referer for log records
+>   - Fields for Object Size, Total Time, Turn-Around Time, and HTTP Referrer for log records
 >   - Lifecycle transitions, expirations, restores
 >   - Invalid Authentication
 
