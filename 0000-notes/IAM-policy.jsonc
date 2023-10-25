@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Id": "PutObjPolicy",
+  "Statement": [
+    {
+      "Sid": "DenyObjectsThatAreNotSSEKMS",
+      "Principal": "*",                                // WHO: Everyone
+      "Effect": "Deny",                                // CAN: Not
+      "Action": "s3:PutObject",                        // CAN: Create Oject
+      "Resource": "arn:aws:s3:::DOC-EXAMPLE-BUCKET/*", // WHAT: This bucket
+      "Condition": {                                   // (WHEN: based on request context)
+        "Null": {
+          "s3:x-amz-server-side-encryption-aws-kms-key-id": "true"
+        }
+      }
+    }
+  ]
+}

@@ -23,16 +23,16 @@ Which is the most suitable option to implement with the LEAST amount of effort?
 ```
 
 > CloudWatch - CloudWatch Logs - CloudTrail - CloudWatch Events - EventBridge?
-
-- CloudWatch: Monitor resources and applications
-
-  - CloudWatch Logs: Monitor, store, and access your log files from Amazon Elastic Compute Cloud instances, AWS CloudTrail, or other sources.
-
-  - CLoudWatch Events: Is now Amazon EventBridge
-
-- CloudTrail: Track and monitor activities by users, roles, or AWS services
-
-- EventBridge: Serverless event bus for SaaS apps and AWS services
+>
+> - CloudWatch: Monitor resources and applications
+>
+>   - CloudWatch Logs: Monitor, store, and access your log files from Amazon Elastic Compute Cloud instances, AWS CloudTrail, or other sources.
+>
+>   - CLoudWatch Events: Is now Amazon EventBridge
+>
+> - CloudTrail: Track and monitor activities by users, roles, or AWS services
+>
+> - EventBridge: Serverless event bus for SaaS apps and AWS services
 
 ### 4
 
@@ -87,7 +87,7 @@ Which of the following options must be implemented to meet these requirements wi
 
 - Simple, scalable, and serverless data integration
 - Serverless ETL
-- Glue Job can be triggered manually or via events using EventBrige
+- Glue Job can be triggered manually or via events using EventBridge
 
 ### 13
 
