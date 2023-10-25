@@ -315,9 +315,9 @@ Which action should a solutions architect consider?
 - View all of the AWS security compliance reports from AWS Security Hub.
 ```
 
-> Amazon Macie: Discover and protect your sensitive data at scale -> EC2
+> Amazon Macie: Discover and protect your sensitive data at scale -> S3
 
-> Amazon Inspector: Automated and continual vulnerability management at scale -> S3
+> Amazon Inspector: Automated and continual vulnerability management at scale -> EC2, ECR, Lambda
 
 > Amazon Artifact: On-demand access to AWS compliance reports: SOC, PCI, BAA, NDA -> Reports
 

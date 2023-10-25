@@ -45,7 +45,7 @@ Which of the following are the possible solutions that you can implement to sati
 - Use Route 53 with Weighted routing policy to divert the traffic between the on-premises and AWS-hosted application. Divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure.
 ```
 
-> Application Load Balancer: supports Weighted Taget Groups
+> Application Load Balancer: supports Weighted Target Groups
 
 ### 5
 
@@ -125,6 +125,8 @@ Which combination of actions should the Solutions Architect implement to meet th
 ```
 A company has multiple AWS Site-to-Site VPN connections placed between their VPCs and their remote network. During peak hours, many employees are experiencing slow connectivity issues, which limits their productivity. The company has asked a solutions architect to scale the throughput of the VPN connections.
 
+Which solution should the architect carry out?
+
 - Associate the VPCs to an Equal Cost Multipath Routing (ECMR)-enabled transit gateway and attach additional VPN tunnels.
 - Add more virtual private gateways to a VPC and enable Equal Cost Multipath Routing (ECMR) to get higher VPN bandwidth.
 - Modify the VPN configuration by increasing the number of tunnels to scale the throughput.
@@ -137,12 +139,11 @@ A company has multiple AWS Site-to-Site VPN connections placed between their VPC
 >
 >   Establish _multiple VPN tunnels_ to an ECMP-enabled transit gateway
 
-Which solution should the architect carry out?###
-
-```
 ## SAA - Design Resilient Architectures
 
 2
+
+```
 A company needs to accelerate the performance of its AI-powered medical diagnostic application by running its machine learning workloads on the edge of telecommunication carriers' 5G networks. The application must be deployed to a Kubernetes cluster and have role-based access control (RBAC) access to IAM users and roles for cluster authentication.
 
 Which of the following should the Solutions Architect implement to ensure single-digit millisecond latency for the application?
@@ -151,6 +152,7 @@ Which of the following should the Solutions Architect implement to ensure single
 - Host the application to an Amazon Elastic Kubernetes Service (Amazon EKS) cluster. Set up node groups in AWS Wavelength Zones for the Amazon EKS cluster. Attach the Amazon EKS connector agent role (AmazonECSConnectorAgentRole) to your cluster and use AWS Control Tower for RBAC access.
 - Launch the application to an Amazon Elastic Kubernetes Service (Amazon EKS) cluster. Create VPC endpoints for the AWS Wavelength Zones and apply them to the Amazon EKS cluster. Install the AWS IAM Authenticator for Kubernetes (aws-iam-authenticator) to your cluster.
 - Host the application to an Amazon EKS cluster and run the Kubernetes pods on AWS Fargate. Create node groups in AWS Wavelength Zones for the Amazon EKS cluster. Add the EKS pod execution IAM role (AmazonEKSFargatePodExecutionRole) to your cluster and ensure that the Fargate profile has the same IAM role as your Amazon EC2 node groups.
+
 ```
 
 > AWS Wavelength: Deliver ultra-low latency applications for 5G devices
@@ -165,6 +167,7 @@ Which of the following should the Solutions Architect implement to ensure single
 ### 8
 
 ```
+
 A top investment bank is in the process of building a new Forex trading platform. To ensure high availability and scalability, you designed the trading platform to use an Elastic Load Balancer in front of an Auto Scaling group of On-Demand EC2 instances across multiple Availability Zones. For its database tier, you chose to use a single Amazon Aurora instance to take advantage of its distributed, fault-tolerant, and self-healing storage system.
 
 In the event of system failure on the primary database instance, what happens to Amazon Aurora during the failover?
@@ -173,6 +176,7 @@ In the event of system failure on the primary database instance, what happens to
 - Aurora will attempt to create a new DB Instance in the same Availability Zone as the original instance and is done on a best-effort basis.
 - Amazon Aurora flips the A record of your DB Instance to point at the healthy replica, which in turn is promoted to become the new primary.
 - Aurora will first attempt to create a new DB Instance in a different Availability Zone of the original instance. If unable to do so, Aurora will attempt to create a new DB Instance in the original Availability Zone in which the instance was first launched.
+
 ```
 
 > Aurora Failover: Automatically handled by Amazon Aurora
@@ -194,9 +198,11 @@ In the event of system failure on the primary database instance, what happens to
 ### 12
 
 ```
+
 A client is hosting their company website on a cluster of web servers that are behind a public-facing load balancer. The client also uses Amazon Route 53 to manage their public DNS.
 
 How should the client configure the DNS zone apex record to point to the load balancer?###
+
 ```
 
 ## SAA - Design Secure Architectures
@@ -204,6 +210,7 @@ How should the client configure the DNS zone apex record to point to the load ba
 3
 
 ```
+
 An application is hosted on an EC2 instance with multiple EBS Volumes attached and uses Amazon Neptune as its database. To improve data security, you encrypted all of the EBS volumes attached to the instance to protect the confidential data stored in the volumes.
 
 Which of the following statements are true about encrypted Amazon Elastic Block Store volumes? (Select TWO.)
@@ -213,6 +220,7 @@ Which of the following statements are true about encrypted Amazon Elastic Block 
 - Snapshots are not automatically encrypted.
 - Only the data in the volume is encrypted and not all the data moving between the volume and the instance.
 - The volumes created from the encrypted snapshot are not encrypted.
+
 ```
 
 > EBS Encryption
@@ -234,6 +242,7 @@ Which of the following would be the best way to achieve this?
 - Provide permissions to the users via the AWS Resource Access Manager (RAM) service to only access EC2 instances that are used for production or development.
 - Launch the UAT and production instances in different Availability Zones and use Multi Factor Authentication.
 - Define the tags on the UAT and production servers and add a condition to the IAM policy which allows access to specific tags.
+
 ```
 
 > Best practice to control access to EC2 instances:
@@ -253,6 +262,7 @@ Which set of AWS services will the Architect use to meet these requirements?
 - AWS Directory Services, VPN connection, and Amazon Workspaces
 - AWS Directory Services, VPN connection, and AWS Identity and Access Management
 - AWS Directory Services, VPN connection, and Amazon S3
+
 ```
 
 > AWS Workspaces: Virtual desktops in the cloud
@@ -270,6 +280,7 @@ Which combination of steps will achieve this? (Select TWO.)
 - Re-configure the route table’s target and destination of the instances’ subnet.
 - Launch a NAT Gateway in the public subnet of each VPC.
 - Deploy a VPC endpoint on each region to enable a private connection.
+
 ```
 
 > Peering VPC - Setup
@@ -285,10 +296,11 @@ A company troubleshoots the operational issues of their cloud architecture by lo
 
 Which of the following is the most suitable approach to implement the encryption?
 
--  Use CloudTrail and configure the destination Amazon Glacier archive to use Server-Side Encryption (SSE).
--  Use CloudTrail and configure the destination S3 bucket to use Server-Side Encryption (SSE).
--  Use CloudTrail and configure the destination S3 bucket to use Server Side Encryption (SSE) with AES-128 encryption algorithm.
--  Use CloudTrail with its default settings.
+- Use CloudTrail and configure the destination Amazon Glacier archive to use Server-Side Encryption (SSE).
+- Use CloudTrail and configure the destination S3 bucket to use Server-Side Encryption (SSE).
+- Use CloudTrail and configure the destination S3 bucket to use Server Side Encryption (SSE) with AES-128 encryption algorithm.
+- Use CloudTrail with its default settings.
+
 ```
 
 > CloudTrail - Encryption
@@ -310,6 +322,7 @@ As the Solutions Architect, which combination of options should you implement in
 - Identify sensitive data using Amazon GuardDuty by creating an Amazon EventBridge (Amazon CloudWatch Events) rule to include the CRITICAL event types from GuardDuty findings.
 - Set up an Amazon SQS as the target for an Amazon EventBridge (Amazon CloudWatch Events) rule that sends notifications when the error occurs again.
 - Set up an AWS IoT Message Broker as the target for an Amazon EventBridge (Amazon CloudWatch Events) rule that sends notifications when the SensitiveData:S3Object/Personal event occurs again.
+
 ```
 
 > S3 - PII:

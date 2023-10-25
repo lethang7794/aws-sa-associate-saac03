@@ -69,9 +69,9 @@ Which of the following can satisfy this requirement with the LEAST amount of ope
 - Create a new Direct Connect gateway and integrate it with the existing Direct Connect connection. Set up a Transit Gateway between AWS accounts and associate it with the Direct Connect gateway.
 ```
 
-> Transit Gateway & Direct Connect Gateway???
+> Transit Gateway & Direct Connect Gateway ??? TODO
 
-> Direct Connect connection/gateway???
+> Direct Connect connection/gateway ??? TODO
 
 > VPN traverses the public internet, doesn't use a dedicated connection
 
