@@ -823,6 +823,43 @@ from your on-premises network
 
 ### AWS Global Accelerator: Improve global application availability and performance
 
+Improve application availability, performance, and security using the AWS global network
+
+#### What is it?
+
+A service in which you create accelerators to improve the performance of your applications for local and global users
+
+#### How it works?
+
+![Alt text](AWS-Global-Accelerator-How-It-Works.png)
+
+#### Why use it?
+
+- Take advantage of AWS Global Infrastructure to onboard your user traffic at one of the Global Accelerator edge locations.
+- Users can access your application endpoints through static IP addresses to enjoy deterministic routing independent of DNS.
+
+#### Use cases
+
+- Global traffic manager
+  Use traffic dials to route traffic to the nearest Region or achieve fast failover across Regions.
+
+- API acceleration
+  Accelerate API workloads by up to 60%, leveraging TCP termination at the edge.
+
+- Global static IP
+  Simplify allowlisting in enterprise firewalling and IoT use cases.
+
+- Low-latency gaming and media workloads
+  Use custom routing to deterministically route traffic to a fleet of EC2 instances.
+
+#### Related Services
+
+> Global Accelerator & ELB
+
+> Global Accelerator vs CloudFront
+
+#### Notes
+
 ### Amazon Route 53: Highly available and scalable Domain Name System (DNS) web service
 
 > Route 53: GeoProximity Routing vs Geolocation Routing vs Latency-based Routing
@@ -1119,7 +1156,7 @@ XSS, SQL-injection
 > - All snapshots created from the volume
 > - All volumes created from those snapshots
 
-### Amazon EFS: Fully managed file system for Amazon EC2
+### Amazon EFS: Fully managed file system for Amazon _EC2_
 
 > EFS vs Storage Gateway
 >
