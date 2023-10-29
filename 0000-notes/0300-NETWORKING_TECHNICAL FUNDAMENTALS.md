@@ -47,59 +47,68 @@ _Right game sends Frame F2 to Left game_ - Carrier Sense Multiple Access ([CSMA]
 ![Alt text](<images/Screenshot 2023-09-28 at 12.17.36 - Layer_2_-_DataLink_-_PART2__learn.cantrill.io_and_.png>)
 Collision Detection (CD)
 
+![Alt text](<Screenshot from 2023-10-29 01-24-02.png>)
+OSI Layer 2 - Try using a Hub
+
+![Alt text](<Screenshot from 2023-10-29 01-26-19.png>)
+OSI Layer 2 - Using a Switch - MAC Address Table
+
+![Alt text](<Screenshot from 2023-10-29 01-27-19.png>)
+OSI Layer 2 Data Link: MAC Address 👉️ Median Access Control & Collision Detection, Switch
+
 ### Layer 3 - Network - PART1 (12:06)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.57.12 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-_LAN (Local Area Network)_ use Ethernet protocol
+OSI Layer 3 - Layer 3*LAN (Local Area Network)* use Ethernet protocol
 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.58.27 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-_Long distant point to point (P2P) links_ use other protocols: PPP/MPLS/ATM...
+OSI Layer 3 - _Long distant point to point (P2P) links_ use other protocols: PPP/MPLS/ATM...
 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.58.41 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-_Internet Protocol (IP)_, a Layer-3 protocol, moves data between LAN without direct P2P links
+OSI Layer 3 - _Internet Protocol (IP)_, a **Layer-3** protocol, moves data between LAN without direct P2P links, by adding cross network _IP addressing_ and _routing_
 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.58.57 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-_IP Packets_ are moved step by step from source to destination Via intermediate networks, encapsulated in different frames along the way.
+OSI Layer 3 - _IP Packets_ are moved step by step from **source** to **destination** via **intermediate** networks, encapsulated in different **frames** along the way.
 
 ![Alt text](<images/Screenshot 2023-09-28 at 12.59.07 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-_Routers_ (L3) devices, remove frame encapsulation and add new frame encapsulation at every **hop** 1️⃣2️⃣3️⃣4️⃣
+OSI Layer 3 - _Routers_ (L3) devices, remove frame encapsulation and add **new frame encapsulation** at every **hop** 1️⃣2️⃣3️⃣4️⃣
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.02.26 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-IP v4 package structure
+OSI Layer 3 - IP v4 package structure
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.03.58 - Layer_3_-_Network_-_PART1__learn.cantrill.io_and_1.png>)
-IP v6 package structure
+OSI Layer 3 - IP v6 package structure
 
 ### Layer 3 - Network - PART2 (19:13)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.41.09 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
-IPv4 Addressing
+OSI Layer 3 - IPv4 Addressing
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.44.55 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
-Subnet Mask
+OSI Layer 3 - Subnet Mask
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.47.17 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
-Route Tables & Routes
+OSI Layer 3 - Route Tables & Routes
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.48.20 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
-**Router** compares packet **destination IP** & **route table** for matching destinations and is forwarded on to the Next Hop/Target. The more specific prefixes are preferred (0 lowest. 32 highest)
+OSI Layer 3 - **Router** compares packet **destination IP** & **route table** for matching destinations and is forwarded on to the Next Hop/Target. The more specific prefixes are preferred (0 lowest. 32 highest)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 13.49.57 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
-Packets are routed, **hop by hop** across the internet. From _source_ to _destination_.
+OSI Layer 3 - Packets are routed, **hop by hop** across the internet. From _source_ to _destination_.
 
 ### Layer 3 - Network - PART3 (15:15)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 14.04.53 - Layer_3_-_Network_-_PART3__learn.cantrill.io_and_1.png>)
-Address Resolution Protocol (ARP)
+OSI Layer 3 - Address Resolution Protocol (ARP)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 14.06.44 - Layer_3_-_Network_-_PART3__learn.cantrill.io_and_1.png>)
-IP Routing - Same local network
+OSI Layer 3 - IP Routing - Same local network
 
 ![Alt text](<images/Screenshot 2023-09-28 at 14.09.27 - Layer_3_-_Network_-_PART3__learn.cantrill.io_and_1.png>)
-IP Routing - 2 different networks
+OSI Layer 3 - IP Routing - 2 different networks
 
 ![Alt text](<images/Screenshot 2023-09-28 at 14.11.29 - Layer_3_-_Network_-_PART3__learn.cantrill.io_and_1.png>)
-L3 Summary
+OSI Layer 3 - L3 Summary
 
 ### Layer 4&5 - Transport & Session - PART1 (15:39)
 
