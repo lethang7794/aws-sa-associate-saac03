@@ -148,15 +148,20 @@ Stateful firewall
 ![Alt text](<images/Screenshot 2023-09-28 at 15.23.51 - Network_Address_Translation_(NAT)_-_PART1__learn.c.png>)
 NAT - Types of NATs
 
+> Why NAT?
+>
+> - Overcome IPv4 shortages.
+> - Security: hide private IP
+
 ![Alt text](<images/Screenshot 2023-09-28 at 15.26.46 - Network_Address_Translation_(NAT)_-_PART1__learn.c.png>)
 Static NAT - Outbound Traffic
 
-> Static NAT maintains a NAT table to map PrivateIP : Public IP (1:1)
-
-> In AWS, Internet Gateway (IGW) is a static NAT.
+> Static NAT maintains a NAT table to map PrivateIP : Public IP (1:1)>
+>
+> 👉️ In AWS, Internet Gateway (IGW) is a static NAT.
 
 ![Alt text](<images/Screenshot 2023-09-28 at 15.27.48 - Network_Address_Translation_(NAT)_-_PART1__learn.c.png>)
-Static NAT - Inbound Traffic
+Static NAT - Inbound Traffic👉️
 
 ### Network Address Translation (NAT) - PART2 (9:38)
 
@@ -165,8 +170,8 @@ Dynamic NAT
 
 > Dynamic NAT maintains a NAT table:
 >
-> - Dynamic NAT maps PrivateIP : Public IP.
-> - Public IP allocations are _temporary allocations from a Public IP Pool_.
+> - Dynamic NAT maps PrivateIP : Public IP (1:1 first available).
+> - Public IP allocations are _temporary allocations from a Public IP Pool_, the pool may be out-of-public IPs.
 
 ![Alt text](<images/Screenshot 2023-09-28 at 15.40.07 - Network_Address_Translation_(NAT)_-_PART2__learn.c.png>)
 Port Address Translating (PAT)
@@ -177,6 +182,16 @@ Port Address Translating (PAT)
 > - The Public IP and public source port are allocated from a pool which allows IP Overloading (many to one)
 
 > In AWS, NAT Gateway (NATGW) is a PAT.
+
+> NAT vs PAT
+>
+> - NAT
+>   ![Alt text](NAT.png)
+>
+> - PAT: is a type of Dynamic NAT
+>   ![Alt text](NAT-PAT.png)
+>
+> Ref: <https://techdifferences.com/difference-between-nat-and-pat.html>
 
 ### IP Address Space & Subnetting - PART1 (14:37)
 
