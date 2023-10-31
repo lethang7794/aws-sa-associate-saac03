@@ -87,6 +87,38 @@ OSI Layer 3 - IPv4 Addressing
 ![Alt text](<images/Screenshot 2023-09-28 at 13.44.55 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
 OSI Layer 3 - Subnet Mask
 
+> IPv4 classful addressing
+>
+> Class A, class B, class C
+>
+> Ref: <https://www.wikiwand.com/en/Classful_network>
+
+> IPv4 reserved IP address
+>
+> - Class A
+>
+>   - 0.0.0.0/8: Local network
+>   - 10.0.0.0/8: Private network
+>   - 127.0.0.0./8: Loopback of local host
+>
+> - Class B
+>
+>   - 169.254.0.0/16: Link-local address when no IP address is specified
+>
+>     - 169.254.169.254/32: AWS EC2 Instance Metadata Service
+>
+>   - 172.16.0.0/12: Private network
+>
+>     - 127.31.0.0/16: AWS default VPC size
+>
+> - Class C
+>   - 192.168.0.0/16: Private network
+>
+> Ref:
+>
+> - <https://www.wikiwand.com/en/Reserved_IP_addresses>
+> - <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#link-local-addresses>
+
 ![Alt text](<images/Screenshot 2023-09-28 at 13.47.17 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
 OSI Layer 3 - Route Tables & Routes
 
@@ -204,7 +236,7 @@ IPv4 Address Space
 ### IP Address Space & Subnetting - PART2 (10:32)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 16.22.13 - IP_Address_Space_&_Subnetting_-_PART1__learn.cantr.png>)
-Examples of IPv4 Address Class
+IPv4 - Private Ranges
 
 ![Alt text](<images/Screenshot 2023-09-28 at 16.24.51 - IP_Address_Space_&_Subnetting_-_PART1__learn.cantr.png>)
 IPv4 vs IPv6 Address Space
@@ -228,10 +260,18 @@ Subnetting - Start and end calculation
 ### Distributed Denial of Service (DDOS) Attacks (14:35)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.45.04 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
-DDOS
+DDOS - Overview
+
+> DDOS types:
+>
+> - Layer 7:
+>   - HTTP Flood
+>   - DNS Amplification
+> - Layer 4:
+>   - TCP SYN Flood
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.46.14 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
-Normal App
+Without DDOS - Normal App
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.47.33 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
 DDOS - Application Layer Attack (HTTP Flood)
@@ -241,6 +281,10 @@ DDOS - Protocol Attack (SYN Flood)
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.54.21 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
 DDOS - Volumetric / Amplification Attack
+
+> What is a DDOS attack?
+>
+> <https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/>
 
 ### VLANs, TRUNKS & QinQ (16:14)
 
@@ -253,6 +297,10 @@ Physical Segment - Multi Switches
 ![Alt text](<images/Screenshot 2023-09-28 at 20.05.44 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 Physical Segment - Connecting Switches
 
+> What is VLAN?
+>
+> A way to divide a single physical network into multiple logical networks.
+
 ![Alt text](<images/Screenshot 2023-09-28 at 20.06.53 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 Frame Tagging - 802.1Q
 
@@ -263,14 +311,22 @@ Frame Tagging - 802.1Q
 > Each has a separate broadcast domain and is isolated from all others
 
 ![Alt text](<images/Screenshot 2023-09-28 at 20.08.44 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
-Frame Tagging - 802.1AD - QinQ
+OSI Layer 2 - Frame Tagging - 802.1AD - QinQ
 
 > What does 802.1AD do?
 >
 > 802.1AD (QinQ) allows ISPs or carriers to use VLANS across their network, while carrying customer traffic which might also be using multiple VLANs
 
+> How does 802.1AD (QinQ) work?
+>
+> It allows multiple VLAN tags to be added to a single Ethernet frame.
+
 ![Alt text](<images/Screenshot 2023-09-28 at 20.12.21 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 VLAN - Trunk Port vs Access Port
+
+> What are trunk port?
+>
+> Trunk ports are a way to carry VLAN traffic between network switches
 
 ![Alt text](<images/Screenshot 2023-09-28 at 20.13.27 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 Devices on different VLANs cannot communicate without a Layer 3 Device (Router)
@@ -295,8 +351,12 @@ VLAN - Summary
 ### Border Gateway Protocol (BGP) 101 (17:03)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 11.35.43 - Border_Gateway_Protocol_(BGP)_101__learn.cantrill..png>)
+BGP: Exchange the **best path** (ASPATH) to a destination
 
 ![Alt text](<images/Screenshot 2023-09-29 at 11.46.22 - Border_Gateway_Protocol_(BGP)_101__learn.cantrill..png>)
+BGP: AS will advertise all the shortest paths its known to all its peers (and prepends its own ASN onto the path)
+
+> ASPATH Prepending: make a path longer
 
 ### Stateful vs Stateless Firewalls (14:04)
 
@@ -315,7 +375,7 @@ Stateful Firewall
 ### JumboFrames (4:35)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 12.19.38 - JumboFrames__learn.cantrill.io_and_1_more_page_-_P.png>)
-JumboFrame vs normal frame
+JumboFrame vs normal frame (OSI Layer 2)
 
 > MTU
 >
@@ -449,36 +509,39 @@ Steganography
 ### Envelope Encryption (8:06)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.28.17 - Envelope_Encryption__learn.cantrill.io_and_1_more_.png>)
+Enveloper Encryption: KEK, DEKs
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.30.34 - Envelope_Encryption__learn.cantrill.io_and_1_more_.png>)
+Enveloper Encryption - Decryption
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.33.12 - Envelope_Encryption__learn.cantrill.io_and_1_more_.png>)
+Enveloper Encryption - Considerations
 
 ### Hardware Security Modules (HSMs) (6:40)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.42.45 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-Without Hardware Security Module (HSM)
+HSM - Without HSM
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.43.34 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-With Hardware Security Module (HSM)
+HSM - With HSM
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.45.42 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-Keys are stored securely inside the HSM
+HSM - Keys are stored securely inside the HSM
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.46.50 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-Authenticate takes place inside the HSM
+HSM - Authenticate takes place inside the HSM
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.46.54 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-HSMs are tamper proof & hardened against physical logical attacks
+HSM - HSMs are tamper proof & hardened against physical logical attacks
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.47.26 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-Accessed via tightly controlled, industry standard APIs
+HSM - Accessed via tightly controlled, industry standard APIs
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.47.35 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-Role Separation: HSM admins can update & maintain but don't always have full access
+HSM - Role Separation: HSM admins can update & maintain but don't always have full access
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.48.16 - Hardware_Security_Modules_(HSMs)__learn.cantrill.i.png>)
-HSM can be used to processing SSL/TLS or PKI Signing certificate
+HSM - HSM can be used to processing SSL/TLS or PKI Signing certificate
 
 ### Hash Functions & Hashing (13:19)
 
