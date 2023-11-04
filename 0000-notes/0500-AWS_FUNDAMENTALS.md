@@ -6,14 +6,23 @@
 
 > How many network zones are there in AWS?
 >
+> 2:
+>
+> - 'AWS Public' Zone
+> - 'AWS Private' Zone
+>
+> and the "Public Internet" Zone
+
 > What is "Public Internet" Zone?
->
+
 > What is "AWS Public" Zone?
->
+
 > What is "AWS Private" Zone?
->
+
 > How to access services in "AWS Private" Zone?
->
+
+> How AWS Private services access services in "AWS Public" Zone?
+
 > How can on-premise access "AWS Private" Zone?
 
 ## AWS Global Infrastructure (14:53)
@@ -31,10 +40,21 @@ AWS Regions vs Availability Zones (AZs)
 
 > AWS Region Code vs Region Name
 >
+> | Region Code              | Region Name    |
+> | ------------------------ | -------------- |
+> | US East (N. Virginia)    | us-east-1      |
+> | Asia Pacific (Singapore) | ap-southeast-1 |
+
 > How many Data Centers can be in a AZ?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.34.35 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
 Service Resilient
+
+| Resilient        | Example            |
+| ---------------- | ------------------ |
+| Global Resilient | IAM, Route 53      |
+| Region Resilient | VPC, RDS Multi-AZ  |
+| AZ Resilient     | EC2, RDS Single-AZ |
 
 ## AWS Default Virtual Private Cloud (VPC) (15:19)
 
@@ -223,6 +243,9 @@ Disaster-Recovery (DR)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 10.45.12 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
 HA - FT - DR
+
+> HA: HA environment has a minimal service interruption.
+> FT: FT environment has no service interruption but a significantly higher cost.
 
 ## Route53 (R53) Fundamentals (6:29)
 

@@ -17,6 +17,14 @@ Cloud Computing Characteristic #4 - Rapid Elasticity ↕️
 ![Alt text](<images/Screenshot 2023-09-30 at 21.28.15 - What_is_Cloud_Computing__learn.cantrill.io_-_Perso.png>)
 Cloud Computing Characteristic #5 - Measured Service 📏
 
+> What are 5 characteristics of cloud computing?
+>
+> 1. On-demand Self-Service 🏧
+> 2. Broad Network Access 🌐
+> 3. Resource Pooling ⛲
+> 4. Rapid Elasticity ↕️
+> 5. Measured Service 📏
+
 ## Public vs Private vs Multi vs Hybrid Cloud .. (8:38)
 
 ![Alt text](<images/Screenshot 2023-10-01 at 14.36.36 - Public_vs_Private_vs_Multi_vs_Hybrid_Cloud_..__lea.png>)
