@@ -22,8 +22,11 @@ SR-IOV
 
 ## EC2 Architecture and Resilience (12:36)
 
+![Alt text](<Screenshot from 2023-11-09 12-01-41.png>)
+EC2 - Overview
+
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/EC2Architecture-1.png>)
-EC2 Architecture
+EC2 - Architecture
 
 > What is the level of resilience of EC2 service?
 >
