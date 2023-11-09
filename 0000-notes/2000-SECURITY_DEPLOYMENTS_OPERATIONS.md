@@ -6,7 +6,7 @@
 Secrets Manager vs System Manager's Parameter Store
 
 ![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/SecretsManager-1.png)
-AWS Secrects Manager - Architecture
+AWS Secrets Manager - Architecture
 
 ## Application Layer (L7) Firewall (7:44)
 
@@ -21,7 +21,7 @@ Firewall - Layer 3-4-5
 
 > What is a big improve of Firewall Layer 5?
 >
-> Firewayll Layer 5 understand REQUEST & RESPONSE's **session**, it can know which REQUEST and RESPONSE is a pair.
+> Firewall Layer 5 understand REQUEST & RESPONSE's **session**, it can know which REQUEST and RESPONSE is a pair.
 
 ![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-2.png)
 Firewall - Layer 7

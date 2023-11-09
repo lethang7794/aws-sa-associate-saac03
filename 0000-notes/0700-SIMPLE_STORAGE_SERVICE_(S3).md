@@ -48,18 +48,24 @@ Out-of-band pages
 ![Alt text](<images/Screenshot 2023-10-03 at 11.27.34 - [ASSOCIATESHARED]_Object_Versioning_&_MFA_Delete__.png>)
 Object Versioning cannot be switched off
 
+![Alt text](<images/Screenshot from 2023-11-06 20-19-04.png>)
+Object Versioning: store multiple versions of objects
+
+![Alt text](<images/Screenshot from 2023-11-06 20-19-32.png>)
+Object Versioning: DeleteMaker & Version delete
+
 ![Alt text](<images/Screenshot 2023-10-03 at 11.30.26 - [ASSOCIATESHARED]_Object_Versioning_&_MFA_Delete__.png>)
-All versions will be billed
+Object Versioning: All versions will be billed
 
 ![Alt text](<images/Screenshot 2023-10-03 at 11.31.07 - [ASSOCIATESHARED]_Object_Versioning_&_MFA_Delete__.png>)
-MFA for suspending bucket versioning and deleting object versions
+Object Versioning: MFA for suspending bucket versioning and deleting object versions
 
 ## [_DEMO_] - S3 Versioning (15:45)
 
 ## S3 Performance Optimization (11:42)
 
 ![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-1.png>)
-Global Archirtecture
+Global Architecture
 
 ![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-2.png>)
 Single PUT Upload

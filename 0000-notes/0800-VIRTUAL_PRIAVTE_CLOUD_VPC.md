@@ -30,6 +30,15 @@ VPC Design - End State
 ![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/CustomVPC.png>)
 VPC Design - Basic
 
+![Alt text](<images/Screenshot from 2023-11-08 14-38-56.png>)
+Custom VPC: Overview
+
+![Alt text](<images/Screenshot from 2023-11-08 14-39-55.png>)
+Custom VPC: IP address
+
+![Alt text](<images/Screenshot from 2023-11-08 14-40-58.png>)
+Custom VPC: DNS in the VPC
+
 ## [_DEMO_] Custom VPCs - PART2 - DEMO (5:40)
 
 ## VPC Subnets (10:42)
@@ -50,9 +59,6 @@ Subnet IP Addressing
 
 ![Alt text](<images/Screenshot 2023-10-04 at 11.05.37 - [ASSOCIATESHARED]_VPC_Subnets__learn.cantrill.io_—.png>)
 VPC Subnets - Auto Assign IP & DHCP
-
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCSubnets-2.png>)
-Using an IGW
 
 ## [_DEMO_] Implement multi-tier VPC subnets (15:24)
 

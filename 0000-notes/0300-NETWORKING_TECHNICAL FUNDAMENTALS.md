@@ -47,13 +47,13 @@ _Right game sends Frame F2 to Left game_ - Carrier Sense Multiple Access ([CSMA]
 ![Alt text](<images/Screenshot 2023-09-28 at 12.17.36 - Layer_2_-_DataLink_-_PART2__learn.cantrill.io_and_.png>)
 Collision Detection (CD)
 
-![Alt text](<Screenshot from 2023-10-29 01-24-02.png>)
+![Alt text](<images/Screenshot from 2023-10-29 01-24-02.png>)
 OSI Layer 2 - Try using a Hub
 
-![Alt text](<Screenshot from 2023-10-29 01-26-19.png>)
+![Alt text](<images/Screenshot from 2023-10-29 01-26-19.png>)
 OSI Layer 2 - Using a Switch - MAC Address Table
 
-![Alt text](<Screenshot from 2023-10-29 01-27-19.png>)
+![Alt text](<images/Screenshot from 2023-10-29 01-27-19.png>)
 OSI Layer 2 Data Link: MAC Address 👉️ Median Access Control & Collision Detection, Switch
 
 ### Layer 3 - Network - PART1 (12:06)
@@ -218,10 +218,10 @@ Port Address Translating (PAT)
 > NAT vs PAT
 >
 > - NAT
->   ![Alt text](NAT.png)
+>   ![Alt text](images/NAT.png)
 >
 > - PAT: is a type of Dynamic NAT
->   ![Alt text](NAT-PAT.png)
+>   ![Alt text](images/NAT-PAT.png)
 >
 > Ref: <https://techdifferences.com/difference-between-nat-and-pat.html>
 

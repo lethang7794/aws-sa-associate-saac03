@@ -36,7 +36,7 @@ SNS -> SQS -> ASG
 
 ## Q46. Which components are needed to create a custom public VPC for an EC2 instance to access public internet?
 
-![Alt text](./images/vpc-resource-map.png)
+![Alt text](../0000-notes/images/vpc-resource-map.png)
 VPC Resource Map
 
 - _Virtual Private Cloud (VPC)_
@@ -119,17 +119,17 @@ VPC Resource Map
 
     - _Main Route Table_:
 
-      ![Alt text](./images/default-vpc-main-route-table.png)
+      ![Alt text](../0000-notes/images/default-vpc-main-route-table.png)
 
       - Send all (`0.0.0.0/0`) traffics to the IGW.
 
   - [_Default NACL_](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#default-network-acl): ALLOW all traffics (~ Has no effect): associated with _default VPC_
 
-    ![Alt text](<./images/Screenshot from 2023-10-18 14-15-00.png>)
+    ![Alt text](../0000-notes/images/default-vpc-NACL.png)
 
   - [_Default SG_](https://docs.aws.amazon.com/vpc/latest/userguide/default-security-group.html): associated with _default VPC_
 
-    ![Alt text](<./images/Screenshot from 2023-10-18 14-19-05.png>)
+    ![Alt text](../0000-notes/images/default-vpc-security-group.png)
 
   - Associate the _default DHCP options set_ for your AWS account with _default VPC_.
 
