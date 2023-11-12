@@ -12,7 +12,7 @@ How to run multiple OSes with a single piece of hardware?
 Emulated Virtualization
 
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/Virtualization101-4.png>)
-Paravirtualization
+Para-virtualization
 
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/Virtualization101-5.png>)
 Hardware Assisted Virtualization
@@ -22,7 +22,7 @@ SR-IOV
 
 ## EC2 Architecture and Resilience (12:36)
 
-![Alt text](<Screenshot from 2023-11-09 12-01-41.png>)
+![Alt text](<../0000-notes/images/Screenshot from 2023-11-09 12-01-41.png>)
 EC2 - Overview
 
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/EC2Architecture-1.png>)
