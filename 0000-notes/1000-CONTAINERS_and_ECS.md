@@ -3,7 +3,7 @@
 ## Introduction to Containers (17:13)
 
 ![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-1.png)
-Virtualisation Problems
+Virtualization Problems
 
 ![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-2.png)
 Containerization
