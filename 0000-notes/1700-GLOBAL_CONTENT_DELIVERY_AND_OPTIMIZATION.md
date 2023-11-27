@@ -5,7 +5,7 @@
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-1.png)
 Which problems CloudFront solves?
 
-![Alt text](<Screenshot 2023-10-10 at 15.08.19 - [ASSOCIATESHARED]_CloudFront_Architecture__learn.c.png>)
+![Alt text](<../0000-notes/images/Screenshot 2023-10-10 at 15.08.19 - [ASSOCIATESHARED]_Cloudfront_Architecture__learn.c.png>)
 CloudFront - Terms
 
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-2.png)

@@ -44,7 +44,10 @@ CAP Theorem
 > - high availability (A) of that data (system always accepts updates);
 > - and tolerance to network partitions (P)
 >
-> [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
+> Ref:
+>
+> - [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
+> - <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/>
 
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/ACIDvBASE-1.png)
 ACID
@@ -115,7 +118,7 @@ RDS - Multi AZ - Cluster - Summary
 >   - **1 _Writer_** DB instance
 >   - **2 _Reader_** DB instances:
 >     - can be used for read 👈 limited read scaling
->     - kept in sync _Synchronously_ with the Writer instance
+>     - kept in sync _Asynchronously_ with the Writer instance
 
 ## RDS Automatic Backup, RDS Snapshots and Restore (8:52)
 
@@ -313,7 +316,6 @@ Database Migration Service (DMS) - Summary
 > Yes and No.
 >
 > - DMS can be used to migrate from/to on-premises DB if the other endpoint were on AWS.
->
 > - If both endpoints are on-premise, DMS can NOT be used.
 
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/Database%2520Migration%2520Service.png)

@@ -5,6 +5,9 @@
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/RegionalandGlobalArchitecture-1.png)
 Regional & Global AWS Architecture
 
+![Alt text](<Screenshot from 2023-11-25 12-54-27.png>)
+Regional & Global Components
+
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/RegionalandGlobalArchitecture-2.png)
 The tiers (components) of an application
 
@@ -20,7 +23,7 @@ Elastic Load Balancer (ELB) - Evolution
 > - v2:
 >   - Application Load Balancer (ALB): HTTP/s, gRPC 👈 Layer 4
 >   - Network Load Balancer (NLB): TCP/UDP, TLS 👈 Layer 7
->   - ??? Gateway LB
+>   - Gateway LB (GWLB)
 >
 > ([AWS ELB Comparisons](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2&dn=1#Product_comparisons))
 

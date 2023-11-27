@@ -1,0 +1,31 @@
+# Database - How to choose?
+
+Ref:
+
+- <https://aws.amazon.com/getting-started/decision-guides/databases-on-aws-how-to-choose/>
+
+| Database Family | When Would You Use It?                                                                | Use Case                                                                                                         | Optimized For                                                                                                             | AWS Related Database Engines or Services       | 3rd-party        |
+| --------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------------- |
+| Relational      | Migrating on-premises relational workloads, ad hoc query patterns                     | Traditional applications, enterprise resource planning (ERP), customer relationship management (CRM), e-commerce | **Structured** data in tables, rows, and columns, supports complex ad hoc queries through joins                           | Amazon Aurora, Amazon RDS                      | MySQL, Postgres  |
+|                 |                                                                                       |                                                                                                                  |                                                                                                                           | Amazon Redshift                                | Google BigQuery  |
+| Key-value       | Session stores, shopping carts, scalable for high volumes of state changes            | High-traffic web applications, e-commerce systems, gaming applications                                           | Fast access to large amounts of **structured, semi-structured, or unstructured** data with high read and write throughput | Amazon DynamoDB                                | Google Bigtable  |
+| Document        | Storing JSON documents with rich querying abilities                                   | Content management, catalogs, user profiles                                                                      | Storing **semi-structured** data as JSON documents                                                                        | Amazon DocumentDB (with MongoDB compatibility) | MongoDB          |
+|                 |                                                                                       |                                                                                                                  |                                                                                                                           |                                                |                  |
+| In-memory       | Improving read performance through caching                                            | Caching, session management, gaming leaderboards, geospatial applications                                        | Applications requiring _**sub-millisecond**_ data access                                                                  | Amazon ElastiCache, Amazon MemoryDB for Redis  | Redis            |
+| Wide column     | Migrating on-premises Cassandra workloads, high-speed data processing                 | High-scale industrial apps for equipment maintenance, fleet management, and route optimization                   | Workloads requiring _**heavy reads/writes, high throughput**_, low latency, and linear scalability                        | Amazon Keyspaces                               | Apache Cassandra |
+|                 |                                                                                       |                                                                                                                  |                                                                                                                           |                                                |                  |
+| Graph           | Fraud detection, recommendation engines, airline networks                             | Fraud detection, social networking, recommendation engines                                                       | Storing and _**navigating relationships**_                                                                                | Amazon Neptune                                 | neo4j            |
+| Time series     | Managing large amounts of time series data from various sources                       | Internet of Things (IoT) applications, DevOps, industrial telemetry                                              | Storing and querying data that _**changes over time**_                                                                    | Amazon Timestream                              |                  |
+| Ledger          | Communicating with other entities, maintaining verifiable history of database changes | Systems of record, supply chain, registrations, banking transactions                                             | Maintaining a complete and _**verifiable history**_ of database changes                                                   | Amazon Quantum Ledger Database (QLDB)          |                  |
+
+## Structured, semi-structured, and unstructured data
+
+|          | Structured data        | Semi-structured data | Unstructured data                                            |
+| -------- | ---------------------- | -------------------- | ------------------------------------------------------------ |
+| Data pie | 10 to 15 %             | 5% to 10%            | 80% to 90%                                                   |
+| Example  | RDS table, spreadsheet | HTML, JSON, XML      | Multimedia (photo, audio, video), text document, scanned PDF |
+
+Ref:
+
+- <https://www.mongodb.com/unstructured-data>
+- <https://www.bisok.com/analytics-and-business-intelligence/unstructured-data/>

@@ -95,7 +95,7 @@ VPC Resource Map
 
 ---
 
-![Alt text](./images/default-vpc.png)
+![Alt text](../0000-notes/images/default-vpc.png)
 
 - [_Default VPC_](https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html): `172.31.0.0/16`
 
