@@ -187,6 +187,8 @@ API Gateway - Caching
 
 ## [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART1 (5:01)
 
+![Alt text](<images/Screenshot from 2023-11-29 23-47-05.png>)
+
 ## [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART2 (8:24)
 
 ## [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART3 (12:31)

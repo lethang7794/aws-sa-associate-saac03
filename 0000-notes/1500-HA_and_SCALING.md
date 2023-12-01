@@ -5,7 +5,7 @@
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/RegionalandGlobalArchitecture-1.png)
 Regional & Global AWS Architecture
 
-![Alt text](<Screenshot from 2023-11-25 12-54-27.png>)
+![Alt text](<images/Screenshot from 2023-11-25 12-54-27.png>)
 Regional & Global Components
 
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/RegionalandGlobalArchitecture-2.png)

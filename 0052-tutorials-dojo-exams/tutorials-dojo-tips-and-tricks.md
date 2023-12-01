@@ -45,7 +45,7 @@
 > - Kinesis Data Streams: Provide real-time analyzing, but required provisioning shards
 > - SQS: Use with Lambda (and its Event Sourcing) provides a cost-efficient solution
 
-> Asynchronous process, cost-effective (alternative to Kinesis Streams)
+> Asynchronous process, cost-effective (alternative to Kinesis Data Streams)
 >
 > SQS + Lambda
 
@@ -85,7 +85,6 @@
 > Amazon MQ:
 >
 > - A _single-instance broker_: is comprised of one broker in one Availability Zone behind a Network Load Balancer (NLB) The broker communicates with your application and with an Amazon EBS storage volume.
->
 > - A _cluster deployment_: is a logical grouping of three RabbitMQ broker nodes behind a Network Load Balancer, each sharing users, queues, and a distributed state across multiple Availability Zones (AZ).
 
 ### Amazon SNS: Pub/sub, SMS, email, and mobile push notifications
@@ -183,7 +182,6 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 > ENI - ENA - EFA
 >
 > - Elastic Network Interface (ENI): logical networking component in a VPC that represents a **virtual network card**
->
 > - Elastic Network Adapter (ENA): High Performance Network Interface for Amazon EC2
 >
 >   - _Enhanced networking_: up to 100 Gbps
@@ -273,7 +271,6 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 > Elastic Beanstalk: Run and manage web apps
 >
 > - Reduces the operational overhead by taking care of provisioning the needed resources for your application
->
 > - Elastic Beanstalk supports:
 >
 >   - applications developed in Go, Java, .NET, Node.js, PHP, Python, and Ruby
@@ -435,13 +432,11 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 > Aurora Auto Scaling vs Aurora Serverless
 >
 > - [Aurora Auto Scaling](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Integrating.AutoScaling.html): Dynamically adjusts the number of Aurora Replicas (reader DB instances) provisioned for an Aurora DB cluster.
->
 > - [Aurora Serverless](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html): On-demand, autoscaling the capacity of Aurora DB cluster resource
 
 > Aurora Serverless
 >
 > - The DB instance cannot be changed from Provisioned to Serverless after created.
->
 > - After the DB instanced is created, need to use AWS Database Migration Service (AWS DMS) to migrate data from the existing DB cluster to a new Aurora Serverless database.
 
 > Aurora Custom Endpoint: provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances
@@ -469,7 +464,6 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 > Aurora - Clone:
 >
 > - Creating a Aurora clone is _faster_ and more _space-efficient_ than physically copying the data using other techniques, such as restoring from a snapshot like you would in Amazon RDS
->
 > - Aurora uses a copy-on-write protocol to create a clone.
 
 > Aurora - Storage:
@@ -492,7 +486,6 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 > Elasticache - Redis vs Memcached
 >
 > - Redis: Advance structure, replicas
->
 > - Memcached: Multi-threads, multi-nodes.
 
 <!-- ### Amazon Keyspaces (for Apache Cassandra): Managed Cassandra-compatible database -->
@@ -538,7 +531,6 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 > RDS Multi-Az Failover:
 >
 > - Loss of availability in primary Availability Zone
->
 > - Primary DB instance:
 >
 >   - Loss of network connectivity to primary
@@ -728,9 +720,7 @@ Inspects your AWS environment and recommends ways to save money, close security 
 >   Monitor your AWS resources and the applications you run on AWS in real time.
 >
 >   - CloudWatch Logs: Monitor, store, and access your log files from Amazon Elastic Compute Cloud instances, AWS CloudTrail, or other sources.
->
 >   - CloudWatch Logs Insights: query logs with SQL-like syntax
->
 >   - CLoudWatch Events: Is now Amazon EventBridge
 
 ### CloudTrail
@@ -871,7 +861,6 @@ A service in which you create accelerators to improve the performance of your ap
 > CNAME record vs Route 53 alias record
 >
 > - CNAME record: doesn't work with zone apex (root domain name)
->
 > - Route 53 alias record:
 >   - make CNAME record work with zone apex 👉 can create alias CNAME to point to another domain
 >   - make other record point to domain name
@@ -908,7 +897,6 @@ A service in which you create accelerators to improve the performance of your ap
 > - Gateway endpoint:
 >
 >   - via Route Table's **Prefix List**, without IGW, NATGW, PrivateLink
->
 >   - Free
 >
 > - Interface endpoint:
@@ -933,7 +921,6 @@ A service in which you create accelerators to improve the performance of your ap
 > ENI - ENA - EFA
 >
 > - Elastic Network Interface (ENI): logical networking component in a VPC that represents a **virtual network card**
->
 > - Elastic Network Adapter (ENA): High Performance Network Interface for Amazon EC2
 >
 >   - _Enhanced networking_: up to 100 Gbps
@@ -995,7 +982,6 @@ Identify unexpected and potentially unauthorized or malicious activity in your A
 > Block SQL injection
 >
 > - AWS Web Application Firewall (WAF): can block SQL injection.
->
 > - GuardDuty: only detect SQL injection, not block.
 
 ### AWS Identity and Access Management - IAM: Securely manage access to services and resources
@@ -1078,18 +1064,14 @@ XSS, SQL-injection
 > - AWS WAF: Protect your web applications from common exploits
 >
 >   - Monitor web requests that your end users send to your applications and to control access to your content.
->
 >   - Used for API Gateway, Load Balancer, Cloudfront.
->
 >   - Block SQL injection, XSS (cross-site scripting)
->
 >   - Can minimize the effects of a DDOS attack
 >
 > - AWS Shield: Managed DDoS protection
 >
 >   - Provides protection against distributed denial of service (DDoS) attacks for AWS resources, at the network and transport layers (layer 3 and 4) and the application layer (layer 7)
 >   - Can use for more services: EC2, Route53
->
 >   - Shield Standard: Free, L3-L4
 >   - Shield Advanced: Cost money, L7
 >
@@ -1228,7 +1210,6 @@ XSS, SQL-injection
 > - Gateway endpoint:
 >
 >   - via Route Table's **Prefix List**, without IGW, NATGW, PrivateLink
->
 >   - Free
 >
 > - Interface endpoint:
