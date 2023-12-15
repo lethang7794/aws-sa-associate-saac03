@@ -86,7 +86,7 @@ CloudFront [Origin Settings](https://docs.aws.amazon.com/AmazonCloudFront/latest
 
 ## [_DEMO_] CloudFront (CF) - Adding an Alternate CNAME and SSL (11:12)
 
-## Securing CF and S3 using OAI (8:50)
+## CloudFront - Security - OAI & Custom Origins (8:50)
 
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-1.png)
 Securing CF Content Delivery Path

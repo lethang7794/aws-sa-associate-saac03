@@ -654,7 +654,7 @@
 
 ### [_DEMO_] CloudFront (CF) - Adding an Alternate CNAME and SSL (11:12)
 
-### Securing CF and S3 using OAI (8:50)
+### CloudFront - Security - OAI & Custom Origins (8:50)
 
 ### CloudFront - Private Distribution & Behaviors (7:49)
 

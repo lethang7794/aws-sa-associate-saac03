@@ -51,7 +51,7 @@ AWS Site-to-Site VPN - Considerations
 
 ## [_DEMO_] Simple Site2Site VPN - STAGE5 - Cleanup (1:50)
 
-## Direct Connect (DX) Concepts (9:37)
+## AWS Direct Connect (DX) Concepts (9:37)
 
 ![Alt text](<images/Screenshot 2023-10-11 at 14.07.52 - Direct_Connect_(DX)_Concepts__learn.c_—_Firefox_De.png>)
 DX - Concepts
@@ -59,7 +59,7 @@ DX - Concepts
 ![Alt text](../1900-HYBRID_ENVIRONMENTS_AND_MIGRATION/00_LEARNINGAIDS/DirectConnect-1.png)
 DX - Architecture
 
-## Direct Connect (DX) Resilience (13:50)
+## AWS Direct Connect (DX) Resilience (13:50)
 
 ![Alt text](../1900-HYBRID_ENVIRONMENTS_AND_MIGRATION/00_LEARNINGAIDS/DirectConnect-Resilience-1.png)
 DX Resilience - NONE 😭
