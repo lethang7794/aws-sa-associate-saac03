@@ -756,7 +756,7 @@
 
 ### Amazon Inspector (6:28)
 
-### Amazon Guardduty (4:14)
+### Amazon Guard Duty (4:14)
 
 ### Section Quiz
 

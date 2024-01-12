@@ -163,7 +163,7 @@ VPC Resource Map
     - **2 _Reader_** DB instances:
 
       - can be used for read 👈 limited read scaling
-      - kept in sync _Synchronously_ with the Writer instance
+      - kept in sync _Synchronously_ with the Writer instance 👈 **replication lag** (aka Replica lag)
 
   [Multi-AZ Comparison Table](https://aws.amazon.com/rds/features/multi-az#Comparison_Table)
 
@@ -205,7 +205,7 @@ VPC Resource Map
 |                       |                                                     |                   |                      |
 | Multi-AZ Cluster [10] | Multiple:                                           | ⬜⬜              | ⬜⬜                 |
 |                       | - _Cluster endpoint_ (_Writer endpoint_)            |                   |                      |
-|                       | - _Reader endpoint_                                |                   |                      |
+|                       | - _Reader endpoint_                                 |                   |                      |
 |                       | - _Instance endpoints_                              |                   |                      |
 |                       |                                                     |                   |                      |
 | Read Replicas         | Multiple:                                           | ⬜⬜⬜            | ⬜⬜⬜               |

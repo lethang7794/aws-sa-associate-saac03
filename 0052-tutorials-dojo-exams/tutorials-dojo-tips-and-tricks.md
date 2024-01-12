@@ -259,10 +259,12 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >   - Target Tracking
 > - Predictive
 
-> Data transfer
+> [Data transfer]
 >
-> - S3: within the same Region is free.
-> - Others (EC2) within the same Availability Zone is free.
+> - Data transferred between EC2 & RDS, Redshift, ElastiCache instances, and ENI in the same AZ is free.
+> - Data transferred directly between EC2 & S3, EBS direct APIs, Glacier, DynamoDB, SES, SQS, Kinesis, ECR, SNS or SimpleDB in the same AWS Region is free.
+
+[Data transfer]: https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer_within_the_same_AWS_Region
 
 ### AWS Elastic Beanstalk: Run and manage web apps
 

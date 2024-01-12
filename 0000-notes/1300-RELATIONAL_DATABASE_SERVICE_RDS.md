@@ -118,7 +118,7 @@ RDS - Multi AZ - Cluster - Summary
 >   - **1 _Writer_** DB instance
 >   - **2 _Reader_** DB instances:
 >     - can be used for read 👈 limited read scaling
->     - kept in sync _Asynchronously_ with the Writer instance
+>     - kept in sync _Asynchronously_ with the Writer instance 👈 **replication lag** (aka Replica lag)
 
 ## RDS Automatic Backup, RDS Snapshots and Restore (8:52)
 

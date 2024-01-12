@@ -26,20 +26,21 @@ EFS - Performance
 >
 > - Storage Class:
 >
->   - EFS One Zone / One Zone-IA
->   - EFS Standard / Standard-IA
+>   - EFS `One Zone` / One Zone-IA
+>   - **EFS `Standard`** / Standard-IA
+>   - EFS `Archive`
 >
 > - Performance Mode:
 >
->   - General Purpose: default - 99.9% of uses
->   - Max I/O
+>   - **`General Purpose` mode** (default - 99.9% of uses): Lowest latency
+>   - `Max I/O` mode: Highly parallelized workloads that can tolerate higher latencies
 >
 > - Throughput Mode:
 >
->   - Bursting
+>   - `Bursting` mode: Throughput scale with storage
 >   - Enhanced
->     - Elastic
->     - Provisioned
+>     - **`Elastic` mode** (default - recommend): Spiky/unpredictable workloads
+>     - `Provisioned` mode: Known performace requirements; or throughput > 5% average-to-peak ratio
 
 ## [_DEMO_] Implementing EFS - PART1 (8:51)
 
