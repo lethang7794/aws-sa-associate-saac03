@@ -10,6 +10,26 @@
 |              | 2         | Data link      | Frame                    | ![Frame](images/OSI-Layer-2-Frame.png)     | PPP              | MAC, Ethernet, Wifi, ARP, IEEE 802.1Q, 802.1AD (QinQ) (VLAN) |                          | Switch   |                                                     | Transmission of **data frames** between _two nodes_ connected by a physical layer                                                                     | Two devices on the _same_ network.                         |
 |              | 1         | Physical       | Bit                      | ![Bit](images/OSI-Layer-1-Bit.png)         |                  | RS232, Bluetooth                                             |                          | NIC, Hub | ![Alt text](images/OSI-Layer-1-Raw-Bit.png)         | Transmission and reception of **raw bit streams** over a _physical medium_                                                                            | Raw bit stream over ethernet cable, optical fibre, Wifi... |
 
+| OSI Layer | OSI Layer Name | Protocol data unit (PDU) | PDU                                        | TCP/IP Protocols |
+| --------- | -------------- | ------------------------ | ------------------------------------------ | ---------------- |
+| 7         | Application    | Data                     |                                            | HTTP/S           |
+| 6         | Presentation   |                          |                                            | SSL/TLS          |
+| 5         | Session        |                          |                                            | Sockets          |
+| 4         | Transport      | Segment, Datagram        | ![Segment](images/OSI-Layer-4-Segment.png) | TCP, UDP         |
+| 3         | Network        | Packet                   | ![Packet](images/OSI-Layer-3-Packet.png)   | IP, ICMP         |
+| 2         | Data link      | Frame                    | ![Frame](images/OSI-Layer-2-Frame.png)     | PPP              |
+| 1         | Physical       | Bit                      | ![Bit](images/OSI-Layer-1-Bit.png)         |                  |
+
+| OSI Layer | OSI Layer Name | TCP/IP Layer    | TCP/IP Protocols |                                                     | Note                                                       |
+| --------- | -------------- | --------------- | ---------------- | --------------------------------------------------- | ---------------------------------------------------------- |
+| 7         | Application    | **Application** | HTTP/S           | ![Alt text](images/OSI-Layer-7-Webpage.png)         |                                                            |
+| 6         | Presentation   | (as above)      | SSL/TLS          | ![Alt text](images/OSI-Layer-6-Encryption.png)      |                                                            |
+| 5         | Session        | (as above)      | Sockets          |                                                     |                                                            |
+| 4         | Transport      | **Transport**   | TCP, UDP         | ![Alt text](images/OSI-Layer-4-Segment-Example.png) |                                                            |
+| 3         | Network        | **Internet**    | IP, ICMP         | ![Alt text](images/OSI-Layer-3-IP-Path.png)         | Which physical path the data will take?                    |
+| 2         | Data link      | **Link**        | PPP              |                                                     | Two devices on the _same_ network.                         |
+| 1         | Physical       |                 |                  | ![Alt text](images/OSI-Layer-1-Raw-Bit.png)         | Raw bit stream over ethernet cable, optical fibre, Wifi... |
+
 [1]: https://www.wikiwand.com/en/Network_socket
 
 | Please   | Do        | Not     | Throw     | Sausage | Pizza        | Away        |
