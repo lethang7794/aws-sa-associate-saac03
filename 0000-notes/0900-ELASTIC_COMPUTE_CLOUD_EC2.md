@@ -28,7 +28,7 @@ EC2 - Overview
 ![Alt text](<../0900-ELASTIC_COMPUTE_CLOUD(EC2)/00_LEARNINGAIDS/EC2Architecture-1.png>)
 EC2 - Architecture
 
-> What is the level of resilience of EC2 service?
+> [!NOTE] What is the level of resilience of EC2 service?
 >
 > EC2 has AZ-level resilience
 
@@ -89,15 +89,15 @@ EBS - GP3
 ![Alt text](<images/Screenshot 2023-10-05 at 11.14.41 - [ASSOCIATESHARED]_Instance_Store_Volumes_-_Archite.png>)
 Instance Store is _local_ storage on the EC2 host
 
-> What kind of storage has the highest performance for EC2?
+> [!NOTE] What kind of storage has the highest performance for EC2?
 >
 > Instance Store
 
-> What is the price model of EC2 Instance Store?
+> [!NOTE] What is the price model of EC2 Instance Store?
 >
 > Instance Store is include in instance price.
 
-> What is the lifecycle of Instance Store?
+> [!NOTE] What is the lifecycle of Instance Store?
 >
 > It's can only be attached at instance launch.
 

@@ -28,7 +28,7 @@ Which of the following options will allow you to asynchronously process the requ
 - Use a combination of SNS to buffer the requests and then asynchronously process them using On-Demand EC2 Instances.
 ```
 
-> Asynchronous process, cost-effective
+> [!NOTE] Asynchronous process, cost-effective
 >
 > SQS + Lambda
 
@@ -50,7 +50,7 @@ Which ingestion pattern should a solutions architect take?
 - Use AWS Schema Conversion Tool (AWS SCT) to convert MySQL data to CSV files. Set up the AWS Server Migration Service (AWS MGN) to capture ongoing changes from the on-premises MySQL database and send them to Amazon S3.
 ```
 
-> Replicate database on S3 as CSV, stream on-going changes, min management overhead
+> [!NOTE] Replicate database on S3 as CSV, stream on-going changes, min management overhead
 >
 > AWS Database Migration Service + Change Data Capture (CDC)
 
@@ -74,13 +74,13 @@ Which of the following options must be implemented to meet these requirements wi
 - Use AWS Glue crawler to automatically discover the raw data file in S3 as well as check its corresponding schema. Create a scheduled ETL job in AWS Glue that will convert .csv files to Apache Parquet format and store the output of the processed files in the “tutorialsdojo-data-transformed" bucket.
 ```
 
-> CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
+> [!NOTE] CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
 >
 > - Working Solutions:
 >   - AWS Batch + bash script
 >   - Amazon EMR
 
-> Amazon EMR: Hosted Hadoop framework
+> [!NOTE] Amazon EMR: Hosted Hadoop framework
 >
 > - Amazon EMR Serverless
 
@@ -104,11 +104,11 @@ Which combination of the following options should the Architect implement? (Sele
 - Enable Object Lock but disable Object Versioning on the new Amazon S3 bucket to comply with the write-once-read-many (WORM) storage model requirement.
 ```
 
-> S3 - WORM
+> [!NOTE] S3 - WORM
 >
 > 👉 S3 - Object Lock + Legal Hold
 
-> S3 - Restrict access to a VPC
+> [!NOTE] S3 - Restrict access to a VPC
 >
 > 👉 S3 Access Point
 
@@ -125,7 +125,7 @@ Which of the following options meets the customer requirements with the LEAST am
 - Integrate Amazon EventBridge (Amazon CloudWatch Events) metrics on the Application Load Balancer to capture the client IP address. Use Amazon CloudWatch Container Insights to analyze traffic patterns.
 ```
 
-> ELB - Access Logs
+> [!NOTE] ELB - Access Logs
 >
 > Capture detailed information about requests sent to your load balancer
 >
@@ -135,7 +135,7 @@ Which of the following options meets the customer requirements with the LEAST am
 >
 > - <https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html>
 
-> AWS Services with Access Logs:
+> [!NOTE] AWS Services with Access Logs:
 >
 > - S3
 > - ELB

@@ -16,7 +16,7 @@ VPC FLow Logs - Flow Log Records
 ![Alt text](<images/Screenshot 2023-10-10 at 23.00.53 - [ASSOCIATESHARED]_Egress-Only_Internet_gateway__le.png>)
 Egress-Only Internet Gateway - Why?
 
-> What does Egress-Only Internet Gateway do?
+> [!NOTE] What does Egress-Only Internet Gateway do?
 >
 > Allow outbound (and response) only access to the public AWS services and Public Internet for IPv6 enabled instances or other VPC based services.
 

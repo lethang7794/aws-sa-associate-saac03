@@ -4,7 +4,7 @@
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.19.34 - [ASSOCIATESHARED]_AWS_Public_vs_Private_Services__.png>)
 
-> How many network zones are there in AWS?
+> [!NOTE] How many network zones are there in AWS?
 >
 > 2:
 >
@@ -13,17 +13,17 @@
 >
 > and the "Public Internet" Zone
 
-> What is "Public Internet" Zone?
+> [!NOTE] What is "Public Internet" Zone?
 
-> What is "AWS Public" Zone?
+> [!NOTE] What is "AWS Public" Zone?
 
-> What is "AWS Private" Zone?
+> [!NOTE] What is "AWS Private" Zone?
 
-> How to access services in "AWS Private" Zone?
+> [!NOTE] How to access services in "AWS Private" Zone?
 
-> How AWS Private services access services in "AWS Public" Zone?
+> [!NOTE] How AWS Private services access services in "AWS Public" Zone?
 
-> How can on-premise access "AWS Private" Zone?
+> [!NOTE] How can on-premise access "AWS Private" Zone?
 
 ## AWS Global Infrastructure (14:53)
 
@@ -38,14 +38,14 @@ AWS Regions - Benefits
 ![Alt text](<images/Screenshot 2023-10-01 at 15.32.52 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
 AWS Regions vs Availability Zones (AZs)
 
-> AWS Region Code vs Region Name
+> [!NOTE] AWS Region Code vs Region Name
 >
 > | Region Code              | Region Name    |
 > | ------------------------ | -------------- |
 > | US East (N. Virginia)    | us-east-1      |
 > | Asia Pacific (Singapore) | ap-southeast-1 |
 
-> How many Data Centers can be in a AZ?
+> [!NOTE] How many Data Centers can be in a AZ?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.34.35 - [ASSOCIATESHARED]_AWS_Global_Infrastructure__learn.png>)
 Service Resilient
@@ -61,7 +61,7 @@ Service Resilient
 ![Alt text](<images/Screenshot 2023-10-01 at 15.49.39 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
 VPC Basics
 
-> What is a VPC?
+> [!NOTE] What is a VPC?
 >
 > Virtual Private Cloud (VPC) is a virtual network inside AWS.
 >
@@ -71,7 +71,7 @@ VPC Basics
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.51.10 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
 
-> What is the default state of a VPC?
+> [!NOTE] What is the default state of a VPC?
 >
 > By default,a VPC is private and isolated
 
@@ -79,19 +79,19 @@ VPC Basics
 
 ![Alt text](<images/Screenshot 2023-10-01 at 15.55.23 - [ASSOCIATESHARED]_AWS_Default_Virtual_Private_Clou.png>)
 
-> What is the default VPC?
+> [!NOTE] What is the default VPC?
 >
 > The VPC that AWS created automatically for each region.
 
-> Can we delete the default VPC?
+> [!NOTE] Can we delete the default VPC?
 >
 > We can delete the default VPC, and re-create in the Web Console.
 
-> What is the CIDR of default VPC?
+> [!NOTE] What is the CIDR of default VPC?
 >
 > 172.31.0.0/16 👉 65535 IPs 👉 16 subnets of /20
 
-> For the default VPC, how many subnets are there in each AZ in each region?
+> [!NOTE] For the default VPC, how many subnets are there in each AZ in each region?
 >
 > The default VPC has 1 subnet for each of its AZ.
 >
@@ -124,31 +124,31 @@ TODO: DEMO - Connect to an EC2 instance
 ![Alt text](<images/Screenshot 2023-10-01 at 17.21.31 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - 101
 
-> What is the resilient of S3?
+> [!NOTE] What is the resilient of S3?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.23.05 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - Objects
 
-> What is S3 object?
+> [!NOTE] What is S3 object?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.25.57 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - Buckets
 
-> What is S3 bucket?
+> [!NOTE] What is S3 bucket?
 >
 > What is the structure of S3 bucket?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.27.50 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - Summary
 
-> What is the limit of S3 object?
+> [!NOTE] What is the limit of S3 object?
 >
 > What is the limit of S3 bucket?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 17.29.27 - [ASSOCIATESHARED]Simple_Storage_Service_(S3)_Basic.png>)
 S3 - Pattern & Anti-pattern
 
-> What is the type of S3 store?
+> [!NOTE] What is the type of S3 store?
 
 ## [_DEMO_] My First S3 Bucket (18:34)
 
@@ -202,17 +202,17 @@ CloudWatch - Namespace
 ![Alt text](<images/Screenshot 2023-10-01 at 18.51.16 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Metric
 
-> What is metric?
+> [!NOTE] What is metric?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 18.52.08 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Datapoint
 
-> What is datapoint?
+> [!NOTE] What is datapoint?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 18.53.11 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Dimension
 
-> What is dimension?
+> [!NOTE] What is dimension?
 
 ![Alt text](<images/Screenshot 2023-10-01 at 18.54.26 - [ASSOCIATESHARED]_[DEMO]_Simple_Automation_With_Cl.png>)
 CloudWatch - Alarm
@@ -244,7 +244,7 @@ Disaster-Recovery (DR)
 ![Alt text](<images/Screenshot 2023-10-02 at 10.45.12 - [ASSOCIATESHARED]_High-Availability_vs_Fault-Toler.png>)
 HA - FT - DR
 
-> HA: HA environment has a minimal service interruption.
+> [!NOTE] HA: HA environment has a minimal service interruption.
 > FT: FT environment has no service interruption but a significantly higher cost.
 
 ## Route53 (R53) Fundamentals (6:29)

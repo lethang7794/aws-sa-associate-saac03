@@ -13,20 +13,20 @@ AWS Secrets Manager - Architecture
 ![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-1.png)
 Firewall - Layer 3-4-5
 
-> What is the drawback of Firewall Layer 3-4?
+> [!NOTE] What is the drawback of Firewall Layer 3-4?
 >
 > Packets & segemnts of REQUEST and REQUEST are different and unrelated.
 >
 > Because Layer 3-4 don't know what is the data.
 
-> What is a big improve of Firewall Layer 5?
+> [!NOTE] What is a big improve of Firewall Layer 5?
 >
 > Firewall Layer 5 understand REQUEST & RESPONSE's **session**, it can know which REQUEST and RESPONSE is a pair.
 
 ![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-2.png)
 Firewall - Layer 7
 
-> What does Firewall Layer 7 do?
+> [!NOTE] What does Firewall Layer 7 do?
 >
 > Firewall Layer 7 can:
 >

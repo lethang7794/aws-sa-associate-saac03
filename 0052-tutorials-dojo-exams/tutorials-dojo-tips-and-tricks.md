@@ -4,7 +4,7 @@
 
 ### Amazon Athena: Query data in Amazon S3 using SQL
 
-> Athena vs Redshift Spectrum
+> [!NOTE] Athena vs Redshift Spectrum
 >
 > SQL query data in S3
 >
@@ -13,39 +13,39 @@
 
 ### Amazon EMR: Hosted Hadoop framework
 
-> CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
+> [!NOTE] CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
 >
 > - Working Solutions:
 >   - AWS Batch + bash script
 >   - Amazon EMR
 
-> Amazon EMR: Hosted Hadoop framework
+> [!NOTE] Amazon EMR: Hosted Hadoop framework
 >
 > - Amazon EMR Serverless
 
 ### AWS Glue: Simple, scalable, and serverless data integration
 
-> AWS Glue
+> [!NOTE] AWS Glue
 >
 > - Serverless ETL
 > - Glue Job can be triggered manually or via events using EventBridge
 
-> AWS Glue - Job Bookmarking
+> [!NOTE] AWS Glue - Job Bookmarking
 >
 > - maintain state information and prevent the reprocessing of old data.
 
 ### Amazon Kinesis: Analyze real-time video and data streams
 
-> - Kinesis Video Streams: Capture, process, and store video streams for analytics and machine learning.
+> [!NOTE] - Kinesis Video Streams: Capture, process, and store video streams for analytics and machine learning.
 > - Kinesis Data Streams: Build custom applications that analyze data streams using popular stream-processing frameworks.
 > - Kinesis Data Firehose: Load data streams into AWS data stores.
 
-> Kinesis Data Streams vs SQS
+> [!NOTE] Kinesis Data Streams vs SQS
 >
 > - Kinesis Data Streams: Provide real-time analyzing, but required provisioning shards
 > - SQS: Use with Lambda (and its Event Sourcing) provides a cost-efficient solution
 
-> Asynchronous process, cost-effective (alternative to Kinesis Data Streams)
+> [!NOTE] Asynchronous process, cost-effective (alternative to Kinesis Data Streams)
 >
 > SQS + Lambda
 
@@ -55,7 +55,7 @@
 
 ### Amazon Redshift: Fast, simple, cost-effective data warehouse service
 
-> Amazon Redshift Backup:
+> [!NOTE] Amazon Redshift Backup:
 >
 > - Manually Snapshots
 > - Automatically increment backup:
@@ -64,12 +64,12 @@
 >
 > Backup to S3 bucket, configurable to copy snapshots to another region for DR.
 
-> Latency: Redshift vs DynamoDB
+> [!NOTE] Latency: Redshift vs DynamoDB
 >
 > - Redshift: sub-second (s)
 > - DynamoDB: millisecond (ms)
 
-> Redshift Spectrum vs Athena
+> [!NOTE] Redshift Spectrum vs Athena
 >
 > SQL query data in S3
 >
@@ -82,7 +82,7 @@
 
 ### Amazon MQ: Managed message broker service
 
-> Amazon MQ:
+> [!NOTE] Amazon MQ:
 >
 > - A _single-instance broker_: is comprised of one broker in one Availability Zone behind a Network Load Balancer (NLB) The broker communicates with your application and with an Amazon EBS storage volume.
 > - A _cluster deployment_: is a logical grouping of three RabbitMQ broker nodes behind a Network Load Balancer, each sharing users, queues, and a distributed state across multiple Availability Zones (AZ).
@@ -95,7 +95,7 @@
 
 ### Amazon SWF: Build applications that coordinate work across distributed components
 
-> Ensure a queue's messages are NOT process twice:
+> [!NOTE] Ensure a queue's messages are NOT process twice:
 >
 > - SQS FIFO Queue
 > - Amazon Simple Workflow Service (Amazon SWF)
@@ -117,11 +117,11 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 
 ### AWS Billing and Cost Management: Find features that help you pay your bills and optimize your costs
 
-> AWS Budgets: Set Custom Budgets and Receive Alerts
+> [!NOTE] AWS Budgets: Set Custom Budgets and Receive Alerts
 >
 > ![Alt text](AWS-Budgets-How-It-Works.png)
 
-> AWS Cost Explorer: Visualize and Explore Your AWS Costs and Usage
+> [!NOTE] AWS Cost Explorer: Visualize and Explore Your AWS Costs and Usage
 >
 > ![Alt text](AWS-Cost-Explorer-How-It-Works.png)
 
@@ -129,19 +129,19 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 
 ### AWS Batch: Run batch jobs at any scale
 
-> CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
+> [!NOTE] CSV store in S3, automated convert to Parquet -> store in a S3 bucket; min operation cost
 >
 > - Working Solutions:
 >   - AWS Batch + bash script
 >   - Amazon EMR
 
-> Amazon EMR: Hosted Hadoop framework
+> [!NOTE] Amazon EMR: Hosted Hadoop framework
 >
 > - Amazon EMR Serverless
 
 ### Amazon EC2: Create and run virtual servers in the cloud
 
-> EC2 - Hibernation
+> [!NOTE] EC2 - Hibernation
 >
 > - Quickly pausing and resuming the instances, by saving the memory footprint to disk.
 > - Can only be enable at launch
@@ -150,7 +150,7 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >   - EBS volume.
 >   - Elastic IP Address.
 
-> EC2 states:
+> [!NOTE] EC2 states:
 >
 > - pending
 > - running 💸
@@ -160,26 +160,26 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 > - shutting-down
 > - terminated (Terminated Reserver Instances are still billed 💸)
 
-> EC2 - Reserved Instance
+> [!NOTE] EC2 - Reserved Instance
 >
 > Reserved Instance Marketplace: Resell unused Standard Reserved Instances
 
-> EC2 - Stop Instance vs Terminate Instance
+> [!NOTE] EC2 - Stop Instance vs Terminate Instance
 >
 > - Stopped: still be billed
 > - Terminated: not billed
 
-> EC2 - Instance store:
+> [!NOTE] EC2 - Instance store:
 >
 > - Its data will be lost if the EC2 instance is stopped / terminated.
 
-> EC2 - Elastic IP address and EBS storage won't be effect after an instance is stopped.
+> [!NOTE] EC2 - Elastic IP address and EBS storage won't be effect after an instance is stopped.
 
-> Security Group Referencing
+> [!NOTE] Security Group Referencing
 >
 > When you specify a security group as the source or destination for a rule (of a security group), the rule affects all instances that are associated with the security groups.
 
-> ENI - ENA - EFA
+> [!NOTE] ENI - ENA - EFA
 >
 > - Elastic Network Interface (ENI): logical networking component in a VPC that represents a **virtual network card**
 > - Elastic Network Adapter (ENA): High Performance Network Interface for Amazon EC2
@@ -191,11 +191,11 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >
 >   - support **OS-bypass** capabilities: allow HPC communicate directly with the EFA device.
 
-> Fault Tolerance: ability of a system to remain in operation even if some of the components used to build the system fail
+> [!NOTE] Fault Tolerance: ability of a system to remain in operation even if some of the components used to build the system fail
 
-> CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
+> [!NOTE] CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
 
-> Monitor EC2:
+> [!NOTE] Monitor EC2:
 >
 > - CloudWatch default metric
 >
@@ -208,7 +208,7 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >   - Memory
 >   - Sub-resource metrics such as per-CPU core
 
-> Notify for EC2 instance:
+> [!NOTE] Notify for EC2 instance:
 >
 > - All EC2 instances:
 >
@@ -219,12 +219,12 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >
 >   Use CloudWatch Alarm and EC2 Action to interact with EC2 instance.
 
-> Best practice to control access to EC2 instances:
+> [!NOTE] Best practice to control access to EC2 instances:
 >
 > - Tag the EC2 instances, to categorize by purpose, owner, or environment...
 > - Control access using resource tags and IAM policy.
 
-> EC2 - Capacity Reservations vs Reserved Instances
+> [!NOTE] EC2 - Capacity Reservations vs Reserved Instances
 >
 > - (On-demand) Capacity Reservations:
 >
@@ -236,20 +236,20 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >   - Regional Reserve Instances: Save money
 >   - Zone Reserve Instances: Save money
 
-> EC2 - Placement Group - Error adding instance 'insufficient capacity error'
+> [!NOTE] EC2 - Placement Group - Error adding instance 'insufficient capacity error'
 >
 > - Amazon does not currently have enough available On-Demand capacity on the existing host to fulfill your request.
 >
 > Workaround: Stop all instances, then start -> Maybe a new host have enough capacity
 
-> EC2 Auto Scaling Group's [Termination Policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html#default-termination-policy)
+> [!NOTE] EC2 Auto Scaling Group's [Termination Policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html#default-termination-policy)
 >
 > - Maximum availability: Kill instance in the AZs with the most instances (and oldest Launch Configuration)
 > - Keep most updated instance: Kill instance with oldest LC
 > - Maximum instance usage: Kill the instance closest to billing hour.
 > - Finally: random.
 
-> Auto Scaling Group (ASG) Policies:
+> [!NOTE] Auto Scaling Group (ASG) Policies:
 >
 > - Manually
 > - Scheduled
@@ -259,7 +259,7 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 >   - Target Tracking
 > - Predictive
 
-> [Data transfer]
+> [!NOTE] [Data transfer]
 >
 > - Data transferred between EC2 & RDS, Redshift, ElastiCache instances, and ENI in the same AZ is free.
 > - Data transferred directly between EC2 & S3, EBS direct APIs, Glacier, DynamoDB, SES, SQS, Kinesis, ECR, SNS or SimpleDB in the same AWS Region is free.
@@ -270,7 +270,7 @@ Engage your customers by sending them email, SMS and voice messages, and push no
 
 Reduces the operational overhead by taking care of provisioning the needed resources for your application.
 
-> Elastic Beanstalk: Run and manage web apps
+> [!NOTE] Elastic Beanstalk: Run and manage web apps
 >
 > - Reduces the operational overhead by taking care of provisioning the needed resources for your application
 > - Elastic Beanstalk supports:
@@ -283,7 +283,7 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 >   - builds the selected supported platform version
 >   - provisions one or more AWS resources, such as Amazon EC2 instances, to run your application.
 
-> Elastic Beanstalk vs ECS
+> [!NOTE] Elastic Beanstalk vs ECS
 >
 > - Elastic Beanstalk:
 >
@@ -297,19 +297,19 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### AWS Lambda: Run code without thinking about servers
 
-> Allow an Lambda permission to use KMS:
+> [!NOTE] Allow an Lambda permission to use KMS:
 >
 > - Attach the kms:decrypt permission to the Lambda function’s `execution role`
 > - Add a statement to the AWS KMS `key policy` that grants the function’s execution role the kms:decrypt permission.
 
-> Permission to invoke a Lambda function
+> [!NOTE] Permission to invoke a Lambda function
 >
 > Use the Lambda function's `resource policy`:
 >
 > - Principal: the ARN of dev account
 > - Action: lambda:InvokeFunction
 
-> Lambda function's `execution role`
+> [!NOTE] Lambda function's `execution role`
 >
 > Give the Lambda function permissions to access AWS resources.
 
@@ -323,7 +323,7 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### Amazon ECS: Highly secure, reliable, and scalable way to run containers
 
-> Elastic Beanstalk vs ECS
+> [!NOTE] Elastic Beanstalk vs ECS
 >
 > - Elastic Beanstalk:
 >
@@ -335,7 +335,7 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 >
 >   Need to manually config Service Auto Scaling, Service Load Balancing, and Monitoring with CloudWatch
 
-> ECS Auto Scaling - Metric:
+> [!NOTE] ECS Auto Scaling - Metric:
 >
 > - ECS Instances (~ K8s Node):
 >
@@ -361,7 +361,7 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### Amazon EKS: Run Kubernetes on AWS without operating your own Kubernetes clusters
 
-> IAM and K8s:
+> [!NOTE] IAM and K8s:
 >
 > - Enable with _AWS IAM Authenticator for Kubernetes_, which runs on the Amazon EKS control plane.
 > - The authenticator gets its configuration information from the aws-auth ConfigMap (AWS authenticator configuration map).
@@ -370,14 +370,14 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### AWS Certificate Manager (ACM): Provision, manage, and deploy SSL/TLS certificates
 
-> Which services support storing SSL certificate?
+> [!NOTE] Which services support storing SSL certificate?
 >
 > - AWS Certificate Manager (ACM)
 > - IAM SSL certificate storage (Used for region that not support ACM)
 
-> When using regional API Gateway, the certificate for the domain name needs to be in the same region.
+> [!NOTE] When using regional API Gateway, the certificate for the domain name needs to be in the same region.
 
-> Monitor expiration of certificates
+> [!NOTE] Monitor expiration of certificates
 >
 > - Option 1: Use the ACM built-in Certificate Expiration event
 >   - ACM sends daily expiration events for all active certificates (public, private and imported) starting 45 days prior to expiration.
@@ -388,22 +388,22 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### AWS KMS: Managed creation and control of encryption keys
 
-> K8s has its own mechanism for storing secret, which are default store as plain text in etcd key-value store.
+> [!NOTE] K8s has its own mechanism for storing secret, which are default store as plain text in etcd key-value store.
 >
 > We can apply _envelope encryption_ to encrypt these secrets with AWS KMS before stored them in etcd store.
 >
 > [Source](https://aws.amazon.com/blogs/containers/using-eks-encryption-provider-support-for-defense-in-depth/)
 
-> KMS - [Custom Key Store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
+> [!NOTE] KMS - [Custom Key Store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
 >
 > -> We own and manage
 
-> Allow an Lambda permission to use KMS:
+> [!NOTE] Allow an Lambda permission to use KMS:
 >
 > - Attach the kms:decrypt permission to the Lambda function’s `execution role`
 > - Add a statement to the AWS KMS `key policy` that grants the function’s execution role the kms:decrypt permission.
 
-> S3 Object encryption:
+> [!NOTE] S3 Object encryption:
 >
 > - Server-Side Encryption (SSE):
 >
@@ -431,23 +431,23 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### Amazon Aurora: High performance managed relational database engine
 
-> Aurora Auto Scaling vs Aurora Serverless
+> [!NOTE] Aurora Auto Scaling vs Aurora Serverless
 >
 > - [Aurora Auto Scaling](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Integrating.AutoScaling.html): Dynamically adjusts the number of Aurora Replicas (reader DB instances) provisioned for an Aurora DB cluster.
 > - [Aurora Serverless](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html): On-demand, autoscaling the capacity of Aurora DB cluster resource
 
-> Aurora Serverless
+> [!NOTE] Aurora Serverless
 >
 > - The DB instance cannot be changed from Provisioned to Serverless after created.
 > - After the DB instanced is created, need to use AWS Database Migration Service (AWS DMS) to migrate data from the existing DB cluster to a new Aurora Serverless database.
 
-> Aurora Custom Endpoint: provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances
+> [!NOTE] Aurora Custom Endpoint: provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances
 
-> Aurora - Reader endpoint:
+> [!NOTE] Aurora - Reader endpoint:
 >
 > - A reader endpoint for an Aurora DB cluster provides load-balancing support for read-only connections to the DB cluster
 
-> Aurora Failover: Automatically handled by Amazon Aurora
+> [!NOTE] Aurora Failover: Automatically handled by Amazon Aurora
 >
 > 1. If you have an Amazon Aurora Replica
 >
@@ -463,12 +463,12 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 >
 >    The replacement is done on a best-effort basis and may not succeed
 
-> Aurora - Clone:
+> [!NOTE] Aurora - Clone:
 >
 > - Creating a Aurora clone is _faster_ and more _space-efficient_ than physically copying the data using other techniques, such as restoring from a snapshot like you would in Amazon RDS
 > - Aurora uses a copy-on-write protocol to create a clone.
 
-> Aurora - Storage:
+> [!NOTE] Aurora - Storage:
 >
 > - Aurora data is stored in the _cluster volume_, which is a single, virtual volume that uses solid state drives (SSDs)
 >   - A _cluster volume_ consists of copies of the data across three Availability Zones in a single AWS Region.
@@ -478,14 +478,14 @@ Reduces the operational overhead by taking care of provisioning the needed resou
 
 ### Amazon DynamoDB: Managed NoSQL database
 
-> Latency: Redshift vs DynamoDB
+> [!NOTE] Latency: Redshift vs DynamoDB
 >
 > - Redshift: sub-second (s)
 > - DynamoDB: millisecond (ms)
 
 ### Amazon ElastiCache: In-memory caching service
 
-> Elasticache - Redis vs Memcached
+> [!NOTE] Elasticache - Redis vs Memcached
 >
 > - Redis: Advance structure, replicas
 > - Memcached: Multi-threads, multi-nodes.
@@ -504,12 +504,12 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 
 ### Amazon RDS: Set up, operate, and scale a relational database in the cloud
 
-> RDS Enhanced Monitoring
+> [!NOTE] RDS Enhanced Monitoring
 >
 > - CloudWatch gathers metrics about CPU utilization from the **hypervisor** for a DB instance
 > - Enhanced Monitoring gathers its metrics from an agent on the **instance** ~ EC2 CloudWatch Agent
 
-> Monitor RDS:
+> [!NOTE] Monitor RDS:
 >
 > - Default metric
 >
@@ -522,15 +522,15 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 >   - OS processes
 >   - RDS processes
 
-> RDS - [IAM DB Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+> [!NOTE] RDS - [IAM DB Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
 >
 > To connect to DB instance, we'll use an authentication token (generated using the IAM role's credential).
 
-> RDS - “too many connections”
+> [!NOTE] RDS - “too many connections”
 >
 > RDS Proxy: allow your applications to pool and share database connections to improve their ability to scale.
 
-> RDS Multi-Az Failover:
+> [!NOTE] RDS Multi-Az Failover:
 >
 > - Loss of availability in primary Availability Zone
 > - Primary DB instance:
@@ -543,7 +543,7 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 >
 >   Applied first on the standby prior then automatic failover
 
-> Use Secure Sockets Layer (SSL) to encrypt connections between your client applications and your Amazon RDS DB instances running Microsoft SQL Server.
+> [!NOTE] Use Secure Sockets Layer (SSL) to encrypt connections between your client applications and your Amazon RDS DB instances running Microsoft SQL Server.
 >
 > - Download the Amazon RDS Root CA certificate. Import the certificate to your servers and configure your application to use SSL to encrypt the connection to RDS.
 > - Force all connections to your DB instance to use SSL by setting the rds.force_ssl parameter to true. Once done, reboot your DB instance.
@@ -558,7 +558,7 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 
 ### AWS AppSync: Accelerate app development with fully-managed, scalable GraphQL APIs
 
-> AWS AppSync Pipeline Resolver: orchestrating requests to multiple data sources.
+> [!NOTE] AWS AppSync Pipeline Resolver: orchestrating requests to multiple data sources.
 >
 > Simplify client-side application complexity and help enforce server-side business logic controls by
 
@@ -602,18 +602,18 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 
 ### AWS CloudFormation: Create and manage resources with templates
 
-> CloudFormation: CreationPolicy & cfn-signal
+> [!NOTE] CloudFormation: CreationPolicy & cfn-signal
 >
 > - CreationPolicy: Wait on resource configuration actions before stack creation proceeds.
 > - cfn-signal: Signals CloudFormation to indicate whether Amazon EC2 instances have been successfully created/updated
 
 ### AWS CloudTrail: Track and monitor activities by users, roles, or AWS services
 
-> CloudTrail - Encryption
+> [!NOTE] CloudTrail - Encryption
 >
 > By default, CloudTrail event log files are encrypted using Amazon S3 server-side encryption (SSE)
 
-> CloudTrail Logs vs S3 server access logs
+> [!NOTE] CloudTrail Logs vs S3 server access logs
 >
 > - CloudTrail Logs: record of actions taken by a user, role, or an AWS service in Amazon S3
 > - S3 server access logs: detailed records for the requests that are made to an S3 bucket
@@ -623,9 +623,9 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 
 ### Amazon CloudWatch: Monitor resources and applications
 
-> CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
+> [!NOTE] CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
 
-> Monitor EC2:
+> [!NOTE] Monitor EC2:
 >
 > - CloudWatch default metric
 >
@@ -638,7 +638,7 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 >   - Memory
 >   - Sub-resource metrics such as per-CPU core
 
-> Monitor RDS:
+> [!NOTE] Monitor RDS:
 >
 > - Default metric
 >
@@ -651,7 +651,7 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 >   - OS processes
 >   - RDS processes
 
-> Monitor expiration of certificates
+> [!NOTE] Monitor expiration of certificates
 >
 > - Option 1: Use the ACM built-in Certificate Expiration event
 >   - ACM sends daily expiration events for all active certificates (public, private and imported) starting 45 days prior to expiration.
@@ -662,7 +662,7 @@ Provides a transparent, immutable, and cryptographically verifiable transaction 
 
 ### AWS Compute Optimizer: Identify optimal AWS compute resources |
 
-> - Analyzes the configuration and utilization metrics of your AWS resources
+> [!NOTE] - Analyzes the configuration and utilization metrics of your AWS resources
 > - Reports whether your resources are optimal
 > - Generates optimization recommendations to reduce the cost and improve the performance of your workloads
 
@@ -688,7 +688,7 @@ Collects metrics
 
 ### AWS Organizations: Central governance and management across AWS accounts
 
-> Service Control Policy (SCP): a feature of AWS Organizations
+> [!NOTE] Service Control Policy (SCP): a feature of AWS Organizations
 >
 > - A type of organization policy that you can use to manage permissions in your organization.
 
@@ -696,7 +696,7 @@ Collects metrics
 
 ### AWS Systems Manager: Gain operational insights and take action
 
-> AWS Systems Manager's Fleet Manager: UI for managing nodes/EC2 instance.
+> [!NOTE] AWS Systems Manager's Fleet Manager: UI for managing nodes/EC2 instance.
 
 ### Tag Editor: Add, edit, or delete tags on multiple AWS resources
 
@@ -706,7 +706,7 @@ Collects metrics
 
 Inspects your AWS environment and recommends ways to save money, close security gaps, and improve system availability and performance.
 
-> **AWS Trusted Advisor** _Service Limits_:
+> [!NOTE] **AWS Trusted Advisor** _Service Limits_:
 >
 > - Monitor the service quotas in all Regions.
 > - Alerts you if your account reaches _more than 80% of a service quota_ in any Region.
@@ -715,7 +715,7 @@ Inspects your AWS environment and recommends ways to save money, close security 
 
 ### CloudWatch
 
-> CloudWatch - CloudWatch Logs - CloudTrail - CloudWatch Events - EventBridge?
+> [!NOTE] CloudWatch - CloudWatch Logs - CloudTrail - CloudWatch Events - EventBridge?
 >
 > - CloudWatch: Monitor resources and applications
 >
@@ -727,7 +727,7 @@ Inspects your AWS environment and recommends ways to save money, close security 
 
 ### CloudTrail
 
-> - CloudTrail: Track and monitor activities by users, roles, or AWS services
+> [!NOTE] - CloudTrail: Track and monitor activities by users, roles, or AWS services
 
 <!-- ## Marketplace -->
 
@@ -743,7 +743,7 @@ Inspects your AWS environment and recommends ways to save money, close security 
 
 Migrate on-premises databases to the AWS Cloud.
 
-> Replicate database on S3 as CSV, stream on-going changes, min management overhead
+> [!NOTE] Replicate database on S3 as CSV, stream on-going changes, min management overhead
 >
 > AWS Database Migration Service + Change Data Capture (CDC)
 
@@ -757,28 +757,28 @@ An online data movement and discovery service that simplifies data migration and
 
 ### Amazon API Gateway: Build, deploy, and manage APIs
 
-> API Gateway works at any scale, just pay money.
+> [!NOTE] API Gateway works at any scale, just pay money.
 >
 > Throttle API requests for our budget (and for better throughtput)
 >
 > [Source](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html)
 
-> When using regional API Gateway, the certificate for the domain name needs to be in the same region.
+> [!NOTE] When using regional API Gateway, the certificate for the domain name needs to be in the same region.
 
 ### Amazon CloudFront: Global content delivery network
 
-> CloudFront supports `geo blocking` (`geographic restrictions`)
+> [!NOTE] CloudFront supports `geo blocking` (`geographic restrictions`)
 
-> Lambda@Edge: run Lambda functions to customize the content that CloudFront delivers
+> [!NOTE] Lambda@Edge: run Lambda functions to customize the content that CloudFront delivers
 
-> CloudFront - Origin _Failover_
+> [!NOTE] CloudFront - Origin _Failover_
 >
 > Needs an origin groups with 2 origin:
 >
 > - a primary origin
 > - a secondary origin
 
-> CloudFront cannot host data, only cache data.
+> [!NOTE] CloudFront cannot host data, only cache data.
 
 ### AWS Direct Connect: Dedicated network connection to AWS
 
@@ -786,17 +786,17 @@ from your on-premises network
 
 ### Elastic Load Balancing: Distribute incoming traffic across multiple targets
 
-> Elastic Load Balancer protocol:
+> [!NOTE] Elastic Load Balancer protocol:
 >
 > - Application Load Balancer: HTTP/s and gRPC
 > - Network Load Balancer: TCP, UDP, TLS
 > - Gateway Load Balancer: IP
 
-> Application Load Balancer: supports Weighted Target Groups
+> [!NOTE] Application Load Balancer: supports Weighted Target Groups
 
-> NLB: only support TCP, UDP, TLS, but it can perform HTTP/s health check.
+> [!NOTE] NLB: only support TCP, UDP, TLS, but it can perform HTTP/s health check.
 
-> ELB - Access Logs
+> [!NOTE] ELB - Access Logs
 >
 > Capture detailed information about requests sent to your load balancer
 >
@@ -806,7 +806,7 @@ from your on-premises network
 >
 > - <https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html>
 
-> AWS Services with Access Logs:
+> [!NOTE] AWS Services with Access Logs:
 >
 > - S3
 > - ELB
@@ -846,21 +846,21 @@ A service in which you create accelerators to improve the performance of your ap
 
 #### Related Services
 
-> Global Accelerator & ELB
+> [!NOTE] Global Accelerator & ELB
 
-> Global Accelerator vs CloudFront
+> [!NOTE] Global Accelerator vs CloudFront
 
 #### Notes
 
 ### Amazon Route 53: Highly available and scalable Domain Name System (DNS) web service
 
-> Route 53: GeoProximity Routing vs Geolocation Routing vs Latency-based Routing
+> [!NOTE] Route 53: GeoProximity Routing vs Geolocation Routing vs Latency-based Routing
 >
 > - Geolocation Routing: Location of user
 > - GeoProximity Routing: Location of user AND AWS resources (with bias)
 > - Latency-based Routing
 
-> CNAME record vs Route 53 alias record
+> [!NOTE] CNAME record vs Route 53 alias record
 >
 > - CNAME record: doesn't work with zone apex (root domain name)
 > - Route 53 alias record:
@@ -871,30 +871,30 @@ A service in which you create accelerators to improve the performance of your ap
 
 ### Amazon VPC: Isolated cloud resources
 
-> Data transfer
+> [!NOTE] Data transfer
 >
 > - S3: within the same Region is free.
 > - Others (EC2) within the same Availability Zone is free.
 
-> VPC Peering: only works for VPCs, doesn't work with on-premise networks
+> [!NOTE] VPC Peering: only works for VPCs, doesn't work with on-premise networks
 
-> VPC Peering - Setup
+> [!NOTE] VPC Peering - Setup
 >
 > - Create, invite, accept VPC Peering Connection
 > - Update each VPC's Route Table to point to IP range of other VPC.
 
-> VPC: IPv4 vs IPv6
+> [!NOTE] VPC: IPv4 vs IPv6
 >
 > - IPv4 is the default IP addressing system for VPC => Cannot be disabled
 > - IPv6: optional
 
-> VPC supports CIDR blocks from /16 to /28
+> [!NOTE] VPC supports CIDR blocks from /16 to /28
 
-> CIDR `/0`: The entire network -> is not used in SG and NACL.
+> [!NOTE] CIDR `/0`: The entire network -> is not used in SG and NACL.
 >
 > CIDR `/32`: One IP address.
 
-> VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
+> [!NOTE] VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
 >
 > - Gateway endpoint:
 >
@@ -910,7 +910,7 @@ A service in which you create accelerators to improve the performance of your ap
 >
 >   - Billed 💸
 
-> VPC - NACL:
+> [!NOTE] VPC - NACL:
 >
 > - The client that initiates the request chooses the ephemeral port range.
 > - In practice, to cover the different types of clients that might initiate traffic to public-facing instances in your VPC, you can open ephemeral ports 1024-65535.
@@ -920,7 +920,7 @@ A service in which you create accelerators to improve the performance of your ap
 > - Inbound traffic on the port that the service is listening on
 > - Outbound traffic to ephemeral ports
 
-> ENI - ENA - EFA
+> [!NOTE] ENI - ENA - EFA
 >
 > - Elastic Network Interface (ENI): logical networking component in a VPC that represents a **virtual network card**
 > - Elastic Network Adapter (ENA): High Performance Network Interface for Amazon EC2
@@ -932,13 +932,13 @@ A service in which you create accelerators to improve the performance of your ap
 >
 >   - support **OS-bypass** capabilities: allow HPC communicate directly with the EFA device.
 
-> Security Group Referencing
+> [!NOTE] Security Group Referencing
 >
 > When you specify a security group as the source or destination for a rule (of a security group), the rule affects all instances that are associated with the security groups.
 
-> Default NACL allows all inbound and outbound traffic
+> [!NOTE] Default NACL allows all inbound and outbound traffic
 
-> S3 - Restrict access to a VPC
+> [!NOTE] S3 - Restrict access to a VPC
 >
 > 👉 S3 Access Point
 
@@ -946,10 +946,10 @@ A service in which you create accelerators to improve the performance of your ap
 
 By establishing a secure and private tunnel from your network or device to the AWS Cloud.)
 
-> - AWS Site-to-Site VPN: AWS managed VPN services
+> [!NOTE] - AWS Site-to-Site VPN: AWS managed VPN services
 > - AWS Client VPN: client-based managed VPN service
 
-> AWS Site-to-Site VPN throughput limit: 1.25 Gbps
+> [!NOTE] AWS Site-to-Site VPN throughput limit: 1.25 Gbps
 >
 > - Scale VPN with Transit Gateway - Equal Cost Multipath Routing (ECMP).
 >
@@ -981,43 +981,43 @@ Simplifies your AWS WAF administration and maintenance tasks across multiple acc
 
 Identify unexpected and potentially unauthorized or malicious activity in your AWS environment.
 
-> Block SQL injection
+> [!NOTE] Block SQL injection
 >
 > - AWS Web Application Firewall (WAF): can block SQL injection.
 > - GuardDuty: only detect SQL injection, not block.
 
 ### AWS Identity and Access Management - IAM: Securely manage access to services and resources
 
-> Authenticate for making API calls to AWS resources
+> [!NOTE] Authenticate for making API calls to AWS resources
 >
 > - Long-term credentials: Access key
 
-> [Identity Federation (with SAML)](https://docs.aws.amazon.com/singlesignon/latest/userguide/samlfederationconcept.html): Pass information about a user between
+> [!NOTE] [Identity Federation (with SAML)](https://docs.aws.amazon.com/singlesignon/latest/userguide/samlfederationconcept.html): Pass information about a user between
 >
 > - a SAML authority (called an identity provider or IdP)
 > - a SAML consumer (called a service provider or SP)
 
-> IAM identity provider (IdP): manage user identities outside of AWS and give these external user identities permissions to use AWS resources in your account.
+> [!NOTE] IAM identity provider (IdP): manage user identities outside of AWS and give these external user identities permissions to use AWS resources in your account.
 >
 > - Setup Identity Provider and Identity Federation.
 > - Setup an AWS Security Token Service to generate temporary tokens (STS supports SAML)
 > - Configure an IAM role and an IAM Policy to access the bucket.
 
-> IAM Group
+> [!NOTE] IAM Group
 >
 > - Cannot attach an IAM Role to an IAM Group.
 
-> Which services support storing SSL certificate?
+> [!NOTE] Which services support storing SSL certificate?
 >
 > - AWS Certificate Manager (ACM)
 > - IAM SSL certificate storage (Used for region that not support ACM)
 
-> IAM and EKS:
+> [!NOTE] IAM and EKS:
 >
 > - Enable with _AWS IAM Authenticator for Kubernetes_, which runs on the Amazon EKS control plane.
 > - The authenticator gets its configuration information from the aws-auth ConfigMap (AWS authenticator configuration map).
 
-> IAM cross-account access: Delegate access across AWS accounts
+> [!NOTE] IAM cross-account access: Delegate access across AWS accounts
 >
 > e.g. 2 accounts for resources:
 >
@@ -1061,7 +1061,7 @@ Dashboard / Overview
 
 XSS, SQL-injection
 
-> [AWS WAF, AWS Shield, and AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html): used together to create a comprehensive security solution
+> [!NOTE] [AWS WAF, AWS Shield, and AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html): used together to create a comprehensive security solution
 >
 > - AWS WAF: Protect your web applications from common exploits
 >
@@ -1093,7 +1093,7 @@ XSS, SQL-injection
 
 ### AWS Fargate: Serverless compute for containers
 
-> AWS Fargate: Serverless compute for containers
+> [!NOTE] AWS Fargate: Serverless compute for containers
 >
 > By default, Fargate tasks are given a minimum of 20 GiB of free ephemeral storage
 
@@ -1107,12 +1107,12 @@ XSS, SQL-injection
 
 ### Amazon SQS: Managed message queues
 
-> Ensure a queue's messages are NOT process twice:
+> [!NOTE] Ensure a queue's messages are NOT process twice:
 >
 > - SQS FIFO Queue
 > - Amazon Simple Workflow Service (Amazon SWF)
 
-> Asynchronous process, cost-effective
+> [!NOTE] Asynchronous process, cost-effective
 >
 > SQS + Lambda
 
@@ -1122,18 +1122,18 @@ XSS, SQL-injection
 
 ### Amazon EBS: Amazon EC2 block storage volumes
 
-> EBS is not suitable for archiving datasets -> S3 is better option
+> [!NOTE] EBS is not suitable for archiving datasets -> S3 is better option
 
-> EBS - Backup: Use Amazon Data Lifecycle Manager (Amazon DLM)
+> [!NOTE] EBS - Backup: Use Amazon Data Lifecycle Manager (Amazon DLM)
 
-> RAID 0:
+> [!NOTE] RAID 0:
 >
 > - I/O is distributed across the volumes in a stripe
 > - higher level of performance for a file system than you can provision on a single Amazon EBS volume
 >
 > RAID 1, 2, 3, 4, 5, 6: NOT recommended for EBS
 
-> EBS Encryption
+> [!NOTE] EBS Encryption
 >
 > - Data at rest inside the volume 👈 Encryption at rest
 > - All data moving between the volume and the instance 👈 Encryption in-transit
@@ -1142,27 +1142,27 @@ XSS, SQL-injection
 
 ### Amazon EFS: Fully managed file system for Amazon _EC2_
 
-> EFS vs Storage Gateway
+> [!NOTE] EFS vs Storage Gateway
 >
 > - EFS: files are stored on AWS -> high-latency
 > - Storage Gateway - File: low-latency
 
 ### Amazon FSx: Launch, run, and scale feature-rich and high-performing file systems
 
-> FSx
+> [!NOTE] FSx
 >
 > - FSx for Lustre: Linux, HPC
 > - FSx for Windows File Server
 
 ### Amazon S3: Object storage built to retrieve any amount of data from anywhere
 
-> KMS-managed CMK: key will be sent to AWS
+> [!NOTE] KMS-managed CMK: key will be sent to AWS
 >
 > Server-side encryption: unencrypted data will be sent to AWS
 >
 > -> Client-side encryption with a client-side master key.
 
-> S3 Object Lock
+> [!NOTE] S3 Object Lock
 >
 > - Retention:
 >
@@ -1175,18 +1175,18 @@ XSS, SQL-injection
 >
 > - Legal holds: ~ Retention Periods but has no expiration date
 
-> S3 Static website - Custom Domain: "The S3 bucket name must be the same as the domain name"
+> [!NOTE] S3 Static website - Custom Domain: "The S3 bucket name must be the same as the domain name"
 >
 > What if someone use my domain name for their bucket ??? TODO
 
-> S3 - Read data from Glacier
+> [!NOTE] S3 - Read data from Glacier
 >
 > - Bulk: Lowest (5-12 hours), cheapest
 > - Standard: 3-5 hours
 > - Expedited: Fastest (1-5 mins)
 >   - Buy Provisioned capacity to ensure Expedited retrievals is available.
 
-> S3 Object encryption:
+> [!NOTE] S3 Object encryption:
 >
 > - Server-Side Encryption (SSE):
 >
@@ -1199,7 +1199,7 @@ XSS, SQL-injection
 >   - CSE-KMS-CMK
 >   - CSE-Client Master key
 
-> By default, all Amazon S3 resources such as buckets, objects, and related subresources are private.
+> [!NOTE] By default, all Amazon S3 resources such as buckets, objects, and related subresources are private.
 >
 > To public all objects in a bucket:
 >
@@ -1207,7 +1207,7 @@ XSS, SQL-injection
 > - Explicit allows public read -> Using bucket policy.
 > - Or manually public objects -> Grant public read access to the object when uploading it using the S3 Console.
 
-> VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
+> [!NOTE] VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
 >
 > - Gateway endpoint:
 >
@@ -1223,21 +1223,21 @@ XSS, SQL-injection
 >
 >   - Billed 💸
 
-> S3 Select: Filter objects with SQL syntax using bucket name & object key
+> [!NOTE] S3 Select: Filter objects with SQL syntax using bucket name & object key
 
-> S3 - Requester Pay
+> [!NOTE] S3 - Requester Pay
 >
 > - In general, bucket owners pay for all Amazon S3 storage and data transfer costs that are associated with their bucket.
 > - With Requester Pays buckets,
 >   - The requester (instead of the bucket owner) pays the cost of the request and the data download from the bucket.
 >   - The bucket owner always pays the cost of storing data.
 
-> S3 - PII:
+> [!NOTE] S3 - PII:
 >
 > - Use Amazon Macie to automatically detect sensitive data.
 > - Then use EventBridge and SNS to send notification.
 
-> S3 - Min Storage Duration
+> [!NOTE] S3 - Min Storage Duration
 >
 > | Storage Class                      | Min Storage Duration |
 > | ---------------------------------- | -------------------- |
@@ -1246,29 +1246,29 @@ XSS, SQL-injection
 > | Glacier Instant/Flexible Retrieval | 90 days              |
 > | Glacier Deep Archive               | 180 days             |
 
-> S3 Standard-IA or S3 One Zone-IA:
+> [!NOTE] S3 Standard-IA or S3 One Zone-IA:
 >
 > - Minimum Days for Transition from Standard: 30 days
 > - Minimum 30-Day Storage Charge: 30 days
 
-> Data transfer
+> [!NOTE] Data transfer
 >
 > - S3: within the same Region is free.
 > - Others (EC2) within the same Availability Zone is free.
 
-> Replicate database on S3 as CSV, stream on-going changes, min management overhead
+> [!NOTE] Replicate database on S3 as CSV, stream on-going changes, min management overhead
 >
 > AWS Database Migration Service + Change Data Capture (CDC)
 
-> S3 - WORM
+> [!NOTE] S3 - WORM
 >
 > 👉 S3 - Object Lock + Legal Hold
 
-> S3 - Restrict access to a VPC
+> [!NOTE] S3 - Restrict access to a VPC
 >
 > 👉 S3 Access Point
 
-> S3 server access logs vs CloudTrail Logs
+> [!NOTE] S3 server access logs vs CloudTrail Logs
 >
 > - CloudTrail Logs: record of actions taken by a user, role, or an AWS service in Amazon S3
 > - S3 server access logs: detailed records for the requests that are made to an S3 bucket
@@ -1276,7 +1276,7 @@ XSS, SQL-injection
 >   - Lifecycle transitions, expirations, restores
 >   - Invalid Authentication
 
-> AWS Services with Access Logs:
+> [!NOTE] AWS Services with Access Logs:
 >
 > - S3
 > - ELB
@@ -1285,11 +1285,11 @@ XSS, SQL-injection
 
 ### Amazon S3 Glacier: Low-cost archive storage in the AWS Cloud
 
-> Amazon Glacier Select: FFilter objects with SQL syntax using bucket name & object key
+> [!NOTE] Amazon Glacier Select: FFilter objects with SQL syntax using bucket name & object key
 
 ### AWS Snow Family: Move petabytes of data to and from AWS, or process data at the edge
 
-> AWS Snow Family:
+> [!NOTE] AWS Snow Family:
 >
 > - Snowcone: 8TB - 14TB
 > - Snowball: 80TB
@@ -1298,16 +1298,16 @@ XSS, SQL-injection
 >   - Snowball Edge Storage Optimized: 210TB + EC2
 > - Snowmobile: 100PB
 
-> AWS OpsHub: Graphical user interface to manage AWS Snowball devices
+> [!NOTE] AWS OpsHub: Graphical user interface to manage AWS Snowball devices
 
 ### AWS Storage Gateway: Hybrid storage integration
 
-> NFS vs Storage Gateway
+> [!NOTE] NFS vs Storage Gateway
 >
 > - NFS: files are stored on AWS -> high-latency
 > - Storage Gateway - File: low-latency
 
-> AWS File Gateway - Handle Writes
+> [!NOTE] AWS File Gateway - Handle Writes
 >
 > - When a client writes data to a file via File Gateway, that data is first written to the _local cache disk_ on the gateway itself.
 >

@@ -30,11 +30,11 @@ Which of the following solutions will fulfill the company's requirements? (Selec
 - Order an AWS Snowball Edge Storage Optimized device, link it to the on-premises network, and transfer data using the AWS CLI. Return the device to AWS for data import into Amazon S3. Configure AWS DataSync tasks to migrate the data from S3 to the Amazon FSx for Windows File Server file system
 ```
 
-> AWS DataSync: Simple, fast, online data transfer
+> [!NOTE] AWS DataSync: Simple, fast, online data transfer
 >
 > An online data movement and discovery service that simplifies data migration and helps you quickly, easily, and securely transfer your file or object data to, from, and between AWS storage services.
 
-> AWS OpsHub: Graphical user interface to manage AWS Snowball devices
+> [!NOTE] AWS OpsHub: Graphical user interface to manage AWS Snowball devices
 
 ### 3
 
@@ -52,7 +52,7 @@ Which of the following actions should be taken to verify and resolve the above i
 - Use AWS CloudWatch to view performance metrics of the compute resources. Create a CloudWatch dashboard to identify overutilized or underutilized resources.
 ```
 
-> AWS Compute Optimizer: Identify optimal AWS compute resources
+> [!NOTE] AWS Compute Optimizer: Identify optimal AWS compute resources
 >
 > - Analyzes the configuration and utilization metrics of your AWS resources
 > - Reports whether your resources are optimal
@@ -75,19 +75,19 @@ Which of the following is the MOST appropriate service to use to satisfy this ta
 - Amazon Inspector
 ```
 
-> AWS Inspector: Continual vulnerability management at scale
+> [!NOTE] AWS Inspector: Continual vulnerability management at scale
 >
 > ![Alt text](AWS-Inspector-How-It-Works.png)
 
-> AWS Trusted Advisor: Optimize Performance and Securityimage
+> [!NOTE] AWS Trusted Advisor: Optimize Performance and Securityimage
 >
 > ![Alt text](AWS-Trusted-Advisor-How-It-Works.png)
 
-> AWS Budgets: Set Custom Budgets and Receive Alerts
+> [!NOTE] AWS Budgets: Set Custom Budgets and Receive Alerts
 >
 > ![Alt text](AWS-Budgets-How-It-Works.png)
 
-> AWS Cost Explorer: Visualize and Explore Your AWS Costs and Usage
+> [!NOTE] AWS Cost Explorer: Visualize and Explore Your AWS Costs and Usage
 >
 > ![Alt text](AWS-Cost-Explorer-How-It-Works.png)
 
@@ -112,7 +112,7 @@ Which solution could resolve the issue with the least amount of development over
 
 ```
 
-> NLB: only support TCP, UDP, TLS, but it can perform HTTP/s health check.
+> [!NOTE] NLB: only support TCP, UDP, TLS, but it can perform HTTP/s health check.
 
 ### 6
 
@@ -131,7 +131,7 @@ Which of the following options would reduce the data transfer costs?
 - Deploy the Amazon EC2 instances in private subnets in different Availability Zones.
 ```
 
-> Data transfer within the same Availability Zone is free.
+> [!NOTE] Data transfer within the same Availability Zone is free.
 
 ### 7
 
@@ -152,7 +152,7 @@ In Route 53, which record types will you use to point the DNS name of the Applic
 - Alias with a type of “MX” record set
 ```
 
-> CNAME record vs Route 53 alias record
+> [!NOTE] CNAME record vs Route 53 alias record
 >
 > - CNAME record: doesn't work with zone apex (root domain name)
 >
@@ -180,14 +180,14 @@ Which solution will fulfill these criteria?
 - On the function’s execution role, add a permission that includes the lambda:InvokeFunction as action and arn:aws:iam::[DEV AWS Account Number]:root as principal.
 ```
 
-> Permission to invoke a Lambda function
+> [!NOTE] Permission to invoke a Lambda function
 >
 > Use the Lambda function's `resource policy`:
 >
 > - Principal: the ARN of dev account
 > - Action: lambda:InvokeFunction
 
-> Lambda function's `execution role`
+> [!NOTE] Lambda function's `execution role`
 >
 > Give the Lambda function permissions to access AWS resources.
 
@@ -208,7 +208,7 @@ Which is the best solution among the following options that can satisfy the requ
 - Enable Amazon S3 Event Notifications for PUT and POST.
 ```
 
-> CloudTrail Logs vs S3 server access logs
+> [!NOTE] CloudTrail Logs vs S3 server access logs
 >
 > - CloudTrail Logs: record of actions taken by a user, role, or an AWS service in Amazon S3
 > - S3 server access logs: detailed records for the requests that are made to an S3 bucket
@@ -239,7 +239,7 @@ What should a solutions architect do to meet the company’s requirements above?
 - Migrate the RabbitMQ queue to a redundant pair (active/standby) of Amazon MQ brokers in AWS. Launch a Multi-AZ Auto Scaling group for the Amazon EC2 instances that host the consumer application. Migrate the PostgreSQL database to Amazon RDS for PostgreSQL with cross-Region read replicas
 ```
 
-> Amazon MQ:
+> [!NOTE] Amazon MQ:
 >
 > - A _single-instance broker_: is comprised of one broker in one Availability Zone behind a Network Load Balancer (NLB) The broker communicates with your application and with an Amazon EBS storage volume.
 >
@@ -263,7 +263,7 @@ Which of the following are valid options that the Solutions Architect can implem
 - Set a lifecycle policy in the bucket to transition to S3 - Standard IA after 30 days
 ```
 
-> S3 Standard-IA or S3 One Zone-IA:
+> [!NOTE] S3 Standard-IA or S3 One Zone-IA:
 >
 > - Minimum Days for Transition from Standard: 30 days
 > - Minimum 30-Day Storage Charge: 30 days
@@ -287,7 +287,7 @@ What solution would be able to fulfill these requirements?
 - Configure CloudFront to return a custom error response to the viewer and apply geographic restrictions using an Allow list.
 ```
 
-> CloudFront supports `geo blocking` (`geographic restrictions`)
+> [!NOTE] CloudFront supports `geo blocking` (`geographic restrictions`)
 
 ---
 
@@ -295,15 +295,15 @@ What solution would be able to fulfill these requirements?
 
 ### 33
 
-> Amazon Managed Service for Prometheus: Highly available, secure, and managed monitoring for your containers
+> [!NOTE] Amazon Managed Service for Prometheus: Highly available, secure, and managed monitoring for your containers
 >
 > Collects metrics
 
-> Amazon Managed Grafana: Visualize and analyze your operational data at scale
+> [!NOTE] Amazon Managed Grafana: Visualize and analyze your operational data at scale
 >
 > Visualize metrics to dashboard
 
-> Amazon Quantum Ledger Database (QLDB): Fully managed ledger database
+> [!NOTE] Amazon Quantum Ledger Database (QLDB): Fully managed ledger database
 >
 > Provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority.
 >

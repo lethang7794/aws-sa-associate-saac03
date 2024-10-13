@@ -25,7 +25,7 @@ As the Senior Solutions Architect, how can you implement a cost-effective archit
 - Use Dedicated Hosts which provide a physical host that is fully dedicated to running your instances, and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.
 ```
 
-> EC2 - Capacity Reservations vs Reserved Instances
+> [!NOTE] EC2 - Capacity Reservations vs Reserved Instances
 >
 > - (On-demand) Capacity Reservations:
 >
@@ -50,7 +50,7 @@ Which of the following is the most cost-effective storage class to use in this s
 - Amazon S3 Glacier Deep Archive
 ```
 
-> S3 - Min Storage Duration
+> [!NOTE] S3 - Min Storage Duration
 >
 > | Storage Class                      | Min Storage Duration |
 > | ---------------------------------- | -------------------- |
@@ -74,7 +74,7 @@ Which of the following options provides high availability for the application?
 - Use Lambda@Edge to improve the performance of your web application and ensure high availability. Set the Lambda@Edge functions to be part of an origin group.
 ```
 
-> CloudFront - Origin _Failover_
+> [!NOTE] CloudFront - Origin _Failover_
 >
 > Needs an origin groups with 2 origin:
 >
@@ -95,7 +95,7 @@ Which of the following options will support the autonomy of each corporate divis
 - Create separate Availability Zones for each division within the corporate IT AWS account. Improve communication between the two AZs using the AWS Global Accelerator.
 ```
 
-> IAM cross-account access: Delegate access across AWS accounts
+> [!NOTE] IAM cross-account access: Delegate access across AWS accounts
 >
 > e.g. 2 accounts for resources:
 >
@@ -117,7 +117,7 @@ A Solutions Architect is required to set up a distributed session management lay
 Which of the following would be the best choice to meet the requirement while still providing sub-millisecond latency for the users?
 ```
 
-> Elasticache - Redis vs Memcached
+> [!NOTE] Elasticache - Redis vs Memcached
 >
 > - Redis: Advance structure, replicas
 >
@@ -136,7 +136,7 @@ How will the Architect fix this issue?
 - Submit a capacity increase request to AWS as you are initially limited to only 12 instances per Placement Group.
 ```
 
-> EC2 - Placement Group - Error adding instance 'insufficient capacity error'
+> [!NOTE] EC2 - Placement Group - Error adding instance 'insufficient capacity error'
 >
 > - Amazon does not currently have enough available On-Demand capacity on the existing host to fulfill your request.
 >
@@ -155,7 +155,7 @@ Which of the following is the best option that you should implement in this scen
 - Ingest the data using Amazon Kinesis Data Streams and create an AWS Lambda function to store the data in Amazon DynamoDB.
 ```
 
-> Latency: Redshift vs DynamoDB
+> [!NOTE] Latency: Redshift vs DynamoDB
 >
 > - Redshift: sub-second (s)
 > - DynamoDB: millisecond (ms)
@@ -175,7 +175,7 @@ Which of the following services can be used to fulfill this requirement?
 - AWS Elastic Beanstalk
 ```
 
-> Elastic Beanstalk: Run and manage web apps
+> [!NOTE] Elastic Beanstalk: Run and manage web apps
 >
 > - Reduces the operational overhead by taking care of provisioning the needed resources for your application
 >
@@ -189,9 +189,9 @@ Which of the following services can be used to fulfill this requirement?
 >   - builds the selected supported platform version
 >   - provisions one or more AWS resources, such as Amazon EC2 instances, to run your application.
 
-> ECS: Run highly secure, reliable, and scalable containers
+> [!NOTE] ECS: Run highly secure, reliable, and scalable containers
 
-> Elastic Beanstalk vs ECS
+> [!NOTE] Elastic Beanstalk vs ECS
 >
 > - Elastic Beanstalk:
 >
@@ -213,13 +213,13 @@ Throughout this period, the application experiences intermittent downtimes as we
 Which combination of actions best satisfies the given set of requirements while being the most cost-effective? (Select TWO)
 ```
 
-> Aurora - Clone:
+> [!NOTE] Aurora - Clone:
 >
 > - Creating a Aurora clone is _faster_ and more _space-efficient_ than physically copying the data using other techniques, such as restoring from a snapshot like you would in Amazon RDS
 >
 > - Aurora uses a copy-on-write protocol to create a clone.
 
-> Aurora - Storage:
+> [!NOTE] Aurora - Storage:
 >
 > - Aurora data is stored in the _cluster volume_, which is a single, virtual volume that uses solid state drives (SSDs)
 >   - A _cluster volume_ consists of copies of the data across three Availability Zones in a single AWS Region.
@@ -239,7 +239,7 @@ What are the benefits of adding Multi-AZ deployments in Amazon RDS? (Select TWO.
 - Provides SQL optimization.
 ```
 
-> RDS Multi-Az Failover:
+> [!NOTE] RDS Multi-Az Failover:
 >
 > - Loss of availability in primary Availability Zone
 >
@@ -266,7 +266,7 @@ Which of the following options can satisfy the given requirement?
 - Move all the static assets and web pages to Amazon S3. Re-host the application to Amazon Elastic Container Service (Amazon ECS) containers and enable Service Auto Scaling. Migrate the database to Amazon RDS with Multi-AZ deployments configuration.
 ```
 
-> CloudFront cannot host data, only cache data.
+> [!NOTE] CloudFront cannot host data, only cache data.
 
 ### 20
 
@@ -281,7 +281,7 @@ Which should the DR team implement to meet the objective with the LEAST amount o
 - Create an AWS Backup plan to copy data backups to a local SMB share every 48 hours.
 ```
 
-> AWS File Gateway - Handle Writes
+> [!NOTE] AWS File Gateway - Handle Writes
 >
 > - When a client writes data to a file via File Gateway, that data is first written to the _local cache disk_ on the gateway itself.
 >
@@ -303,7 +303,7 @@ Which solution could satisfy the requirement? (Select TWO.)
 - Create an AWS Auto Scaling policy that scales out the ECS cluster when the service’s CPU utilization is too high.
 ```
 
-> ECS Auto Scaling - Metric:
+> [!NOTE] ECS Auto Scaling - Metric:
 >
 > - ECS Instances (~ K8s Node):
 >
@@ -343,7 +343,7 @@ Which of the following can the Solutions Architect implement to meet this reques
 - Create an Amazon EventBridge (Amazon CloudWatch Events) rule and schedule it to run every day to identify the expiring ACM certificates. Configure to rule to check the DaysToExpiry metric of all ACM certificates in Amazon CloudWatch. Send an alert notification to an Amazon Simple Notification Service (Amazon SNS) topic when a certificate is going to expire in 30 days.
 ```
 
-> Monitor expiration of certificates
+> [!NOTE] Monitor expiration of certificates
 >
 > - Option 1: Use the ACM built-in Certificate Expiration event
 >   - ACM sends daily expiration events for all active certificates (public, private and imported) starting 45 days prior to expiration.
@@ -364,7 +364,7 @@ Which of the following options is the MOST suitable solution that you should imp
 - Configure the security groups of your EC2 instances and RDS to only allow traffic to and from port 443.
 ```
 
-> Use Secure Sockets Layer (SSL) to encrypt connections between your client applications and your Amazon RDS DB instances running Microsoft SQL Server.
+> [!NOTE] Use Secure Sockets Layer (SSL) to encrypt connections between your client applications and your Amazon RDS DB instances running Microsoft SQL Server.
 >
 > - Download the Amazon RDS Root CA certificate. Import the certificate to your servers and configure your application to use SSL to encrypt the connection to RDS.
 > - Force all connections to your DB instance to use SSL by setting the rds.force_ssl parameter to true. Once done, reboot your DB instance.
@@ -384,7 +384,7 @@ Which solution will meet these requirements with the LEAST operational overhead?
 - Set up an Amazon Connect contact flow to send the confirmation SMS messages to the mobile app users. Deploy an AWS Lambda function to process and analyze the responses. Store the data to Amazon S3 Glacier Flexible Retrieval
 ```
 
-> Amazon Pinpoint: Multichannel marketing communications
+> [!NOTE] Amazon Pinpoint: Multichannel marketing communications
 >
 > Engage your customers by sending them email, SMS and voice messages, and push notifications.
 >
@@ -404,6 +404,6 @@ Which of the following must be done to allow the user to make API calls to the A
 - Create a set of Access Keys for the user and attach the necessary permissions.
 ```
 
-> Authenticate for making API calls to AWS resources
+> [!NOTE] Authenticate for making API calls to AWS resources
 >
 > - Long-term credentials: Access key

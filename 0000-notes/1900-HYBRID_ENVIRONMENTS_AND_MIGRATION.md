@@ -22,7 +22,7 @@ BGP - Architecture
 ![Alt text](<images/Screenshot 2023-10-11 at 11.45.21 - AWS_Site-to-Site_VPN__learn.cantrill.io_—_Firefox_.png>)
 AWS Site-to-Site VPN - Overview
 
-> What is a virtual private gateway (VGW)?
+> [!NOTE] What is a virtual private gateway (VGW)?
 >
 > A virtual private gateway (VGW) is part of a VPC that provides edge routing for AWS managed VPN connections and AWS Direct Connect connections. You associate an AWS Direct Connect gateway with the virtual private gateway for the VPC.
 > ([Source](https://aws.amazon.com/directconnect/faqs/#what-is-a-virtual-private-gateway))
@@ -81,7 +81,7 @@ DX - Public VIF + VPN
 ![Alt text](<images/Screenshot 2023-10-11 at 14.31.10 - Direct_Connect_(DX)_-_Public_VIF_+_VPN_(Encryption.png>)
 DX - Public VIF + VPN
 
-> What is a virtual interface (VIF)?
+> [!NOTE] What is a virtual interface (VIF)?
 >
 > For AWS Direct Connection, a virtual interface (VIF) is necessary to access AWS services, and is either public or private.
 >

@@ -43,13 +43,13 @@ AWS Certificate Manager (ACM) - Certificates
 ![Alt text](<images/Screenshot 2023-10-10 at 15.53.06 - [ASSOCIATESHARED]_ACM__learn.can_—_Firefox_Develop.png>)
 AWS Certificate Manager (ACM) - Regional Service
 
-> What types of services does ACM support?
+> [!NOTE] What types of services does ACM support?
 >
 > ACM supports: CloudFront, ALB.
 >
 > ACM does NOT support: EC2.
 
-> Which region an ACM should be in?
+> [!NOTE] Which region an ACM should be in?
 >
 > The same with AWS resources:
 >
@@ -67,7 +67,7 @@ CloudFront & SSL
 ![Alt text](<images/Screenshot 2023-10-10 at 16.08.21 - [ASSOCIATESHARED]_Cloudfront_and_SSLTLS__learn.can.png>)
 CloudFront & SNI
 
-> What is the problem between old browsers and SSL?
+> [!NOTE] What is the problem between old browsers and SSL?
 >
 > Old browsers don't support SNI.
 
@@ -97,7 +97,7 @@ Origin Access Identity (OAI)
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-2.png)
 OAI - In Action
 
-> ⚠️ AWS has introduced [OAC](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-cloudfront-introduces-origin-access-control-oac/) to replace OAI.
+> [!NOTE] ⚠️ AWS has introduced [OAC](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-cloudfront-introduces-origin-access-control-oac/) to replace OAI.
 >
 > [Docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-restricting-access-to-s3-oai)
 
@@ -136,7 +136,7 @@ Global Accelerator - The Problem
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/GlobalAccelerator-2.png)
 Global Accelerator - Use Anycast to route traffic to AWS global backbone network
 
-> What is anycast?
+> [!NOTE] What is anycast?
 >
 > **Anycast** is a _network addressing and routing_ method in which incoming requests can be routed to a variety of different locations (called “nodes”).
 >
@@ -153,7 +153,7 @@ CloudFront - Without Field-Level Encryption
 ![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontFieldLevelEncryption-2.png)
 CloudFront - With Field-Level Encryption
 
-> What does Field-Level Encryption do?
+> [!NOTE] What does Field-Level Encryption do?
 >
 > Field-level encryption allows you to enable your users to securely upload sensitive information to your web servers.
 >

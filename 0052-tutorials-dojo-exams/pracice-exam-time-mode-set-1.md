@@ -22,7 +22,7 @@ Which is the most suitable option to implement with the LEAST amount of effort?
 - Set up an alarm in CloudWatch to monitor S3 object-level operations recorded on CloudTrail. Set two alarm actions to update the ECS task count to scale-out/scale-in depending on the S3 event.
 ```
 
-> CloudWatch - CloudWatch Logs - CloudTrail - CloudWatch Events - EventBridge?
+> [!NOTE] CloudWatch - CloudWatch Logs - CloudTrail - CloudWatch Events - EventBridge?
 >
 > - CloudWatch: Monitor resources and applications
 >
@@ -47,7 +47,7 @@ Which of the following Amazon storage services should the developer use?
 - Use Amazon FSx For Windows File Server and Amazon S3 for hot and cold storage respectively.
 ```
 
-> EBS is not suitable for archiving datasets -> S3 is better option
+> [!NOTE] EBS is not suitable for archiving datasets -> S3 is better option
 
 ### 9
 
@@ -62,7 +62,7 @@ As a solutions architect, which of the following will address the issue with the
 - Set up a read replica that can operate across different regions.
 ```
 
-> Aurora Auto Scaling vs Aurora Serverless
+> [!NOTE] Aurora Auto Scaling vs Aurora Serverless
 
 - [Aurora Auto Scaling](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Integrating.AutoScaling.html): Dynamically adjusts the number of Aurora Replicas (reader DB instances) provisioned for an Aurora DB cluster.
 
@@ -83,7 +83,7 @@ Which of the following options must be implemented to meet these requirements wi
 - Create an ETL (Extract, Transform, Load) job and a Data Catalog table in AWS Glue. Configure the AWS Glue crawler to run on a schedule to check for new files in the S3 bucket every hour and convert them to Parquet format.
 ```
 
-> AWS Glue
+> [!NOTE] AWS Glue
 
 - Simple, scalable, and serverless data integration
 - Serverless ETL
@@ -102,7 +102,7 @@ How can you protect the backend systems and applications from traffic spikes?
 - Deploy Multi-AZ in API Gateway with Read Replica
 ```
 
-> API Gateway works at any scale, just pay money.
+> [!NOTE] API Gateway works at any scale, just pay money.
 
 Throttle API requests for our budget (and for better throughtput)
 
@@ -124,11 +124,11 @@ Which of the following options should be implemented to meet the company require
 - Provision and replatform the application to Amazon Elastic Container Service (Amazon ECS) with Amazon EC2 worker nodes. Use the Windows Server Amazon Machine Image (AMI) and deploy the .NET application using to the ECS cluster via the Amazon ECS Anywhere service.
 ```
 
-> AWS Database Migration Service (AWS DMS)
+> [!NOTE] AWS Database Migration Service (AWS DMS)
 >
 > Migrate on-premises databases to the AWS Cloud.
 
-> AWS Beanstalk: Run and manage web apps
+> [!NOTE] AWS Beanstalk: Run and manage web apps
 >
 > Reduces the operational overhead by taking care of provisioning the needed resources for your application.
 
@@ -146,9 +146,9 @@ Which of the following options should you use together to set up a cost-effectiv
 - Set up an origin failover by creating an origin group with two origins. Specify one as the primary origin and the other as the second origin which CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
 ```
 
-> Lambda@Edge: run Lambda functions to customize the content that CloudFront delivers
+> [!NOTE] Lambda@Edge: run Lambda functions to customize the content that CloudFront delivers
 
-> CloudFront - Origin failover
+> [!NOTE] CloudFront - Origin failover
 
 ### 19
 
@@ -163,17 +163,17 @@ Which solution will minimize overhead and costs while meeting the required acces
 - Use AWS Control Tower to centrally manage each account's S3 buckets.
 ```
 
-> AWS Lake Formation: Build a secure data lake in days
+> [!NOTE] AWS Lake Formation: Build a secure data lake in days
 
-> AWS Kinesis: Analyze real-time video and data streams
+> [!NOTE] AWS Kinesis: Analyze real-time video and data streams
 >
 > - Kinesis Video Streams: Capture, process, and store video streams for analytics and machine learning.
 > - Kinesis Data Streams: Build custom applications that analyze data streams using popular stream-processing frameworks.
 > - Kinesis Data Firehose: Load data streams into AWS data stores.
 
-> AWS Control Tower: Set up and govern a secure, compliant multi-account environment
+> [!NOTE] AWS Control Tower: Set up and govern a secure, compliant multi-account environment
 
-> AWS Organizations: Central governance and management across AWS accounts
+> [!NOTE] AWS Organizations: Central governance and management across AWS accounts
 
 ### 3
 
@@ -188,7 +188,7 @@ Which of the following is the most suitable solution to properly monitor your da
 - Check the CPU% and MEM% metrics which are readily available in the Amazon RDS console that shows the percentage of the CPU bandwidth and total memory consumed by each database process of your RDS instance.
 ```
 
-> RDS Enhanced Monitoring
+> [!NOTE] RDS Enhanced Monitoring
 
 - CloudWatch gathers metrics about CPU utilization from the **hypervisor** for a DB instance
 - Enhanced Monitoring gathers its metrics from an agent on the **instance** ~ EC2 CloudWatch Agent
@@ -206,7 +206,7 @@ Which EC2 instance will be the first one to be terminated by your Auto Scaling G
 - The instance will be randomly selected by the Auto Scaling group
 ```
 
-> Auto Scaling Group's [Termination Policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html#default-termination-policy)
+> [!NOTE] Auto Scaling Group's [Termination Policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html#default-termination-policy)
 
 - Maximum availability: Kill instance in the AZs with the most instances (and oldest Launch Configuration)
 - Keep most updated instance: Kill instance with oldest LC
@@ -226,7 +226,7 @@ Which is the most suitable configuration for your application as well as your Au
 - Do nothing since by default, Aurora will automatically direct the production traffic to your high-capacity instances and the reporting queries to your low-capacity instances.
 ```
 
-> Aurora Custom Endpoint: provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances
+> [!NOTE] Aurora Custom Endpoint: provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances
 
 ### 14.
 
@@ -241,7 +241,7 @@ What is the most suitable solution to meet the company's requirements?
 - Use Amazon EKS default options and the Amazon Elastic Block Store (Amazon EBS) Container Storage Interface (CSI) driver as an add-on to securely store sensitive data within the Amazon EKS cluster.
 ```
 
-> K8s has its own mechanism for storing secret, which are default store as plain text in etcd key-value store.
+> [!NOTE] K8s has its own mechanism for storing secret, which are default store as plain text in etcd key-value store.
 >
 > We can apply _envelope encryption_ to encrypt these secrets with AWS KMS before stored them in etcd store.
 
@@ -260,7 +260,7 @@ As the Solutions Architect of the company, which of the following should you do 
 - Use a combination of IAM and STS to restrict access to your RDS instance via a temporary token.
 ```
 
-> RDS - [IAM DB Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+> [!NOTE] RDS - [IAM DB Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
 >
 > To connect to DB instance, we'll use an authentication token (generated using the IAM role's credential).
 
@@ -277,7 +277,7 @@ Which S3 encryption technique should the Architect use?
 - Use S3 server-side encryption with customer provided key.
 ```
 
-> KMS-managed CMK: key will be sent to AWS
+> [!NOTE] KMS-managed CMK: key will be sent to AWS
 >
 > Server-side encryption: unencrypted data will be sent to AWS
 >
@@ -291,12 +291,12 @@ A tech company that you are working for has undertaken a Total Cost Of Ownership
 Which of the following will you need to consider so you can set up a solution that incorporates a single sign-on feature from your corporate AD or LDAP directory and also restricts access for each individual user to a designated user folder in an S3 bucket? (Select TWO.)
 ```
 
-> [Identity Federation (with SAML)](https://docs.aws.amazon.com/singlesignon/latest/userguide/samlfederationconcept.html): Pass information about a user between
+> [!NOTE] [Identity Federation (with SAML)](https://docs.aws.amazon.com/singlesignon/latest/userguide/samlfederationconcept.html): Pass information about a user between
 >
 > - a SAML authority (called an identity provider or IdP)
 > - a SAML consumer (called a service provider or SP)
 
-> IAM identity provider (IdP): manage user identities outside of AWS and give these external user identities permissions to use AWS resources in your account.
+> [!NOTE] IAM identity provider (IdP): manage user identities outside of AWS and give these external user identities permissions to use AWS resources in your account.
 >
 > - Setup Identity Provider and Identity Federation.
 > - Setup an AWS Security Token Service to generate temporary tokens (STS supports SAML)
@@ -315,13 +315,13 @@ Which action should a solutions architect consider?
 - View all of the AWS security compliance reports from AWS Security Hub.
 ```
 
-> Amazon Macie: Discover and protect your sensitive data at scale -> S3
+> [!NOTE] Amazon Macie: Discover and protect your sensitive data at scale -> S3
 
-> Amazon Inspector: Automated and continual vulnerability management at scale -> EC2, ECR, Lambda
+> [!NOTE] Amazon Inspector: Automated and continual vulnerability management at scale -> EC2, ECR, Lambda
 
-> Amazon Artifact: On-demand access to AWS compliance reports: SOC, PCI, BAA, NDA -> Reports
+> [!NOTE] Amazon Artifact: On-demand access to AWS compliance reports: SOC, PCI, BAA, NDA -> Reports
 
-> Amazon Security Hub: Unified security and compliance center -> Dashboard / Overview
+> [!NOTE] Amazon Security Hub: Unified security and compliance center -> Dashboard / Overview
 
 ### 15.
 
@@ -336,13 +336,13 @@ As a Solutions Architect, what solution would you recommend?
 - Use Amazon GuardDuty and set up a managed rule to block request patterns associated with the exploitation of SQL databases, like SQL injection attacks. Associate it with the Application Load Balancer and utilize the AWS Security Hub service to reuse the managed rules across all the AWS accounts
 ```
 
-> AWS Network Firewall: a stateful, managed, network firewall and intrusion detection and prevention service for your virtual private cloud (VPC).
+> [!NOTE] AWS Network Firewall: a stateful, managed, network firewall and intrusion detection and prevention service for your virtual private cloud (VPC).
 
-> AWS Firewall Manager: Simplifies your AWS WAF administration and maintenance tasks across multiple accounts and resources
+> [!NOTE] AWS Firewall Manager: Simplifies your AWS WAF administration and maintenance tasks across multiple accounts and resources
 
-> AWS WAF: Filter malicious web traffic
+> [!NOTE] AWS WAF: Filter malicious web traffic
 
-> Amazon Guard Duty: Managed threat detection service; identify unexpected and potentially unauthorized or malicious activity in your AWS environment.
+> [!NOTE] Amazon Guard Duty: Managed threat detection service; identify unexpected and potentially unauthorized or malicious activity in your AWS environment.
 
 ### 17
 
@@ -357,7 +357,7 @@ Which of the following options will meet this requirement?
 - Use AWS Key Management Service to create a CMK in a custom key store and store the non-extractable key material in AWS CloudHSM.
 ```
 
-> KMS - [Custom Key Store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
+> [!NOTE] KMS - [Custom Key Store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
 >
 > -> We own and manage
 
@@ -374,7 +374,7 @@ Which of the following is the most secure way of storing the data in Amazon S3?
 - Enable S3 Object Lock in compliance mode with a legal hold of one year.
 ```
 
-> S3 Object Lock
+> [!NOTE] S3 Object Lock
 
 - Retention:
 
@@ -400,8 +400,8 @@ Which of the following should the Architect implement to satisfy this requiremen
 - Set up and configure Amazon Fraud Detector to send out alert notifications whenever a security violation is detected on their Amazon S3 data.
 ```
 
-> Amazon Kendra: Reinvent enterprise search with ML
+> [!NOTE] Amazon Kendra: Reinvent enterprise search with ML
 
-> Amazon Polly: Turn text into life-like speech
+> [!NOTE] Amazon Polly: Turn text into life-like speech
 
-> Amazon Fraud Detector: Detect more online fraud faster
+> [!NOTE] Amazon Fraud Detector: Detect more online fraud faster

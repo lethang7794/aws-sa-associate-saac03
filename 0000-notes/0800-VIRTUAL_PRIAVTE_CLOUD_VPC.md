@@ -46,11 +46,11 @@ Custom VPC: DNS in the VPC
 ![Alt text](<images/Screenshot 2023-10-04 at 11.01.07 - [ASSOCIATESHARED]_VPC_Subnets__learn.cantrill.io_—.png>)
 VPC Subnets
 
-> How many subnets an AZ can have?
+> [!NOTE] How many subnets an AZ can have?
 >
 > An AZ can have many subnets.
 
-> How many AZs a subnet can have?
+> [!NOTE] How many AZs a subnet can have?
 >
 > A subnet can only be in an AZ.
 
@@ -89,11 +89,11 @@ VPC Router
 ![Alt text](<images/Screenshot 2023-10-04 at 12.25.43 - [ASSOCIATESHARED]_VPC_Routing,_Internet_Gateway_&_.png>)
 Route Tables
 
-> How many subnets a Route Table can be associated with?
+> [!NOTE] How many subnets a Route Table can be associated with?
 >
 > A Route Table can be associated with many subnets.
 
-> How many Route Tables a subnet can be associated with?
+> [!NOTE] How many Route Tables a subnet can be associated with?
 >
 > A subnet can be attached with only ONE Route Table.
 
@@ -130,7 +130,7 @@ Directionality (Inbound or Outbound) depends on perspective (Client/Server)
 ![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-4.png>)
 With Stateless Firewall, a connection needs 2 rules (1 IN, 1 OUT) to go through
 
-> With Stateless Firewall, ephemeral port is not the well known port (e.g. 443, 80)
+> [!NOTE] With Stateless Firewall, ephemeral port is not the well known port (e.g. 443, 80)
 
 ![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-5.png>)
 Stateful firewall is intelligent enough to identify the REQUEST and RESPONSE components of a connection as being related
@@ -142,18 +142,18 @@ Stateful firewall is intelligent enough to identify the REQUEST and RESPONSE com
 ![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-1.png>)
 NACLs filter traffic across the subnet's boundary
 
-> What is NACL?
+> [!NOTE] What is NACL?
 >
 > A set of rules grouped into:
 >
 > - INBOUND rules 👉 match traffic ENTERING the subnet
 > - OUTBOUND rules 👉 match traffic LEAVING the subnet
 
-> What does NACL do?
+> [!NOTE] What does NACL do?
 >
 > NACLs filter traffic across the subnet's boundary.
 
-> How are NACL's rules processed?
+> [!NOTE] How are NACL's rules processed?
 >
 > NACL's rules are process in order:
 >
@@ -174,7 +174,7 @@ Rule-pairs (`app port` & `ephemeral port`) are needed on each NACL for each comm
 ![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-4.png>)
 Default NACL - The NACL created with a VPC
 
-> What does Default NACL do?
+> [!NOTE] What does Default NACL do?
 >
 > Default NACL does NOTHING. It has an ALLOW ALL rule.
 
@@ -184,15 +184,15 @@ Custom NACL DENIED ALL traffic after created
 ![Alt text](<images/Screenshot 2023-10-04 at 14.47.37 - [ASSOCIATESHARED]_Network_Access_Control_Lists_(NA.png>)
 NACL - Summary
 
-> Which AWS resources can be use with NACLs?
+> [!NOTE] Which AWS resources can be use with NACLs?
 >
 > NACLS can only be used with subnets.
 
-> How many subnets a NACL can be associated with?
+> [!NOTE] How many subnets a NACL can be associated with?
 >
 > A NACL can be associated with MANY subnets.
 
-> How many NACLs a subnet can have?
+> [!NOTE] How many NACLs a subnet can have?
 >
 > A subnet can only have ONE (1) NACL.
 
@@ -201,19 +201,19 @@ NACL - Summary
 ![Alt text](<images/Screenshot 2023-10-04 at 15.31.50 - [ASSOCIATESHARED]_Security_Groups_(SG)__learn.cant.png>)
 Security Group (SG) is STATEFUL firewall
 
-> Which type of rules a SG can have?
+> [!NOTE] Which type of rules a SG can have?
 >
 > SG can only have ALLOW rule.
 >
 > 👉 SG can't block specific bad actors 😈
 
-> Can SG deny a traffic?
+> [!NOTE] Can SG deny a traffic?
 >
 > No. SG can't deny traffic. It can't block bad actors.
 >
 > Because SG only support ALLOW rules.
 
-> Which kind of sources does SG rules support?
+> [!NOTE] Which kind of sources does SG rules support?
 >
 > SG rules supports:
 >
@@ -223,7 +223,7 @@ Security Group (SG) is STATEFUL firewall
 >   - Itself 🤯
 >   - Prefix Lists 📃
 
-> To which, the SGs are attached to?
+> [!NOTE] To which, the SGs are attached to?
 >
 > SGs are attached to ENI, not the instances.
 
@@ -243,9 +243,9 @@ With SG Self reference, the instances can scale easily
 
 ![Alt text](<images/Screenshot 2023-10-04 at 16.14.22 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
 
-> AWS Internet Gateway (AWS IGW) is a NAT (static NAT)
+> [!NOTE] AWS Internet Gateway (AWS IGW) is a NAT (static NAT)
 
-> What can NAT can be used for?
+> [!NOTE] What can NAT can be used for?
 >
 > - IP masquerading 👺: hiding CIDR blocks behind one IP.
 > - Gives Private CIDR block outgoing internet access.
@@ -265,11 +265,11 @@ Routing a package from an instance in a private subnet ...
 ![Alt text](<images/Screenshot 2023-10-04 at 16.25.14 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
 NAT Gateways run from a public subnet, uses Elastic IPs
 
-> What level of resilient NAT Gateway is?
+> [!NOTE] What level of resilient NAT Gateway is?
 >
 > NAT Gateway is an AZ resilient service.
 
-> How to have the region resilience for NAT Gateways?
+> [!NOTE] How to have the region resilience for NAT Gateways?
 >
 > NATGW in each AZ, and Route Tables in each AZ targets that NATGW.
 
@@ -283,12 +283,12 @@ VPC Design - NATGW Full Resilience
 ![Alt text](<images/Screenshot 2023-10-04 at 16.37.34 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
 NAT Instance vs NAT Gateway
 
-> What is NAT Instance?
+> [!NOTE] What is NAT Instance?
 
 ![Alt text](<images/Screenshot 2023-10-04 at 16.42.38 - [ASSOCIATESHARED]_Network_Address_Translation_(NAT.png>)
 NAT Gateway and IPv6
 
-> Which kind of IP version can NAT Gateway work with?
+> [!NOTE] Which kind of IP version can NAT Gateway work with?
 >
 > NAT Gateway only works with IPv4, it doesn't work with IPv6.
 >

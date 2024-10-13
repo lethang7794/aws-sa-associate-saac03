@@ -5,11 +5,11 @@
 ![Alt text](<images/Screenshot 2023-10-08 at 16.56.17 - [ASSOCIATESHARED]_EFS_Architecture__learn.cantrill.png>)
 EFS - Overview
 
-> Which OS does AWS EFS support?
+> [!NOTE] Which OS does AWS EFS support?
 >
 > AWS EFS is an implement of NFSv4, which can only be mounted in Linux.
 
-> How to access an AWS EFS?
+> [!NOTE] How to access an AWS EFS?
 >
 > The EFS can be accessed:
 >
@@ -22,7 +22,7 @@ EFS - Architecture
 ![Alt text](<images/Screenshot 2023-10-08 at 16.59.39 - [ASSOCIATESHARED]_EFS_Architecture__learn.cantrill.png>)
 EFS - Performance
 
-> Which configuration impact an [EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)?
+> [!NOTE] Which configuration impact an [EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)?
 >
 > - Storage Class:
 >

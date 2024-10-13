@@ -24,7 +24,7 @@ Which combination of actions should the Architect implement to satisfy the requi
 - Configure Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS).
 ```
 
-> S3 - Server-Side Encryption
+> [!NOTE] S3 - Server-Side Encryption
 >
 > - SSE-S3
 > - SSE-KMS: support audit
@@ -53,7 +53,7 @@ Where can you safely import the SSL/TLS certificate of your application? (Select
 - CloudFront
 ```
 
-> Which services support storing SSL certificate?
+> [!NOTE] Which services support storing SSL certificate?
 >
 > - AWS Certificate Manager (ACM)
 > - IAM SSL certificate storage (Used for region that not support ACM)
@@ -73,13 +73,13 @@ Which of the following options should the Solutions Architect implement for this
 - Utilize AWS DataSync to migrate the application workloads to AWS. Deploy the AWS DataSync VM on the on-premises data center. Once replication is completed, launch Amazon EC2 instances based on the created AMIs.
 ```
 
-> AWS Application Migration Service: Automate application migration and modernization
+> [!NOTE] AWS Application Migration Service: Automate application migration and modernization
 
-> AWS Application Discovery Service: Discover on-premises applications to streamline migration
+> [!NOTE] AWS Application Discovery Service: Discover on-premises applications to streamline migration
 
-> AWS Database Migration Service: Migrate databases with minimal downtime
+> [!NOTE] AWS Database Migration Service: Migrate databases with minimal downtime
 
-> AWS DataSync: Simple, fast, online data transfer
+> [!NOTE] AWS DataSync: Simple, fast, online data transfer
 
 ### 18
 
@@ -94,7 +94,7 @@ Which of the following is the MOST suitable solution that you should implement t
 - Attach a Private Virtual Interface (VIF) on each Amazon EC2 instance to accelerate High Performance Computing (HPC).
 ```
 
-> ENI - ENA - EFA
+> [!NOTE] ENI - ENA - EFA
 >
 > - Elastic Network Interface (ENI): logical networking component in a VPC that represents a **virtual network card**
 >
@@ -129,7 +129,7 @@ What can you do to prevent this from happening again in the future? (Select TWO.
 - Use an Amazon SQS FIFO Queue instead.
 ```
 
-> Ensure a queue's messages are NOT process twice:
+> [!NOTE] Ensure a queue's messages are NOT process twice:
 >
 > - SQS FIFO Queue
 > - Amazon Simple Workflow Service (Amazon SWF)
@@ -150,7 +150,7 @@ Which of the following deployments provide 100% fault tolerance if any single AZ
 - eu-east-2a with three EC2 instances, eu-east-2b with three EC2 instances, and eu-east-2c with three EC2 instances
 ```
 
-> Fault Tolerance: ability of a system to remain in operation even if some of the components used to build the system fail
+> [!NOTE] Fault Tolerance: ability of a system to remain in operation even if some of the components used to build the system fail
 
 ### 5
 
@@ -165,7 +165,7 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 - First, look at the existing Flow logs for keywords related to the application error to create a custom metric. Then, create a CloudWatch alarm for that custom metric which calls a Lambda function that invokes an action to restart the EC2 instance.
 ```
 
-> CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
+> [!NOTE] CloudWatch Alarm can stop, terminate, reboot, recover an EC2 instance
 
 ### 8
 
@@ -188,12 +188,12 @@ Which of the following options fulfills this requirement?
 - Configure RAID 0 in multiple instance store volumes.
 ```
 
-> RAID 0:
+> [!NOTE] RAID 0:
 >
 > - I/O is distributed across the volumes in a stripe
 > - higher level of performance for a file system than you can provision on a single Amazon EBS volume
 
-> RAID 1, 2, 3, 4, 5, 6: NOT recommended for EBS
+> [!NOTE] RAID 1, 2, 3, 4, 5, 6: NOT recommended for EBS
 
 ### 12
 
@@ -203,7 +203,7 @@ A company deployed an online enrollment system database on a prestigious univers
 What are the enhanced monitoring metrics that Amazon CloudWatch gathers from Amazon RDS DB instances which provide more accurate information? (Select TWO.)
 ```
 
-> Monitor EC2:
+> [!NOTE] Monitor EC2:
 >
 > - CloudWatch default metric
 >
@@ -216,7 +216,7 @@ What are the enhanced monitoring metrics that Amazon CloudWatch gathers from Ama
 >   - Memory
 >   - Sub-resource metrics such as per-CPU core
 
-> Monitor RDS:
+> [!NOTE] Monitor RDS:
 >
 > - Default metric
 >
@@ -242,7 +242,7 @@ Which of the following is the best approach to meet this requirement?
 - Enable Cross-Region Snapshots Copy in your Amazon Redshift Cluster.
 ```
 
-> Amazon Redshift Backup:
+> [!NOTE] Amazon Redshift Backup:
 >
 > - Manually Snapshots
 > - Automatically increment backup:
@@ -264,7 +264,7 @@ Which solution meets the requirements with the least amount of effort?
 - Create a Scheduled Amazon EventBridge (Amazon CloudWatch Events) Rule that runs a scaling job on a Lambda function every midnight.
 ```
 
-> Auto Scaling Group (ASG) Policies:
+> [!NOTE] Auto Scaling Group (ASG) Policies:
 >
 > - Manually
 > - Scheduled
@@ -287,7 +287,7 @@ Which of the following options is the recommended action to meet the above requi
 - Set up an Amazon EventBridge (Amazon CloudWatch Events) rule to check for AWS Service Health Dashboard events that are related to Amazon EC2 instances. To send notifications, set an Amazon SNS topic as a target for the rule.
 ```
 
-> Notify for EC2 instance:
+> [!NOTE] Notify for EC2 instance:
 >
 > - All EC2 instances:
 >
@@ -314,7 +314,7 @@ Which of the following changes should be made to the security group configuratio
 - For the MS SQL rule, change the Source to the Network ACL ID attached to the application tier.
 ```
 
-> Security Group Referencing
+> [!NOTE] Security Group Referencing
 >
 > When you specify a security group as the source or destination for a rule (of a security group), the rule affects all instances that are associated with the security groups.
 
@@ -333,9 +333,9 @@ Which of the following is the most suitable way to implement this requirement?
 - Create a new Network ACL inbound rule in the subnet of the EC2 instance with the following details: Protocol: UDP Port Range: 20 - 21 Source: 175.45.116.100/0 Allow/Deny: ALLOW
 ```
 
-> Default NACL allows all inbound and outbound traffic
+> [!NOTE] Default NACL allows all inbound and outbound traffic
 
-> CIDR `/0`: The entire network -> is not used in SG and NACL.
+> [!NOTE] CIDR `/0`: The entire network -> is not used in SG and NACL.
 >
 > CIDR `/32`: One IP address.
 
@@ -352,11 +352,11 @@ Which of the following options is the recommended solution to meet the company's
 - Configure AWS Resource Access Manager (AWS RAM) to track and control the licenses used by AWS resources. Configure AWS RAM to provide available licenses for Amazon EC2 instances. Set up an Amazon SNS to send notifications and alerts once all licenses are used.
 ```
 
-> AWS License Manager: Track and manage software licenses across multiple AWS Regions
+> [!NOTE] AWS License Manager: Track and manage software licenses across multiple AWS Regions
 
-> AWS Systems Manager's Fleet Manager: UI for managing nodes/EC2 instance.
+> [!NOTE] AWS Systems Manager's Fleet Manager: UI for managing nodes/EC2 instance.
 
-> AWS Resource Access Manager (AWS RAM): Simple, secure service to share AWS resources
+> [!NOTE] AWS Resource Access Manager (AWS RAM): Simple, secure service to share AWS resources
 
 ### 8
 
@@ -371,7 +371,7 @@ Which of the following would be the next step to achieve the company's objective
 - Request a public certificate in the us-east-2 region for api.tutorialsdojo.com using AWS Certificate Manager (ACM). Create a regional API Gateway domain name and associate it with api.tutorialsdojo.com and the ACM certificate. In Route 53, create an alias record for api.tutorialsdojo.com that points to the API Gateway domain name.
 ```
 
-> When using regional API Gateway, the certificate for the domain name needs to be in the same region.
+> [!NOTE] When using regional API Gateway, the certificate for the domain name needs to be in the same region.
 
 ### 12
 
@@ -385,7 +385,7 @@ A media company needs to configure an Amazon S3 bucket to serve static assets fo
 - Do nothing. Amazon S3 objects are already public by default.
 ```
 
-> By default, all Amazon S3 resources such as buckets, objects, and related subresources are private.
+> [!NOTE] By default, all Amazon S3 resources such as buckets, objects, and related subresources are private.
 >
 > To public all objects in a bucket:
 >
@@ -406,7 +406,7 @@ Which solution meets this requirement MOST cost-effectively?
 - Enable S3 Object Lock in governance mode to lower data transfer costs and set a Legal Hold for each object to disable anonymous access
 ```
 
-> S3 - Requester Pay
+> [!NOTE] S3 - Requester Pay
 >
 > - In general, bucket owners pay for all Amazon S3 storage and data transfer costs that are associated with their bucket.
 > - With Requester Pays buckets,

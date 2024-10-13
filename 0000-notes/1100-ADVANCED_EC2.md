@@ -5,19 +5,19 @@
 ![Alt text](<images/Screenshot 2023-10-06 at 11.16.06 - [ASSOCIATESHARED]_Bootstrapping_EC2_using_User_Dat.png>)
 EC2 User Data
 
-> What is EC2 bootstrapping?
+> [!NOTE] What is EC2 bootstrapping?
 >
 > The process of configuring an EC2 instance to perform automated install & configuration steps 'post launch' before an instance is brought into service.
 
-> How to bootstrap an EC2 instance?
+> [!NOTE] How to bootstrap an EC2 instance?
 
-> What is EC2 user data?
+> [!NOTE] What is EC2 user data?
 
-> When does EC2 execute user data?
+> [!NOTE] When does EC2 execute user data?
 
-> What exactly execute EC2 user data?
+> [!NOTE] What exactly execute EC2 user data?
 
-> How many times does the EC2 user data be executed?
+> [!NOTE] How many times does the EC2 user data be executed?
 
 ![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2Bootstrapping-1.png)
 EC2 Bootstrapping
@@ -25,7 +25,7 @@ EC2 Bootstrapping
 ![Alt text](<images/Screenshot 2023-10-06 at 11.26.46 - [ASSOCIATESHARED]_Bootstrapping_EC2_using_User_Dat.png>)
 User Data - Key Points
 
-> What are drawbacks of EC2 user data?
+> [!NOTE] What are drawbacks of EC2 user data?
 >
 > - It's opaque to EC2.
 > - NOT secure.
@@ -43,7 +43,7 @@ Boot-Time-To-Service-Time
 ![Alt text](<images/Screenshot 2023-10-06 at 12.10.41 - Enhanced_Bootstrapping_with_CFN-INIT__lea_—_Firefo.png>)
 AWS::CloudFormation::Init
 
-> What is `cfn-init`?
+> [!NOTE] What is `cfn-init`?
 >
 > A powerful desired-state-like configuration engine which is part of the CFN suite of products.
 
@@ -53,11 +53,11 @@ AWS::CloudFormation::Init
 ![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/CFN-INIT-2.png)
 CreatePolicy & Signals
 
-> What does `CloudFormation`'s `CreatePolicy` do?
+> [!NOTE] What does `CloudFormation`'s `CreatePolicy` do?
 >
 > Creation policies create a 'WAIT STATE' on resources .. not allowing the resource to move to `CREATE_COMPLETE` until signalled using the `cfn-signal` tool.
 
-> What does `cfn-signal` do?
+> [!NOTE] What does `cfn-signal` do?
 >
 > `cfn-signal` tells CloudFormation that the stack's resource is at the desired state (it's created).
 
@@ -71,7 +71,7 @@ EC2 Instance Role & Instance Profile
 ![Alt text](<images/Screenshot 2023-10-06 at 13.16.52 - [ASSOCIATESHARED]_EC2_Instance_Roles_&_Profile__le.png>)
 EC2 Instance Profile's credential
 
-> Why use Instance Role/Profile?
+> [!NOTE] Why use Instance Role/Profile?
 >
 > To grant permissions to applications running on Amazon EC2 instances via short-term credentials.
 >
@@ -84,7 +84,7 @@ EC2 Instance Profile's credential
 ![Alt text](<images/Screenshot 2023-10-06 at 14.18.38 - [ASSOCIATESHARED]_SSM_Parameter_Store__lea_—_Firef.png>)
 SSM Paremeter Store - Overview
 
-> What is SSM Parameter Store?
+> [!NOTE] What is SSM Parameter Store?
 >
 > [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html), a capability of [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html), provides secure, hierarchical storage for configuration data management and secrets management.
 
@@ -146,19 +146,19 @@ EC2 Dedicated Hosts - Limitations & Features
 
 ![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2EnhancedNetworking.png)
 
-> What is AWS Enhanced networking?
+> [!NOTE] What is AWS Enhanced networking?
 >
 > The AWS implementation of SR-IOV.
 
-> What is SR-IOV?
+> [!NOTE] What is SR-IOV?
 >
 > A standard allowing a physical host network card to present many logical devices which can be directly utilized by instances.
 
-> What is the benefit of SR-IOV?
+> [!NOTE] What is the benefit of SR-IOV?
 >
 > Lower host CPU usage, better throughput, lower and consistent latency.
 
-> What is EBS Optimized?
+> [!NOTE] What is EBS Optimized?
 >
 > A dedicated bandwidth for storage networking - separate from data networking.
 

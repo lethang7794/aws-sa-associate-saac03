@@ -5,9 +5,9 @@
 ![Alt text](<images/Screenshot 2023-10-07 at 13.51.50 - [ASSOCIATESHARED]_Database_Refresher_&_MODELS_-_PA.png>)
 SQL vs NoSQL
 
-> What is SQL?
+> [!NOTE] What is SQL?
 
-> What is NoSQL?
+> [!NOTE] What is NoSQL?
 
 ### Relational (SQL) Database
 
@@ -36,7 +36,7 @@ _Graph Database_, e.g. neo4j, Amazon Neptune
 ![Alt text](<images/Screenshot 2023-10-07 at 14.37.08 - ACID_vs_BASE__lea_—_Firefox_Developer_Edition.png>)
 CAP Theorem
 
-> What is CAP Theorem?
+> [!NOTE] What is CAP Theorem?
 >
 > The CAP theorem states that any networked shared-data system can have at most two of three desirable properties:
 >
@@ -104,7 +104,7 @@ RDS - Multi AZ - Cluster - Architecture
 ![Alt text](<images/Screenshot 2023-10-07 at 16.50.19 - [ASSOCIATESHARED]_Relational_Database_Service_(RDS.png>)
 RDS - Multi AZ - Cluster - Summary
 
-> Compare RDS Multi AZ Instance and Multi AZ Cluster.
+> [!NOTE] Compare RDS Multi AZ Instance and Multi AZ Cluster.
 >
 > - Multi AZ **Instance**:
 >
@@ -125,18 +125,18 @@ RDS - Multi AZ - Cluster - Summary
 ![Alt text](<images/Screenshot 2023-10-07 at 17.06.01 - [ASSOCIATESHARED]_RDS_Automatic_Backup,_RDS_Snapsh.png>)
 RDS Backups - General
 
-> What kind of backups does RDS support?
+> [!NOTE] What kind of backups does RDS support?
 >
 > RDS support 2 kind of backup:
 >
 > - Manually Snapshots
 > - Automated Backups
 
-> What is RDS Manually Snapshot?
+> [!NOTE] What is RDS Manually Snapshot?
 >
 > A backup performed manually and live past the termination of an RDS instance
 
-> What is RDS Automated Backups?
+> [!NOTE] What is RDS Automated Backups?
 >
 > Backups performed automatically by RDS:
 >
@@ -151,11 +151,11 @@ RDS Backups - Cross-Region
 ![Alt text](<images/Screenshot 2023-10-07 at 17.07.39 - [ASSOCIATESHARED]_RDS_Automatic_Backup,_RDS_Snapsh.png>)
 RDS Restores
 
-> Where is a RDS snapshot restored to?
+> [!NOTE] Where is a RDS snapshot restored to?
 >
 > RDS Snapshot is restored to a new RDS instance, with new address.
 
-> How long is an RDS Restore?
+> [!NOTE] How long is an RDS Restore?
 >
 > RDS Restores aren't fast. Be careful with RTO.
 
@@ -170,14 +170,14 @@ RDS Read-Replicas - Performance Improvement
 ![Alt text](<images/Screenshot 2023-10-07 at 18.18.41 - [ASSOCIATESHARED]_RDS_Read-Replicas__le_—_Firefox_.png>)
 RDS Read-Replicas - RPO/RTO Improvement
 
-> What is the impact of RDS Read-Replicas to RPO/RTO?
+> [!NOTE] What is the impact of RDS Read-Replicas to RPO/RTO?
 >
 > Read-Replicas offer:
 >
 > - near 0 RPO.
 > - very low RTO 👈 RRs can be promoted quickly.
 
-> Can Read-Replicas solve data corruption?
+> [!NOTE] Can Read-Replicas solve data corruption?
 >
 > No. Data corruption will be replicated to RRs.
 
@@ -247,7 +247,7 @@ Aurora Serverless - Use Cases
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/AuroraGlobalDB.png)
 Aurora Global Database - Architecture
 
-> How long is Aurora Global Database's replication between regions?
+> [!NOTE] How long is Aurora Global Database's replication between regions?
 >
 > Less than or equal 1s
 
@@ -273,7 +273,7 @@ Aurora Multi-Master - Failover
 ![Alt text](<images/Screenshot 2023-10-08 at 15.57.41 - [ASSOCIATESHARED]_Relational_Database_Service_(RDS.png>)
 RDS Proxy - Why?
 
-> Why use RDS Proxy?
+> [!NOTE] Why use RDS Proxy?
 >
 > - Opening/Closing DB Connections consume resources.
 >
@@ -286,7 +286,7 @@ RDS Proxy - Why?
 >
 > 👉 RDS Proxy solves these problems.
 
-> How RDS Proxy works?
+> [!NOTE] How RDS Proxy works?
 >
 > ![Alt text](<images/product-page-diagram_RDS Proxy_How-it-works.png>)
 >
@@ -311,7 +311,7 @@ RDS Proxy - Key Facts
 ![Alt text](<images/Screenshot 2023-10-08 at 16.13.02 - [ASSOCIATESHARED]_Database_Migration_Service_(DMS).png>)
 Database Migration Service (DMS) - Summary
 
-> Can DMS be used for on-premises DB?
+> [!NOTE] Can DMS be used for on-premises DB?
 >
 > Yes and No.
 >
@@ -321,11 +321,11 @@ Database Migration Service (DMS) - Summary
 ![Alt text](../1300-RELATIONAL_DATABASE_SERVICE%2528RDS%2529/00_LEARNINGAIDS/Database%2520Migration%2520Service.png)
 DMS - Architecture
 
-> Where is DMS run?
+> [!NOTE] Where is DMS run?
 >
 > On a `replication instance` (an EC2 instance).
 
-> Which part of DMS really run the migration?
+> [!NOTE] Which part of DMS really run the migration?
 >
 > DMS Task:
 >
@@ -336,7 +336,7 @@ DMS - Architecture
 ![Alt text](<images/Screenshot 2023-10-08 at 16.17.35 - [ASSOCIATESHARED]_Database_Migration_Service_(DMS).png>)
 Schema Conversion Tool (SCT)
 
-> AWS <u>Schema Conversion</u> Tool (SCT) vs AWS DMS <u>Schema Conversion</u>?
+> [!NOTE] AWS <u>Schema Conversion</u> Tool (SCT) vs AWS DMS <u>Schema Conversion</u>?
 >
 > - [AWS <u>Schema Conversion</u> Tool (SCT)](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html):
 >

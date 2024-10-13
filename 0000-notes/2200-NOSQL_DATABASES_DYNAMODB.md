@@ -5,18 +5,18 @@
 ![Alt text](<images/Screenshot from 2023-10-15 15-11-56.png>)
 DynamoDB Concepts
 
-> What is DynamoDB?
+> [!NOTE] What is DynamoDB?
 
-> What is the selling point of DynamoDB?
+> [!NOTE] What is the selling point of DynamoDB?
 
 ![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-1.png)
 DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes) -  [Primary Key (PK)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey): Partition Key & Sort Key (PK & SK)
 
-> What is a *primary key*?
+> [!NOTE] What is a *primary key*?
 >
 > [*Primary key*](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey) uniquely identifies each item in the table, so that no two items can have the same key.
 
-> What is a *partition key*?
+> [!NOTE] What is a *partition key*?
 >
 > *Partition key* is the required part of *primary key*.
 >
@@ -24,14 +24,14 @@ DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamo
 >
 > - The term ***hash attribute*** derives from the use of an internal hash function in DynamoDB that evenly distributes data items across partitions, based on their *partition key* values.
 
-> What is a *sort key*?
+> [!NOTE] What is a *sort key*?
 >
 > *Sort key* is an optional part of *primary key*.
 >
 > - The *sort key* of an *item* is also known as its ***range attribute***.
 > - The term ***range attribute*** derives from the way DynamoDB stores items with the same partition key physically close together, in **sorted order** by the *sort key* value.
 
-> What is capacity of DynamoDB?
+> [!NOTE] What is capacity of DynamoDB?
 
 ![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-2.png)
 DynamoDB On-Demand Backups
@@ -42,7 +42,7 @@ DynamoDB PITR
 ![Alt text](<images/Screenshot from 2023-10-15 15-19-45.png>)
 DynamoDB Considerations
 
-> How is DynamoDB billed?
+> [!NOTE] How is DynamoDB billed?
 
 ## DynamoDB - Operations, Consistency and Performance - PART1 (13:06)
 
@@ -71,7 +71,7 @@ DynamoDB - RCU Calculation
 ![Alt text](<images/Screenshot from 2023-10-15 18-05-50.png>)
 DynamoDB [Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html): Alternative views on table data
 
-> In DynamoDB, what is attribute projection?
+> [!NOTE] In DynamoDB, what is attribute projection?
 >
 > When you create an index:
 >
@@ -97,7 +97,7 @@ DynamoDB GSI: Always eventually consistent
 ![Alt text](<images/Screenshot from 2023-10-15 18-20-14.png>)
 LSI & GSI Considerations
 
-> When to use GSI & LCI?
+> [!NOTE] When to use GSI & LCI?
 >
 > Amazon DynamoDB provides fast access to items in a table by specifying **primary key** values.
 >
@@ -129,7 +129,7 @@ DynamoDB - Global Tables: Overview
 ![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Globaltables-1.png)
 DynamoDB - Global Tables: Architecture
 
-> What are exactly a DynamoDB *global table*?
+> [!NOTE] What are exactly a DynamoDB *global table*?
 >
 > A *global table* is a **collection of one or more *replica tables***, all owned by a single AWS account.
 >
@@ -137,7 +137,7 @@ DynamoDB - Global Tables: Architecture
 >
 > Source: [Global Tables - How it works?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html)
 
-> Which type are global table's replica tables?
+> [!NOTE] Which type are global table's replica tables?
 >
 > All replica tables are master/active, supports both *read* and *write* operations.
 >

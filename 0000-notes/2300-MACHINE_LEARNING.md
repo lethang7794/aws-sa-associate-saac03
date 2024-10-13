@@ -5,7 +5,7 @@
 ![Alt text](<images/Screenshot from 2023-10-16 12-31-42.png>)
 Amazon Comprehend: Discover insights and relationships in text
 
-> [What is Amazon Comprehend?](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html)
+> [!NOTE] [What is Amazon Comprehend?](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html)
 >
 > NLP for a document.
 
@@ -14,7 +14,7 @@ Amazon Comprehend: Discover insights and relationships in text
 ![Alt text](<images/Screenshot from 2023-10-16 13-52-55.png>)
 Amazon Kendra: Reinvent enterprise search with ML
 
-> [What is Kendra?](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html)
+> [!NOTE] [What is Kendra?](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html)
 >
 > NLP for a lot of documents.
 
@@ -26,7 +26,7 @@ Amazon Kendra Concepts: Index - Documents - Data source ([How Amazon Kendra work
 ![Alt text](<images/Screenshot from 2023-10-16 14-05-34.png>)
 Amazon Lex: Build voice and text chatbots
 
-> [What is Amazon Lex?](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html)
+> [!NOTE] [What is Amazon Lex?](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html)
 >
 > Bot with ML, e.g. Alexa
 
@@ -38,21 +38,21 @@ Amazon Lex Concepts: Bot - Language - Intent - Slot ([How Lex Works?](https://do
 ![Alt text](<images/Screenshot from 2023-10-16 14-24-20.png>)
 Amazon Polly: Turn text into *life-like* speech
 
-> [What Is Amazon Polly?](https://docs.aws.amazon.com/polly/latest/dg/what-is.html)
+> [!NOTE] [What Is Amazon Polly?](https://docs.aws.amazon.com/polly/latest/dg/what-is.html)
 >
 > TTS with ML.
 
 ![Alt text](<images/Screenshot from 2023-10-16 14-32-28.png>)
 Amazon Polly: Speech Synthesis Markup Language ([SSML](https://docs.aws.amazon.com/polly/latest/dg/ssml.html))
 
-> [Polly - Demo](https://ai-service-demos.go-aws.com/polly)
+> [!NOTE] [Polly - Demo](https://ai-service-demos.go-aws.com/polly)
 
 ## [Amazon Rekognition](https://aws.amazon.com/rekognition/) (4:18)
 
 ![Alt text](<images/Screenshot from 2023-10-16 14-41-58.png>)
 Amazon Rekognition: Analyze image and video
 
-> [What is Rekognition?](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)
+> [!NOTE] [What is Rekognition?](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)
 >
 > Image & video processing with ML
 
@@ -64,7 +64,7 @@ Amazon Rekognition: How is work?
 ![Alt text](<images/Screenshot from 2023-10-16 14-54-38.png>)
 Amazon Textract: Extract text and data from documents
 
-> [What is Amazon Textract?](https://docs.aws.amazon.com/textract/latest/dg/what-is.html)
+> [!NOTE] [What is Amazon Textract?](https://docs.aws.amazon.com/textract/latest/dg/what-is.html)
 >
 > OCR with ML and Analysis
 
@@ -76,7 +76,7 @@ Amazon Textract: Detect and analysis
 ![Alt text](<images/Screenshot from 2023-10-16 15-24-52.png>)
 Amazon Transcribe: Automatic speech recognition
 
-> [What is Amazon Transcribe?](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html)
+> [!NOTE] [What is Amazon Transcribe?](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html)
 >
 > Speech Recognition with ML.
 
@@ -88,7 +88,7 @@ Amazon Transcribe - Use Cases
 ![Alt text](<images/Screenshot from 2023-10-16 15-38-15.png>)
 Amazon Translate: Natural and fluent language translation
 
-> [What is Amazon Translate?](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)
+> [!NOTE] [What is Amazon Translate?](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)
 >
 > Text translate with ML.
 
@@ -100,7 +100,7 @@ Amazon Translate - Use Cases
 ![Alt text](<images/Screenshot from 2023-10-16 15-50-24.png>)
 Amazon Forecast: Increase forecast accuracy using machine learning
 
-> [What is Amazon Forecast?](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html)
+> [!NOTE] [What is Amazon Forecast?](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html)
 >
 > Time-series forecasts that uses statistical and machine learning algorithms.
 
@@ -109,7 +109,7 @@ Amazon Forecast: Increase forecast accuracy using machine learning
 ![Alt text](<images/Screenshot from 2023-10-16 16-04-55.png>)
 Amazon Fraud Detector: Detect more online fraud faster
 
-> [What is Amazon Fraud Detector?](https://docs.aws.amazon.com/frauddetector/latest/ug/what-is-frauddetector.html)
+> [!NOTE] [What is Amazon Fraud Detector?](https://docs.aws.amazon.com/frauddetector/latest/ug/what-is-frauddetector.html)
 >
 > Fraud Detector with ML.
 
@@ -118,7 +118,7 @@ Amazon Fraud Detector: Detect more online fraud faster
 ![Alt text](<images/Screenshot from 2023-10-16 16-21-04.png>)
 Amazon SageMaker: Build, train, and deploy machine learning models at scale
 
-> [What is Amazon SageMaker?](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
+> [!NOTE] [What is Amazon SageMaker?](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 >
 > Fully managed machine learning service:
 >

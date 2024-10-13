@@ -22,7 +22,7 @@ Which of the following is the FASTEST and the MOST cost-effective way to import 
 - Order multiple AWS Snowball devices to upload the files to Amazon S3.
 ```
 
-> AWS Snow Family:
+> [!NOTE] AWS Snow Family:
 >
 > - Snowcone: 8TB - 14TB
 > - Snowball: 80TB
@@ -48,9 +48,9 @@ Which solution could the company take to resolve the issue?
 - Increase the memory allocation of the Lambda function
 ```
 
-> RDS - “too many connections”
+> [!NOTE] RDS - “too many connections”
 
-> RDS Proxy: allow your applications to pool and share database connections to improve their ability to scale.
+> [!NOTE] RDS Proxy: allow your applications to pool and share database connections to improve their ability to scale.
 
 ### 6
 
@@ -66,7 +66,7 @@ Which of the following options will allow you to asynchronously process the requ
 - Use a combination of SNS to buffer the requests and then asynchronously process them using On-Demand EC2 Instances.
 ```
 
-> Kinesis Data Streams vs SQS
+> [!NOTE] Kinesis Data Streams vs SQS
 >
 > - Kinesis Data Streams: Provide real-time analyzing, but required provisioning shards
 > - SQS: Use with Lambda (and its Event Sourcing) provides a cost-efficient solution
@@ -86,9 +86,9 @@ Which of the following options are valid? (Select TWO.)
 - Use VPC peering to connect both on-premises servers and EC2 instances for your decoupled application
 ```
 
-> Amazon Simple Workflow Service (SWF): build applications that coordinate work across distributed components.
+> [!NOTE] Amazon Simple Workflow Service (SWF): build applications that coordinate work across distributed components.
 
-> VPC Peering: only works for VPCs, doesn't work with on-premise networks
+> [!NOTE] VPC Peering: only works for VPCs, doesn't work with on-premise networks
 
 ## SAA - Design Resilient Architectures
 
@@ -106,7 +106,7 @@ What are the prerequisites when routing traffic using Amazon Route 53 to a websi
 - The Cross-Origin Resource Sharing (CORS) option should be enabled in the S3 bucket
 ```
 
-> S3 Static website - Custom Domain: "The S3 bucket name must be the same as the domain name"
+> [!NOTE] S3 Static website - Custom Domain: "The S3 bucket name must be the same as the domain name"
 >
 > What if someone use my domain name for their bucket???
 
@@ -123,9 +123,9 @@ What is the fastest and most cost-effective solution to automatically back up al
 - Use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation of EBS snapshots.
 ```
 
-> EBS - Backup: Use Amazon DLM
+> [!NOTE] EBS - Backup: Use Amazon DLM
 
-> Amazon Data Lifecycle Manager (Amazon DLM): Automate management of Amazon EBS snapshots and Amazon EBS-backed AMIs
+> [!NOTE] Amazon Data Lifecycle Manager (Amazon DLM): Automate management of Amazon EBS snapshots and Amazon EBS-backed AMIs
 
 ### 7
 
@@ -140,7 +140,7 @@ Which configuration will satisfy the given requirement?
 - Configure a Gateway Load Balancer in front of the auto-scaling group. Ensure that the IP Listener Routing uses the GENEVE protocol on port 6081 to allow gRPC response traffic.
 ```
 
-> Elastic Load Balancer protocol:
+> [!NOTE] Elastic Load Balancer protocol:
 >
 > - Application Load Balancer: HTTP/s and gRPC
 > - Network Load Balancer: TCP, UDP, TLS
@@ -159,7 +159,7 @@ How should the Solutions Architect resolve this problem?
 - Disable the IPv4 support in the VPC and use the available IPv6 addresses.
 ```
 
-> VPC: IPv4 vs IPv6
+> [!NOTE] VPC: IPv4 vs IPv6
 >
 > - IPv4 is the default IP addressing system for VPC => Cannot be disabled
 > - IPv6: optional
@@ -192,7 +192,7 @@ Which Route 53 routing policy should the Solutions Architect use?
 - Weighted Routing
 ```
 
-> Route 53: GeoProximity Routing vs Geolocation Routing vs Latency-based Routing
+> [!NOTE] Route 53: GeoProximity Routing vs Geolocation Routing vs Latency-based Routing
 >
 > - Geolocation Routing: Location of user
 > - GeoProximity Routing: Location of user AND AWS resources (with bias)
@@ -215,7 +215,7 @@ Which network topology provides the minimum resources needed for the website to 
 - Set up an Auto Scaling group of Amazon EC2 instances behind an Application Load Balancer with an Aurora Serverless DB cluster to store application data. Deploy all resources in a public subnet. Configure host-based routing to the Application Load Balancer to stop traffic to known malicious URLs and drop requests from blacklisted FQDNs.
 ```
 
-> AWS Network Firewall
+> [!NOTE] AWS Network Firewall
 >
 > Traffic from VPC need to be routed to Network Firewall through the firewall endpoints.
 
@@ -232,9 +232,9 @@ Which of the following options will meet this requirement?
 - Use AWS CloudTrail and review the event history of your AWS account.
 ```
 
-> AWS Config: _Track_ and _evaluate_ configuration changes
+> [!NOTE] AWS Config: _Track_ and _evaluate_ configuration changes
 
-> AWS Trusted Advisor: Optimize performance and security
+> [!NOTE] AWS Trusted Advisor: Optimize performance and security
 >
 > - Inspects your AWS environment and recommends ways to save money, close security gaps, and improve system availability and performance.
 
@@ -252,12 +252,12 @@ Which of the following options increase the fault tolerance of the connection to
 - Establish another AWS Direct Connect connection and private virtual interface in the same AWS region as VPC-1.
 ```
 
-> AWS VPN: Securely access your network resources (by establishing a secure and private tunnel from your network or device to the AWS Cloud.)
+> [!NOTE] AWS VPN: Securely access your network resources (by establishing a secure and private tunnel from your network or device to the AWS Cloud.)
 >
 > - AWS Site-to-Site VPN: AWS managed VPN services
 > - AWS Client VPN: client-based managed VPN service
 
-> AWS Direct Connect: Dedicated network connection to AWS (from your on-premises network)
+> [!NOTE] AWS Direct Connect: Dedicated network connection to AWS (from your on-premises network)
 
 ### 16
 
@@ -275,7 +275,7 @@ Which combination of options can be used to meet the above requirements? (Select
 - Implement AWS Organizations to create a multi-account architecture that provides a consolidated view and centralized management of AWS accounts.
 ```
 
-> Service Control Policy (SCP): a feature of AWS Organizations
+> [!NOTE] Service Control Policy (SCP): a feature of AWS Organizations
 >
 > - A type of organization policy that you can use to manage permissions in your organization.
 
@@ -293,9 +293,9 @@ Which combination of actions should a solutions architect recommend to meet thes
 - Configure AWS IAM Identity Center (AWS Single Sign-On) for the organization and integrate it with the company’s directory service using the Active Directory Connector
 ```
 
-> AWS IAM Identity Center: Manage single sign-on access to AWS accounts and apps
+> [!NOTE] AWS IAM Identity Center: Manage single sign-on access to AWS accounts and apps
 
-> Amazon Cognito: Identity management for your apps
+> [!NOTE] Amazon Cognito: Identity management for your apps
 
 - Customer already has Active Directory Service -> No need to use Amazon Cognito -> use AWS IAM Identity Center with the Active Director Connector
 
@@ -312,13 +312,13 @@ Which of the following should the Architect implement to mitigate this kind of a
 - Set up security rules that block SQL injection and cross-site scripting attacks in AWS Web Application Firewall (WAF). Associate the rules to the Application Load Balancer.
 ```
 
-> Block SQL injection
+> [!NOTE] Block SQL injection
 >
 > - AWS Web Application Firewall (WAF): can block SQL injection.
 >
 > - GuardDuty: only detect SQL injection, not block.
 
-> [AWS WAF, AWS Shield, and AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html): used together to create a comprehensive security solution
+> [!NOTE] [AWS WAF, AWS Shield, and AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html): used together to create a comprehensive security solution
 >
 > - AWS WAF: Protect your web applications from common exploits
 >
@@ -342,6 +342,6 @@ Which of the following should the Architect implement to mitigate this kind of a
 >
 >   Provides management of protections like AWS WAF and Shield Advanced across accounts and resources, even as new resources are added.
 
-> How about AWS Network Firewall?
+> [!NOTE] How about AWS Network Firewall?
 >
 > AWS Network Firewall: Deploy network firewall security across your VPCs

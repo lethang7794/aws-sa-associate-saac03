@@ -27,7 +27,7 @@ Which of the following is the MOST suitable storage service that the Architect s
 - Amazon FSx for Lustre
 ```
 
-> FSx
+> [!NOTE] FSx
 >
 > - FSx for Lustre: Linux, HPC
 > - FSx for Windows File Server
@@ -45,7 +45,7 @@ Which of the following are the possible solutions that you can implement to sati
 - Use Route 53 with Weighted routing policy to divert the traffic between the on-premises and AWS-hosted application. Divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure.
 ```
 
-> Application Load Balancer: supports Weighted Target Groups
+> [!NOTE] Application Load Balancer: supports Weighted Target Groups
 
 ### 5
 
@@ -60,7 +60,7 @@ As a Solutions Architect, which solution will achieve this goal with the LEAST o
 - Run the simulations using AWS Fargate.
 ```
 
-> AWS Batch: Run batch jobs at any scale
+> [!NOTE] AWS Batch: Run batch jobs at any scale
 
 ### 6
 
@@ -75,7 +75,7 @@ Which of the following can be used to create a private connection between the VP
 - AWS Site-to-Site VPN
 ```
 
-> AWS Direct Connect: Dedicated network connection to AWS
+> [!NOTE] AWS Direct Connect: Dedicated network connection to AWS
 
 ### 10
 
@@ -92,7 +92,7 @@ Which of the following is the MOST operationally efficient solution?
 - Use CloudFront function
 ```
 
-> AWS AppSync: Accelerate app development with fully-managed, scalable GraphQL APIs
+> [!NOTE] AWS AppSync: Accelerate app development with fully-managed, scalable GraphQL APIs
 >
 > - AWS AppSync Pipeline Resolver: orchestrating requests to multiple data sources.
 >
@@ -112,7 +112,7 @@ Which combination of actions should the Solutions Architect implement to meet th
 - Utilize the AWS managed rule on AWS Config to monitor AWS resource service quotas. Schedule this checking using an AWS Lambda function.
 ```
 
-> **AWS Trusted Advisor**: Optimize performance and security
+> [!NOTE] **AWS Trusted Advisor**: Optimize performance and security
 >
 > Trusted Advisor inspects your AWS environment and recommends ways to save money, close security gaps, and improve system availability and performance.
 >
@@ -133,7 +133,7 @@ Which solution should the architect carry out?
 - Re-route some of the VPN connections to a secondary customer gateway device on the remote network’s end.
 ```
 
-> AWS Site-to-Site VPN throughput limit: 1.25 Gbps
+> [!NOTE] AWS Site-to-Site VPN throughput limit: 1.25 Gbps
 >
 > - Scale VPN with Transit Gateway - Equal Cost Multipath Routing (ECMP).
 >
@@ -155,11 +155,11 @@ Which of the following should the Solutions Architect implement to ensure single
 
 ```
 
-> AWS Wavelength: Deliver ultra-low latency applications for 5G devices
+> [!NOTE] AWS Wavelength: Deliver ultra-low latency applications for 5G devices
 >
 > - Application traffic can reach application servers running in Wavelength Zones without leaving the mobile providers’ network
 
-> IAM and K8s:
+> [!NOTE] IAM and K8s:
 >
 > - Enable with _AWS IAM Authenticator for Kubernetes_, which runs on the Amazon EKS control plane.
 > - The authenticator gets its configuration information from the aws-auth ConfigMap (AWS authenticator configuration map).
@@ -179,7 +179,7 @@ In the event of system failure on the primary database instance, what happens to
 
 ```
 
-> Aurora Failover: Automatically handled by Amazon Aurora
+> [!NOTE] Aurora Failover: Automatically handled by Amazon Aurora
 >
 > 1. If you have an Amazon Aurora Replica
 >
@@ -223,7 +223,7 @@ Which of the following statements are true about encrypted Amazon Elastic Block 
 
 ```
 
-> EBS Encryption
+> [!NOTE] EBS Encryption
 >
 > - Data at rest inside the volume 👈 Encryption at rest
 > - All data moving between the volume and the instance 👈 Encryption in-transit
@@ -245,7 +245,7 @@ Which of the following would be the best way to achieve this?
 
 ```
 
-> Best practice to control access to EC2 instances:
+> [!NOTE] Best practice to control access to EC2 instances:
 >
 > - Tag the EC2 instances, to categorize by purpose, owner, or environment...
 > - Control access using resource tags and IAM policy.
@@ -265,7 +265,7 @@ Which set of AWS services will the Architect use to meet these requirements?
 
 ```
 
-> AWS Workspaces: Virtual desktops in the cloud
+> [!NOTE] AWS Workspaces: Virtual desktops in the cloud
 
 ### 11
 
@@ -283,7 +283,7 @@ Which combination of steps will achieve this? (Select TWO.)
 
 ```
 
-> Peering VPC - Setup
+> [!NOTE] Peering VPC - Setup
 >
 > - Create, invite, accept VPC Peering Connection
 > - Update each VPC's Route Table to point to IP range of other VPC.
@@ -303,7 +303,7 @@ Which of the following is the most suitable approach to implement the encryption
 
 ```
 
-> CloudTrail - Encryption
+> [!NOTE] CloudTrail - Encryption
 >
 > By default, CloudTrail event log files are encrypted using Amazon S3 server-side encryption (SSE)
 
@@ -325,7 +325,7 @@ As the Solutions Architect, which combination of options should you implement in
 
 ```
 
-> S3 - PII:
+> [!NOTE] S3 - PII:
 >
 > - Use Amazon Macie to automatically detect sensitive data.
 > - Then use EventBridge and SNS to send notification.

@@ -1,6 +1,6 @@
 # DNSSEC
 
-> .org
+> [!NOTE] .org
 >
 > ```shell
 > # 6️⃣ DS: Hash of icann.org's public KSK 5️⃣

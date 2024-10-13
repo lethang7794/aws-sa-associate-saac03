@@ -30,11 +30,11 @@ Identity Policies - Bucket Polices - ACLs
 
 ![Alt text](<images/Screenshot 2023-10-03 at 10.58.27 - [ASSOCIATESHARED]_S3_Static_Hosting__learn.cantril.png>)
 
-> What is the normal access to S3 object?
+> [!NOTE] What is the normal access to S3 object?
 >
 > Via AWS APIs.
 
-> What is S3 website endpoint?
+> [!NOTE] What is S3 website endpoint?
 >
 > The endpoint to access the S3 bucket via HTTP.
 
@@ -76,7 +76,7 @@ Multipart Upload
 ![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-4.png>)
 S3 Transfer Acceleration
 
-> What is S3 Transfer Acceleration?
+> [!NOTE] What is S3 Transfer Acceleration?
 
 ## [_DEMO_] - S3 Performance (5:06)
 
@@ -122,7 +122,7 @@ SSE-C
 ![Alt text](<images/Screenshot 2023-10-03 at 13.48.16 - [SHAREDALL]_S3_Object_Encryption_CSESSE__learn.can.png>)
 SSE-S3 👈 Default
 
-> What is the biggest drawback of SS3-S3?
+> [!NOTE] What is the biggest drawback of SS3-S3?
 >
 > The admin can see the content.
 

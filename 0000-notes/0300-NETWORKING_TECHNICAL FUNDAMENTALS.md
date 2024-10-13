@@ -20,14 +20,12 @@
 
 ![Alt text](<images/Screenshot 2023-09-28 at 11.27.48 - Layer_2_-_DataLink_-_PART1__learn.cantrill.io_-_Pe.png>)
 
-> **MAC vs MAC Address**?
+> [!NOTE] **MAC vs MAC Address**?
 >
 > - [MAC](https://www.wikiwand.com/en/Medium_access_control): Medium Access Control, also called Media Access Control
->
 > - [MAC Address](https://www.wikiwand.com/en/MAC_address): Medium Access Control Address,
 >
 >   - also known as _hardware address_, or _physical address_
->
 >   - a _unique identifier_ assigned to a **network interface controller** (NIC) for use as a network address in communications within a network segment
 
 ![Alt text](<images/Screenshot 2023-09-28 at 11.28.56 - Layer_2_-_DataLink_-_PART1__learn.cantrill.io_-_Pe.png>)
@@ -40,7 +38,7 @@ _Left game sends Frame F1 to Right game_
 ![Alt text](<images/Screenshot 2023-09-28 at 12.16.45 - Layer_2_-_DataLink_-_PART2__learn.cantrill.io_and_.png>)
 _Right game sends Frame F2 to Left game_ - Carrier Sense Multiple Access ([CSMA](https://www.wikiwand.com/en/Carrier-sense_multiple_access_with_collision_detection))
 
-> Layers are independent
+> [!NOTE] Layers are independent
 >
 > Conceptually, left L2 is talking to right L2.
 
@@ -87,13 +85,13 @@ OSI Layer 3 - IPv4 Addressing
 ![Alt text](<images/Screenshot 2023-09-28 at 13.44.55 - Layer_3_-_Network_-_PART2__learn.cantrill.io_and_1.png>)
 OSI Layer 3 - Subnet Mask
 
-> IPv4 classful addressing
+> [!NOTE] IPv4 classful addressing
 >
 > Class A, class B, class C
 >
 > Ref: <https://www.wikiwand.com/en/Classful_network>
 
-> IPv4 reserved IP address
+> [!NOTE] IPv4 reserved IP address
 >
 > - Class A
 >
@@ -180,7 +178,7 @@ Stateful firewall
 ![Alt text](<images/Screenshot 2023-09-28 at 15.23.51 - Network_Address_Translation_(NAT)_-_PART1__learn.c.png>)
 NAT - Types of NATs
 
-> Why NAT?
+> [!NOTE] Why NAT?
 >
 > - Overcome IPv4 shortages.
 > - Security: hide private IP
@@ -188,7 +186,7 @@ NAT - Types of NATs
 ![Alt text](<images/Screenshot 2023-09-28 at 15.26.46 - Network_Address_Translation_(NAT)_-_PART1__learn.c.png>)
 Static NAT - Outbound Traffic
 
-> Static NAT maintains a NAT table to map PrivateIP : Public IP (1:1)>
+> [!NOTE] Static NAT maintains a NAT table to map PrivateIP : Public IP (1:1)>
 >
 > 👉️ In AWS, Internet Gateway (IGW) is a static NAT.
 
@@ -200,7 +198,7 @@ Static NAT - Inbound Traffic👉️
 ![Alt text](<images/Screenshot 2023-09-28 at 15.36.00 - Network_Address_Translation_(NAT)_-_PART2__learn.c.png>)
 Dynamic NAT
 
-> Dynamic NAT maintains a NAT table:
+> [!NOTE] Dynamic NAT maintains a NAT table:
 >
 > - Dynamic NAT maps PrivateIP : Public IP (1:1 first available).
 > - Public IP allocations are _temporary allocations from a Public IP Pool_, the pool may be out-of-public IPs.
@@ -208,18 +206,17 @@ Dynamic NAT
 ![Alt text](<images/Screenshot 2023-09-28 at 15.40.07 - Network_Address_Translation_(NAT)_-_PART2__learn.c.png>)
 Port Address Translating (PAT)
 
-> PAT records the Source (Private) IP and Source Port:
+> [!NOTE] PAT records the Source (Private) IP and Source Port:
 >
 > - PAT replaces the source IP with the single Public IP and a public source port
 > - The Public IP and public source port are allocated from a pool which allows IP Overloading (many to one)
 
-> In AWS, NAT Gateway (NATGW) is a PAT.
+> [!NOTE] In AWS, NAT Gateway (NATGW) is a PAT.
 
-> NAT vs PAT
+> [!NOTE] NAT vs PAT
 >
 > - NAT
 >   ![Alt text](images/NAT.png)
->
 > - PAT: is a type of Dynamic NAT
 >   ![Alt text](images/NAT-PAT.png)
 >
@@ -241,13 +238,13 @@ IPv4 - Private Ranges
 ![Alt text](<images/Screenshot 2023-09-28 at 16.24.51 - IP_Address_Space_&_Subnetting_-_PART1__learn.cantr.png>)
 IPv4 vs IPv6 Address Space
 
-> [Classless Inter-Domain Routing (CIDR)](https://www.wikiwand.com/en/Classless_Inter-Domain_Routing)
+> [!NOTE] [Classless Inter-Domain Routing (CIDR)](https://www.wikiwand.com/en/Classless_Inter-Domain_Routing)
 >
 > A method for allocating IP addresses and for IP routing.
 >
 > Introduced CIDR in 1993 to replace the previous classful network addressing architecture
 
-> Subnetting
+> [!NOTE] Subnetting
 >
 > The process of spitting a larger network into more smaller subnets
 
@@ -262,13 +259,13 @@ Subnetting - Start and end calculation
 ![Alt text](<images/Screenshot 2023-09-28 at 19.45.04 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
 DDOS - Overview
 
-> DDOS types:
+> [!NOTE] DDOS types:
 >
 > - Layer 7:
 >   - HTTP Flood
->   - DNS Amplification
+>   - DNS Fllod
 > - Layer 4:
->   - TCP SYN Flood
+>   - (TCP) SYN Flood
 
 ![Alt text](<images/Screenshot 2023-09-28 at 19.46.14 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
 Without DDOS - Normal App
@@ -282,7 +279,7 @@ DDOS - Protocol Attack (SYN Flood)
 ![Alt text](<images/Screenshot 2023-09-28 at 19.54.21 - Distributed_Denial_of_Service_(DDOS)_Attacks__lear.png>)
 DDOS - Volumetric / Amplification Attack
 
-> What is a DDOS attack?
+> [!NOTE] What is a DDOS attack?
 >
 > <https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/>
 
@@ -297,14 +294,14 @@ Physical Segment - Multi Switches
 ![Alt text](<images/Screenshot 2023-09-28 at 20.05.44 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 Physical Segment - Connecting Switches
 
-> What is VLAN?
+> [!NOTE] What is VLAN?
 >
 > A way to divide a single physical network into multiple logical networks.
 
 ![Alt text](<images/Screenshot 2023-09-28 at 20.06.53 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 Frame Tagging - 802.1Q
 
-> What does 802.1Q do?
+> [!NOTE] What does 802.1Q do?
 >
 > 802.1Q allows multiple "VIRTUAL LANS (VLANS)" to operate over the same L2 physical network.
 >
@@ -313,18 +310,18 @@ Frame Tagging - 802.1Q
 ![Alt text](<images/Screenshot 2023-09-28 at 20.08.44 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 OSI Layer 2 - Frame Tagging - 802.1AD - QinQ
 
-> What does 802.1AD do?
+> [!NOTE] What does 802.1AD do?
 >
 > 802.1AD (QinQ) allows ISPs or carriers to use VLANS across their network, while carrying customer traffic which might also be using multiple VLANs
 
-> How does 802.1AD (QinQ) work?
+> [!NOTE] How does 802.1AD (QinQ) work?
 >
 > It allows multiple VLAN tags to be added to a single Ethernet frame.
 
 ![Alt text](<images/Screenshot 2023-09-28 at 20.12.21 - VLANs,_TRUNKS_&_QinQ__learn.cantrill.io_and_1_more.png>)
 VLAN - Trunk Port vs Access Port
 
-> What are trunk port?
+> [!NOTE] What are trunk port?
 >
 > Trunk ports are a way to carry VLAN traffic between network switches
 
@@ -356,7 +353,7 @@ BGP: Exchange the **best path** (ASPATH) to a destination
 ![Alt text](<images/Screenshot 2023-09-29 at 11.46.22 - Border_Gateway_Protocol_(BGP)_101__learn.cantrill..png>)
 BGP: AS will advertise all the shortest paths its known to all its peers (and prepends its own ASN onto the path)
 
-> ASPATH Prepending: make a path longer
+> [!NOTE] ASPATH Prepending: make a path longer
 
 ### Stateful vs Stateless Firewalls (14:04)
 
@@ -377,7 +374,7 @@ Stateful Firewall
 ![Alt text](<images/Screenshot 2023-09-29 at 12.19.38 - JumboFrames__learn.cantrill.io_and_1_more_page_-_P.png>)
 JumboFrame vs normal frame (OSI Layer 2)
 
-> MTU
+> [!NOTE] MTU
 >
 > Maximum Transmission Unit (MTU):
 >
@@ -400,7 +397,7 @@ In contrast, layer 7 firewalls have the ability to analyze the content of networ
 ![Alt text](<images/Screenshot 2023-09-29 at 12.55.13 - IP_Sec_VPN_Fundamentals__learn.cantrill.io_and_3_m.png>)
 IPSec
 
-> What does IP Sec do?
+> [!NOTE] What does IP Sec do?
 >
 > IP Sec sets up secure tunnel across insecure networks.
 
@@ -494,7 +491,7 @@ Asymmetric Encryption - Decryption
 ![Alt text](<images/Screenshot 2023-09-29 at 14.13.18 - Encryption_101_-_PART2__learn.cantrill.io_and_1_mo.png>)
 Signing
 
-> Signing
+> [!NOTE] Signing
 >
 > The practice of using asymmetric keys to verify the authenticity and integrity of data.
 
@@ -502,7 +499,7 @@ Signing
 ![Alt text](<images/Screenshot 2023-09-29 at 14.17.11 - Encryption_101_-_PART2__learn.cantrill.io_and_1_mo.png>)
 Steganography
 
-> Steganography
+> [!NOTE] Steganography
 >
 > The practice of concealing information within another message or physical object to avoid detection.
 
@@ -548,14 +545,14 @@ HSM - HSM can be used to processing SSL/TLS or PKI Signing certificate
 ![Alt text](<images/Screenshot 2023-09-29 at 14.57.15 - Hash_Functions_&_Hashing__learn.cantrill.io_and_1_.png>)
 Hashing
 
-> Hashing
+> [!NOTE] Hashing
 >
 > The process of applying a hash function to data to produce a unique and irreversible representation of the original data.
 
 ![Alt text](<images/Screenshot 2023-09-29 at 14.58.21 - Hash_Functions_&_Hashing__learn.cantrill.io_and_1_.png>)
 Hash Function
 
-> Hash Function
+> [!NOTE] Hash Function
 >
 > Mathematical algorithms that transform input data into a fixed-length string of characters, called a hash or message digest.
 
@@ -643,18 +640,18 @@ DNS Disrupted
 ![Alt text](<images/Screenshot 2023-09-29 at 18.04.45 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
 DNSSEC - RRSET
 
-> What is a RRSET?
+> [!NOTE] What is a RRSET?
 >
 > A group of all the records with the same type ad same name
 
 ![Alt text](<images/Screenshot 2023-09-29 at 18.08.12 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
 DNSSEC - RRSIG & Zone Signing Key (ZSK)
 
-> What is a RRSIG?
+> [!NOTE] What is a RRSIG?
 >
 > A digital signature for a RRSET, signed by the private Zone Signing Key (ZSK).
 
-> What is Zone Signing Key (ZSK)?
+> [!NOTE] What is Zone Signing Key (ZSK)?
 >
 > Each zone has a ZSK, which is used to:
 >
@@ -666,18 +663,18 @@ DNSSEC - RRSIG & Zone Signing Key (ZSK)
 ![Alt text](<images/Screenshot 2023-09-29 at 18.11.03 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
 DNSSEC - DNSKEY contains public ZSK to verify all RRSIGs in the zone
 
-> Why the DNSKEY also has an RRSIG?
+> [!NOTE] Why the DNSKEY also has an RRSIG?
 >
 > Because someone can fake the DNSKEY too. 🤯
 
 ![Alt text](<images/Screenshot 2023-09-29 at 18.13.51 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
 DNSSEC - 2 Keys - Key Signing Key
 
-> What is a KSK?
+> [!NOTE] What is a KSK?
 >
 > KSK is used to sign and verify the ZSK
 
-> Why do we use separate zone-signing keys and key-signing keys?
+> [!NOTE] Why do we use separate zone-signing keys and key-signing keys?
 >
 > The KSK is linked to the parent zone.
 >
@@ -693,7 +690,7 @@ DNSSEC - Summary
 ![Alt text](<images/Screenshot 2023-09-30 at 14.48.29 - DNSSEC_3_-_DNSSEC_Chain_of_Trust__learn.cantrill..png>)
 DNSSEC - DS Record
 
-> What is DS Record?
+> [!NOTE] What is DS Record?
 >
 > DS (Delegation Signer) Record, on a parent zone, contains a hash of the KSK in a child zone.
 
@@ -724,79 +721,79 @@ DNSSEC - Key Ceremony
 ![Alt text](<images/Screenshot 2023-09-30 at 20.01.29 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
 K8s - Cluster Structure
 
-> What is the basic structure of a K8s cluster?
+> [!NOTE] What is the basic structure of a K8s cluster?
 >
 > .
 
-> What is a Node in K8s?
+> [!NOTE] What is a Node in K8s?
 >
 > .
 
-> What is the Control Plan in K8s?
+> [!NOTE] What is the Control Plan in K8s?
 >
 > .
 
-> What is the `kubelet` in K8s?
+> [!NOTE] What is the `kubelet` in K8s?
 >
 > .
 
-> What is the `containerd` in K8s?
+> [!NOTE] What is the `containerd` in K8s?
 >
 > .
 
-> How does the container run in K8s?
+> [!NOTE] How does the container run in K8s?
 >
 > .
 
-> What is the K8s API?
+> [!NOTE] What is the K8s API?
 >
 > .
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.06.24 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
 K8s - Cluster Detail
 
-> What is a `Pod` in K8s?
+> [!NOTE] What is a `Pod` in K8s?
 
-> What is `kube-scheduler`?
+> [!NOTE] What is `kube-scheduler`?
 
-> What is `etcd`?
+> [!NOTE] What is `etcd`?
 
-> What is `cloud-controller-manager`?
+> [!NOTE] What is `cloud-controller-manager`?
 
-> What is `kube-controller-manager`?
+> [!NOTE] What is `kube-controller-manager`?
 
-> What is `kube-apiserver`
+> [!NOTE] What is `kube-apiserver`
 
-> What is `kube-proxy`
+> [!NOTE] What is `kube-proxy`
 
-> What is the smallest units of computing in K8s?
+> [!NOTE] What is the smallest units of computing in K8s?
 
-> How does K8s know which Pods run on which Nodes?
+> [!NOTE] How does K8s know which Pods run on which Nodes?
 
-> How does K8s stores the cluster state?
+> [!NOTE] How does K8s stores the cluster state?
 
-> How does K8s run on the clouds?
+> [!NOTE] How does K8s run on the clouds?
 
-> How does K8s Pods communicate?
+> [!NOTE] How does K8s Pods communicate?
 
-> How does K8s manages the cluster?
+> [!NOTE] How does K8s manages the cluster?
 
-> What is the front end of K8s Control Plane?
+> [!NOTE] What is the front end of K8s Control Plane?
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.08.44 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
 K8s - Summary
 
-> What is K8s Cluster?
+> [!NOTE] What is K8s Cluster?
 
-> What is K8s Service?
+> [!NOTE] What is K8s Service?
 
-> What is K8s Job?
+> [!NOTE] What is K8s Job?
 
-> What is K8s Ingress?
+> [!NOTE] What is K8s Ingress?
 
-> What is K8s Ingress Controller?
+> [!NOTE] What is K8s Ingress Controller?
 
-> What is K8s Persistent Volume?
+> [!NOTE] What is K8s Persistent Volume?
 
 ## Backups & DR (MORE COMING SOON)
 
@@ -805,16 +802,16 @@ K8s - Summary
 ![Alt text](<images/Screenshot 2023-09-30 at 20.38.29 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
 Recovery Point Objective (RPO)
 
-> What is RPO?
+> [!NOTE] What is RPO?
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.43.54 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
 Recovery Time Objective (RTO)
 
-> What is RTO?
+> [!NOTE] What is RTO?
 
-> When does RTO begin and end?
+> [!NOTE] When does RTO begin and end?
 
-> What need to be cautious about RTO?
+> [!NOTE] What need to be cautious about RTO?
 >
 > - How long until we know there is an issue?
 > - What is the issue?

@@ -22,14 +22,14 @@ IAM Users
 ![Alt text](<images/Screenshot 2023-10-02 at 12.40.20 - [ASSOCIATESHARED]_IAM_Users_and_ARNs__learn.cantri.png>)
 IAM Users - Limitation
 
-> What is the limit IAM Users per account?
+> [!NOTE] What is the limit IAM Users per account?
 
-> How many IAM Groups a IAM User can be a member of?
+> [!NOTE] How many IAM Groups a IAM User can be a member of?
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-2.png)
 ARNs
 
-> What is the format of ARN?
+> [!NOTE] What is the format of ARN?
 >
 > - **arn**:_partition_:_service_:_region_:_account-id_:_resource-id_
 > - **arn**:_partition_:_service_:_region_:_account-id_:_resource-type_/_resource-id_
@@ -51,11 +51,11 @@ ARNs
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAM-Groups-1.png)
 IAM Groups
 
-> What is IAM Group?
+> [!NOTE] What is IAM Group?
 >
 > Containers for IAM Users.
 
-> What are the limits of IAM Group?
+> [!NOTE] What are the limits of IAM Group?
 >
 > - No Nesting.
 > - Limit of 300 Groups.
@@ -63,7 +63,7 @@ IAM Groups
 ![Alt text](<images/Screenshot 2023-10-02 at 14.31.52 - [ASSOCIATESHARED]_IAM_Groups__learn.cantrill.io_-_.png>)
 IAM Group is not a true identity
 
-> Can a IAM Group be used as a Principle in a policy?
+> [!NOTE] Can a IAM Group be used as a Principle in a policy?
 >
 > IAM Group can NOT be used as a Principle in a policy. IAM Group is NOT a true identity.
 
@@ -77,7 +77,7 @@ IAM Role and Assuming an IAM Role
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-2.png)
 Trust Policy vs Permission Policy
 
-> What is Trust Policy in IAM?
+> [!NOTE] What is Trust Policy in IAM?
 
 ## [_ASSOCIATE_] When to use IAM Roles (15:27)
 
@@ -101,7 +101,7 @@ AWS Partner Accounts
 ![Alt text](<images/Screenshot 2023-10-02 at 15.44.22 - Service-linked_Roles_&_PassRole__learn.cantrill.io.png>)
 Service-linked Roles
 
-> What is Service-linked Role?
+> [!NOTE] What is Service-linked Role?
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole1.png)
 Permissions to allow create/edit the service-linked role
@@ -142,7 +142,7 @@ Service Control Policies (SCP)
 ![Alt text](<images/Screenshot 2023-10-02 at 18.57.45 - [ASSOCIATESHARED]_Service_Control_Policies_(SCPs)_.png>)
 SCP controls account permissions in an organization
 
-> At which level the SCP work?
+> [!NOTE] At which level the SCP work?
 >
 > Account-level.
 
@@ -155,11 +155,11 @@ SCP - Allow List
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-2.png)
 Identity Policies and SCPs
 
-> Can SCP restrict management account?
+> [!NOTE] Can SCP restrict management account?
 >
 > No.
 
-> Can SCP restrict root user?
+> [!NOTE] Can SCP restrict root user?
 >
 > SCP can un-directly control the member account's root user (by control the account's permission)
 
@@ -176,29 +176,29 @@ CloudWatch Logs - Basic
 
 CloudWatch Logs - Architecture
 
-> What is Log Event?
+> [!NOTE] What is Log Event?
 
-> What is Log Stream?
+> [!NOTE] What is Log Stream?
 
-> What is Log Group?
+> [!NOTE] What is Log Group?
 
 ## [_ASSOCIATE_] CloudTrail (11:40)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 20.29.57 - [ASSOCIATESHARED]_CloudTrail__learn.cantrill.io_-_.png>)
 
-> What is CloudTrail Event/Trail?
+> [!NOTE] What is CloudTrail Event/Trail?
 
-> How long is the default CloudTrail history?
+> [!NOTE] How long is the default CloudTrail history?
 
-> In CloudTrail, what are Management Events / Data Events?
+> [!NOTE] In CloudTrail, what are Management Events / Data Events?
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/Cloudtrail-1.png)
 
-> How to implement a central log store for AWS Organization?
+> [!NOTE] How to implement a central log store for AWS Organization?
 
 ![Alt text](<images/Screenshot 2023-10-02 at 20.35.42 - [ASSOCIATESHARED]_CloudTrail__learn.cantrill.io_-_.png>)
 
-> Is CloudTrail realtime?
+> [!NOTE] Is CloudTrail realtime?
 
 ## [_ALL_, _DEMO_] Implementing an Organizational Trail (18:23)
 

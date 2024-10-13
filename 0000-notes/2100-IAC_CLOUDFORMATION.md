@@ -26,7 +26,7 @@ Template Parameters - Input for Cfn Template
 ![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/PseudoParameters-1.png)
 [Pseudo Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html) - Provided by AWS based on the **Stack** environment
 
-> What are the difference between _Cfn - **Pseudo Parameters**_ and _AWS Systems Manager - **public parameters**_
+> [!NOTE] What are the difference between _Cfn - **Pseudo Parameters**_ and _AWS Systems Manager - **public parameters**_
 >
 > - _Cfn - **Pseudo Parameters**_: Parameters predefined by AWS CloudFormation
 >
@@ -119,7 +119,7 @@ Single Stack - The Problem
 ![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationNestedStacks-2.png)
 Cfn [Nested Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html): Stacks created as part of other stacks 👈️ Allow reusing template (code)
 
-> `Nested Stack`, `Root Stack`, `Parent Stack`?
+> [!NOTE] `Nested Stack`, `Root Stack`, `Parent Stack`?
 >
 > - _Nested Stack_: Stacks created as **part of other stacks**.
 > - _Root Stack_: The **top-level stack** to which all the _nested stacks_ ultimately belong.
@@ -130,7 +130,7 @@ Cfn [Nested Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuid
 ![Alt text](<images/Screenshot from 2023-10-13 16-01-27.png>)
 Cfn Nested Stacks - When?
 
-> How are lifecycle of nested stacks?
+> [!NOTE] How are lifecycle of nested stacks?
 >
 > The root stacks and all of its nested stacks share the same lifecycle.
 
@@ -169,7 +169,7 @@ Cfn StackSets - Key Points
 ![Alt text](<images/Screenshot from 2023-10-13 20-59-08.png>)
 Cfn Stack Roles - Overview
 
-> ⚠️ The identity creating the stack doesn't need permissions for resources.
+> [!NOTE] ⚠️ The identity creating the stack doesn't need permissions for resources.
 >
 > It only needs permissions for:
 >
@@ -195,11 +195,11 @@ cfn-init: The problem
 ![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCfnHUP.png)
 [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html): Rerun config when change detected
 
-> What **cfn-hup** stands for?
+> [!NOTE] What **cfn-hup** stands for?
 >
 > **cfn** **h**ot **up**date.
 
-> [Update behaviors of stack resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html)
+> [!NOTE] [Update behaviors of stack resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html)
 
 ## [_DEMO_] wait conditions, cfn-signal, cfn-init and cfn-hup-PART1 (12:51)
 

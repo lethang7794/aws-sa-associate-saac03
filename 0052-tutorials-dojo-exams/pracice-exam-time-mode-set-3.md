@@ -23,7 +23,7 @@ How can the solutions architect speed up the instance’s loading time without d
 - Disable the Instance Metadata Service to reduce the things that need to be loaded at startup.
 ```
 
-> EC2 - Hibernation
+> [!NOTE] EC2 - Hibernation
 >
 > - Quickly pausing and resuming the instances, by saving the memory footprint to disk.
 > - Can only be enable at launch
@@ -46,7 +46,7 @@ Which of the following statements is true regarding EC2 billing? (Select TWO.)
 - You will not be billed for any instance usage while an instance is not in the running state.
 ```
 
-> EC2 states:
+> [!NOTE] EC2 states:
 >
 > - pending
 > - running 💸
@@ -69,11 +69,11 @@ Which of the following can satisfy this requirement with the LEAST amount of ope
 - Create a new Direct Connect gateway and integrate it with the existing Direct Connect connection. Set up a Transit Gateway between AWS accounts and associate it with the Direct Connect gateway.
 ```
 
-> Transit Gateway & Direct Connect Gateway ??? TODO
+> [!NOTE] Transit Gateway & Direct Connect Gateway ??? TODO
 
-> Direct Connect connection/gateway ??? TODO
+> [!NOTE] Direct Connect connection/gateway ??? TODO
 
-> VPN traverses the public internet, doesn't use a dedicated connection
+> [!NOTE] VPN traverses the public internet, doesn't use a dedicated connection
 
 ### 9
 
@@ -88,7 +88,7 @@ How can this be accomplished in the MOST cost-efficient manner?
 - Set up an AWS Transit Gateway to access Amazon S3.
 ```
 
-> VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
+> [!NOTE] VPC endpoints for S3: Provide _private_ access to AWS Public services (S3)
 >
 > - Gateway endpoint:
 >
@@ -120,11 +120,11 @@ What service must be used to easily capture, transform, and load streaming data 
 - Amazon SQS
 ```
 
-> Amazon Kinesis Data Firehose: Load data streams into AWS data stores.
+> [!NOTE] Amazon Kinesis Data Firehose: Load data streams into AWS data stores.
 
-> Amazon Athena: Query data in Amazon S3 using SQL
+> [!NOTE] Amazon Athena: Query data in Amazon S3 using SQL
 
-> Amazon Redshift: Fast, simple, cost-effective data warehouse service
+> [!NOTE] Amazon Redshift: Fast, simple, cost-effective data warehouse service
 
 ### 6
 
@@ -140,11 +140,11 @@ What cost-effective steps will you take in this circumstance? (Select TWO.)
 - Go to the Amazon.com online shopping website and sell the Reserved instances.
 ```
 
-> EC2 - Reserved Instance
+> [!NOTE] EC2 - Reserved Instance
 >
 > Reserved Instance Marketplace: Resell unused Standard Reserved Instances
 
-> EC2 - Stop Instance vs Terminate Instance
+> [!NOTE] EC2 - Stop Instance vs Terminate Instance
 >
 > - Stopped: still be billed
 > - Terminated: not billed
@@ -162,7 +162,7 @@ Which AWS service should the company use?
 - AWS Storage Gateway
 ```
 
-> NFS vs Storage Gateway
+> [!NOTE] NFS vs Storage Gateway
 >
 > - NFS: files are stored on AWS -> high-latency
 > - Storage Gateway - File: low-latency
@@ -180,7 +180,7 @@ Which solution would resolve the issue in the most operationally efficient way?
 - Enable job bookmark for the ETL job.
 ```
 
-> AWS Glue - Job Bookmarking
+> [!NOTE] AWS Glue - Job Bookmarking
 >
 > - maintain state information and prevent the reprocessing of old data.
 
@@ -197,7 +197,7 @@ Which of the following should the Architect do to meet this requirement?
 - Configure a CreationPolicy attribute to the instance in the CloudFormation template. Send a success signal after the applications are installed and configured using the cfn-signal helper script.
 ```
 
-> CloudFormation: CreationPolicy & cfn-signal
+> [!NOTE] CloudFormation: CreationPolicy & cfn-signal
 >
 > - CreationPolicy: Wait on resource configuration actions before stack creation proceeds.
 > - cfn-signal: Signals CloudFormation to indicate whether Amazon EC2 instances have been successfully created/updated
@@ -215,7 +215,7 @@ Which action satisfies the requirements?
 - Deploy the application Amazon ECS cluster with EC2 worker nodes and attach a 5 GB Amazon EBS volume.
 ```
 
-> AWS Fargate: Serverless compute for containers
+> [!NOTE] AWS Fargate: Serverless compute for containers
 >
 > By default, Fargate tasks are given a minimum of 20 GiB of free ephemeral storage
 
@@ -234,7 +234,7 @@ Which of the following is the MOST suitable configuration that the Architect sho
 - Create a new Network Load Balancer to evenly distribute the read queries to the Read Replicas of the Amazon Aurora database.
 ```
 
-> Aurora - Reader endpoint:
+> [!NOTE] Aurora - Reader endpoint:
 >
 > - A reader endpoint for an Aurora DB cluster provides load-balancing support for read-only connections to the DB cluster
 
@@ -251,7 +251,7 @@ Which change should be taken to meet the objective?
 - Add an Aurora Replica to the cluster and set its instance class to Serverless. Failover to the read replica and promote it to primary.
 ```
 
-> Aurora Serverless
+> [!NOTE] Aurora Serverless
 >
 > - The DB instance cannot be changed from Provisioned to Serverless after created.
 >
@@ -271,14 +271,14 @@ Which of the following should you do to meet the above requirement? (Select TWO.
 - Purchase provisioned retrieval capacity.
 ```
 
-> S3 - Read data from Glacier
+> [!NOTE] S3 - Read data from Glacier
 >
 > - Bulk: Lowest (5-12 hours), cheapest
 > - Standard: 3-5 hours
 > - Expedited: Fastest (1-5 mins)
 >   - Buy Provisioned capacity to ensure Expedited retrievals is available.
 
-> Amazon Glacier Select: Filter objects using SQL
+> [!NOTE] Amazon Glacier Select: Filter objects using SQL
 
 ### 14
 
@@ -294,11 +294,11 @@ Which of the following will occur when the EC2 instance is stopped and started? 
 - There will be no changes.
 ```
 
-> EC2 - Instance store:
+> [!NOTE] EC2 - Instance store:
 >
 > - Its data will be lost if the EC2 instance is stopped / terminated.
 
-> EC2 - Elastic IP address and EBS storage won't be effect after an instance is stopped.
+> [!NOTE] EC2 - Elastic IP address and EBS storage won't be effect after an instance is stopped.
 
 ### 18
 
@@ -315,7 +315,7 @@ Which of the following statements are true regarding Amazon VPC subnets?
 - Each subnet spans to 2 Availability Zones.
 ```
 
-> VPC supports CIDR blocks from /16 to /28
+> [!NOTE] VPC supports CIDR blocks from /16 to /28
 
 ## SAA - Design Secure Architectures
 
@@ -332,7 +332,7 @@ Which action accomplishes the requirement?
 - Attach the kms:decrypt permission to the Lambda function’s resource policy. Add a statement to the AWS KMS key’s policy that grants the function’s execution role the kms:decrypt permission.
 ```
 
-> Allow an Lambda permission to use KMS:
+> [!NOTE] Allow an Lambda permission to use KMS:
 >
 > - Attach the kms:decrypt permission to the Lambda function’s `execution role`
 > - Add a statement to the AWS KMS `key policy` that grants the function’s execution role the kms:decrypt permission.
@@ -350,7 +350,7 @@ Which of the following action is the MOST secure way to grant permissions to the
 - Set up IAM roles for each IAM user and associate a permissions boundary that defines the maximum permissions.
 ```
 
-> IAM Group
+> [!NOTE] IAM Group
 >
 > - Cannot attach an IAM Role to an IAM Group.
 
@@ -368,7 +368,7 @@ Which combination of steps will accomplish this requirement? (Select TWO.)
 - In the Network ACL, update the rule to allow inbound TCP connection on port 443 from source 0.0.0.0/0 and outbound TCP connection on port 32768 - 65535 to destination 0.0.0.0/0
 ```
 
-> VPC - NACL:
+> [!NOTE] VPC - NACL:
 >
 > - The client that initiates the request chooses the ephemeral port range.
 > - In practice, to cover the different types of clients that might initiate traffic to public-facing instances in your VPC, you can open ephemeral ports 1024-65535.
@@ -392,7 +392,7 @@ Which of the following methods can achieve this requirement? (Select TWO.)
 - Set up Client-Side Encryption using a client-side master key.
 ```
 
-> S3 Object encryption:
+> [!NOTE] S3 Object encryption:
 >
 > - Server-Side Encryption (SSE):
 >

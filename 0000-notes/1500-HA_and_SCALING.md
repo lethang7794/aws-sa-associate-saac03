@@ -16,7 +16,7 @@ The tiers (components) of an application
 ![Alt text](<images/Screenshot 2023-10-08 at 19.38.23 - [ASSOCIATESHARED]_Evolution_of_the_Elastic_Load_Ba.png>)
 Elastic Load Balancer (ELB) - Evolution
 
-> What are the 3 types of load balancers in AWS?
+> [!NOTE] What are the 3 types of load balancers in AWS?
 >
 > - v1:
 >   - Classic Load Balancer (CLB): 2009
@@ -32,7 +32,7 @@ Elastic Load Balancer (ELB) - Evolution
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ELB-2.png)
 ELB - Architecture
 
-> What is the benefits of Load Balancer?
+> [!NOTE] What is the benefits of Load Balancer?
 >
 > - Distributing workloads across multiple compute resources 👉 HA & FT
 > - Decoupling application tiers 👉 ↕️ compute resources without disrupting the overall flow of our app.
@@ -56,7 +56,7 @@ ELB - Summary
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ELB-1.png)
 ELB - Internet-facing LB & Internal LB
 
-> What are 2 types [scheme](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html#load-balancer-scheme) of AWS ELB?
+> [!NOTE] What are 2 types [scheme](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html#load-balancer-scheme) of AWS ELB?
 >
 > - **Internet-facing LB**: the nodes have _public IP_ addresses.
 > - **Internal LB**: the nodes have only _private IP_ addresses.
@@ -66,17 +66,17 @@ ELB - Internet-facing LB & Internal LB
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ALBvsNLB-1.png)
 LB Consolidation 🏳️‍🌈
 
-> Why AWS Classic Load Balancer don't scale?
+> [!NOTE] Why AWS Classic Load Balancer don't scale?
 >
 > CLB don't support TLS [Server Name Indicator (SNI)](https://www.cloudflare.com/learning/ssl/what-is-sni/).
 >
 > 😭 Every unique host name requires an individual CLB.
 
-> What is LB Consolidation?
+> [!NOTE] What is LB Consolidation?
 >
 > When multiple websites are hosted on one server (the LB) and share a single IP address.
 
-> How does AWS v2 LBs allows consolidation?
+> [!NOTE] How does AWS v2 LBs allows consolidation?
 >
 > AWS v2 ALB support _rules_ and _target groups_.
 >
@@ -97,7 +97,7 @@ NLB
 ![Alt text](<images/Screenshot 2023-10-08 at 20.50.18 - [SHAREDALL]_Application_Load_balancing_(ALB)_vs_Ne.png>)
 NLB vs ALB - Exam Tips
 
-> Which type of ELB can have a static IP?
+> [!NOTE] Which type of ELB can have a static IP?
 >
 > Only NLB can have a _static_ IP.
 
@@ -159,7 +159,7 @@ ASG - With Lifecycle Hooks
 ![Alt text](<images/Screenshot 2023-10-09 at 00.30.49 - [ASSOCIATESHARED]_ASG_HealthCheck_Comparison_-_EC2.png>)
 ASG - 3 types of HealthCheck
 
-> What are 3 types of ASG HealthCheck?
+> [!NOTE] What are 3 types of ASG HealthCheck?
 >
 > - EC2 (Default)
 >
@@ -179,7 +179,7 @@ ASG - 3 types of HealthCheck
 ![Alt text](../1500-HA_and_SCALING/00_LEARNINGAIDS/ELBListners.png)
 ELB - SSL Offload
 
-> What are 3 ways that ELB's can handle SSL?
+> [!NOTE] What are 3 ways that ELB's can handle SSL?
 >
 > - Bridging (Default): HTTPS <-> HTTPS
 > - Pass-through: TCP
