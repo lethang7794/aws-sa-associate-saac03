@@ -16,15 +16,25 @@ Inline Policy vs Managed Policy
 
 ## [_ASSOCIATE_] IAM Users and ARNs (13:49)
 
+![alt text](<images/Screenshot From 2024-10-17 17-21-36.png>)
+IAM User - What is it?
+
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-1.png)
-IAM Users
+IAM - Principal and Authenticated Identity
+
+> [!NOTE] What is a principal?
+> Principal is an entity in AWS that can perform actions and access resources.
 
 ![Alt text](<images/Screenshot 2023-10-02 at 12.40.20 - [ASSOCIATESHARED]_IAM_Users_and_ARNs__learn.cantri.png>)
 IAM Users - Limitation
 
 > [!NOTE] What is the limit IAM Users per account?
+>
+> 5.000 IAM Users per AWS account
 
 > [!NOTE] How many IAM Groups a IAM User can be a member of?
+>
+> 10 IAM groups per IAM User
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-2.png)
 ARNs
@@ -63,9 +73,11 @@ IAM Groups
 ![Alt text](<images/Screenshot 2023-10-02 at 14.31.52 - [ASSOCIATESHARED]_IAM_Groups__learn.cantrill.io_-_.png>)
 IAM Group is not a true identity
 
-> [!NOTE] Can a IAM Group be used as a Principle in a policy?
+> [!NOTE] Can an IAM Group be used as a Principle in a policy?
+> IAM Group is NOT a true identity, that
 >
-> IAM Group can NOT be used as a Principle in a policy. IAM Group is NOT a true identity.
+> - can NOT be used as a Principle in a policy.
+> - don't have credential to login with
 
 ## [_ASSOCIATE_, _DEMO_] Permissions control using IAM Groups (9:24)
 
@@ -78,6 +90,13 @@ IAM Role and Assuming an IAM Role
 Trust Policy vs Permission Policy
 
 > [!NOTE] What is Trust Policy in IAM?
+>
+> The trust policy defines
+>
+> - which principals can assume the role, and
+> - under which conditions
+>
+> See [How to use trust policies with IAM roles | AWS Security Blog](https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/)
 
 ## [_ASSOCIATE_] When to use IAM Roles (15:27)
 
@@ -102,6 +121,26 @@ AWS Partner Accounts
 Service-linked Roles
 
 > [!NOTE] What is Service-linked Role?
+>
+> A service-linked role is
+>
+> - a unique type of IAM role that is linked directly to an AWS service.
+> - predefined (by the service) to include all the permissions that the service requires (to call other AWS services on your behalf).
+
+> [!NOTE] Why use Service-linked Role?
+>
+> A service-linked Role
+>
+> - simplify the process of setting up a service because
+>
+>   - you don't have to manually add permissions for the service to complete actions on your behalf
+>
+> - may be created
+>   - automatically (by the service)
+>   - manually using a wizard in the console
+>   - manually using IAM
+>
+> See [Create a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html)
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole1.png)
 Permissions to allow create/edit the service-linked role
@@ -111,11 +150,19 @@ Pass an existing role to the service
 
 ## [_ASSOCIATE_] AWS Organizations (12:56)
 
+![alt text](<images/Screenshot From 2024-10-17 22-41-47.png>)
+"Standard" AWS Account
+
 ![Alt text](<images/Screenshot 2023-10-02 at 16.02.10 - [ASSOCIATESHARED]_AWS_Organizations__learn.cantril.png>)
 Management/Master Account
 
+> [!NOTE] AWS Organization and Management Account, which come first?
+>
+> - First, you use a standard account to create an AWS Organization
+> - Then that standard account become the management account of the AWS Organization.
+
 ![Alt text](<images/Screenshot 2023-10-02 at 16.03.00 - [ASSOCIATESHARED]_AWS_Organizations__learn.cantril.png>)
-Invite Standalone accounts to an AWS Organization
+Invite existed standard accounts to an AWS Organization
 
 ![Alt text](<images/Screenshot 2023-10-02 at 16.03.05 - [ASSOCIATESHARED]_AWS_Organizations__learn.cantril.png>)
 Accepting invitations to become member of an AWS Organization
@@ -134,6 +181,15 @@ Role Switching
 
 ## [_ALL_, _DEMO_] AWS Organizations (19:48)
 
+![alt text](<images/Screenshot From 2024-10-17 22-52-06.png>)
+Create an account in your organization
+
+> [!NOTE] How to access an AWS account in an AWS organization?
+>
+> 1. Using username/password of that AWS account to access that AWS account using its root user
+> 2. Using another account to _switch role_ to that account's IAM role `OrganizationAccountAccessRole`
+> 3. Using the AWS access portal with corporation credentials (Google, Facebook...)
+
 ## [_ASSOCIATE_] Service Control Policies (SCPs) (12:44)
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-1.png)
@@ -142,22 +198,50 @@ Service Control Policies (SCP)
 ![Alt text](<images/Screenshot 2023-10-02 at 18.57.45 - [ASSOCIATESHARED]_Service_Control_Policies_(SCPs)_.png>)
 SCP controls account permissions in an organization
 
-> [!NOTE] At which level the SCP work?
+> [!NOTE] What does Service Control Policies (SCP) do?
 >
-> Account-level.
+> SCP
+>
+> - restricts permissions for
+>
+>   - IAM users
+>   - IAM roles
+>   - including root user
+>
+>   in **member** accounts.
+>
+> - (do NOT grant permissions)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 18.59.57 - [ASSOCIATESHARED]_Service_Control_Policies_(SCPs)_.png>)
 SCP - Deny List
 
+> [!NOTE] SGP - Deny List Strategy
+> With _deny list strategy_, all permissions are allowed unless explicitly denied.
+>
+> This is the _default_ behavior of AWS Organizations.
+>
+> - By default, AWS Organizations attaches an AWS managed policy called `FullAWSAccess` to all roots, OUs, and accounts.
+> - You
+>   - leave the default `FullAWSAccess` policy in place (that allow "all").
+>   - then attach additional policies that explicitly deny access to the unwanted services and actions.
+
 ![Alt text](<images/Screenshot 2023-10-02 at 19.01.01 - [ASSOCIATESHARED]_Service_Control_Policies_(SCPs)_.png>)
 SCP - Allow List
+
+> [!NOTE] SGP - Allow List Strategy
+> With _allow list strategy_, all permissions are denied unless explicitly allowed.
+>
+> - By default, AWS Organizations attaches an AWS managed policy called `FullAWSAccess` to all roots, OUs, and accounts.
+> - You
+>   - remove the default `FullAWSAccess` policy
+>   - then attach additional policies that explicitly allow access to the wanted services and actions
 
 ![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-2.png)
 Identity Policies and SCPs
 
 > [!NOTE] Can SCP restrict management account?
->
-> No.
+
+> SCPs don't affect users or roles in the management account. They affect only the member accounts in your organization.
 
 > [!NOTE] Can SCP restrict root user?
 >
