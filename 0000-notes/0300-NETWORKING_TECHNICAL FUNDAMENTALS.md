@@ -238,11 +238,13 @@ IPv4 - Private Ranges
 ![Alt text](<images/Screenshot 2023-09-28 at 16.24.51 - IP_Address_Space_&_Subnetting_-_PART1__learn.cantr.png>)
 IPv4 vs IPv6 Address Space
 
-> [!NOTE] [Classless Inter-Domain Routing (CIDR)](https://www.wikiwand.com/en/Classless_Inter-Domain_Routing)
+> [!NOTE] Classless Inter-Domain Routing (CIDR)
 >
 > A method for allocating IP addresses and for IP routing.
 >
-> Introduced CIDR in 1993 to replace the previous classful network addressing architecture
+> CIDR is introduced in 1993 to replace the previous classful network addressing architecture
+>
+> See [Classless Inter-Domain Routing (CIDR) | Wikipedia](https://www.wikiwand.com/en/Classless_Inter-Domain_Routing)
 
 > [!NOTE] Subnetting
 >
@@ -345,6 +347,8 @@ VLAN - Summary
 
 ![Alt text](<images/Screenshot 2023-09-29 at 11.28.51 - SSL_&_TLS__learn.cantrill.io_and_1_more_page_-_Per.png>)
 
+See [The First Few Milliseconds of an HTTPS Connection](http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html)
+
 ### Border Gateway Protocol (BGP) 101 (17:03)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 11.35.43 - Border_Gateway_Protocol_(BGP)_101__learn.cantrill..png>)
@@ -360,29 +364,83 @@ BGP: AS will advertise all the shortest paths its known to all its peers (and pr
 ![Alt text](<images/Screenshot 2023-09-29 at 12.03.58 - Stateful_vs_Stateless_Firewalls__learn.cantrill.io.png>)
 Connection's Inbound and Outbound
 
+> [!NOTE] Connection and port
+> A _connection_ has 2 parts:
+>
+> - _Request_: From an ephemeral port - chosen by the client - (to a well-known port)
+> - _Response_: From the well-known port (to that ephemeral port)
+
 ![Alt text](<images/Screenshot 2023-09-29 at 12.08.00 - Stateful_vs_Stateless_Firewalls__learn.cantrill.io.png>)
 Inbound and Outbound are depend on perspective
 
 ![Alt text](<images/Screenshot 2023-09-29 at 12.10.09 - Stateful_vs_Stateless_Firewalls__learn.cantrill.io.png>)
 Stateless Firewall
 
+> [!NOTE] Stateless Firewall
+> A Stateless Firewall
+>
+> - examines each individual network packet in isolation
+> - makes decisions
+>   - based on predetermined rules
+>   - without any awareness of the state of the network connection
+
+> [!TIP] Stateless Firewall and Server
+> When using stateless firewall with a server, you need to:
+>
+> - Allow inbound traffic to well-known port, e.g. `443`
+> - Allow outbound traffic to all ephemeral ports, e.g. `1024`, `65535` (randomly chosen by the client)
+>
+> e.g. AWS Network ACL
+
 ![Alt text](<images/Screenshot 2023-09-29 at 12.12.06 - Stateful_vs_Stateless_Firewalls__learn.cantrill.io.png>)
 Stateful Firewall
+
+> [!NOTE] Stateful Firewall
+> A stateful firewall
+>
+> - tracks the state of the network connections:
+>   - knows a response corresponding to which request
+> - make decisions based on these knowledge:
+>   - do some of the works for you
+>
+> 👉 If
+>
+> - the request (no matter whether it's inbound or outbound traffic) is allowed
+> - the response will be automatically allowed too
+>
+> e.g. AWS security group
+
+> [!TIP]
+> Usually:
+>
+> - A stateful firewall is called "firewall".
+> - A stateless firewall is called ACL.
+>
+> When something is called firewall, it usually means it's a stateful firewall.
 
 ### JumboFrames (4:35)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 12.19.38 - JumboFrames__learn.cantrill.io_and_1_more_page_-_P.png>)
 JumboFrame vs normal frame (OSI Layer 2)
 
-> [!NOTE] MTU
+> [!NOTE] Maximum Transmission Unit (MTU)
 >
-> Maximum Transmission Unit (MTU):
->
-> - Traditional Ethernet frames have a maximum transmission unit (MTU) of 1500 bytes.
+> - Traditional Ethernet frames have a MTU of 1500 bytes.
 > - Jumbo Frames can allow for frames up to 9000 bytes.
+
+> [!TIP] Why use Jumbo Frames
+>
+> - Reduce frame overhead
+> - Reduce wasted time on medium (between frames)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 12.20.18 - JumboFrames__learn.cantrill.io_and_1_more_page_-_P.png>)
 Not everything in AWS supports JumboFrames
+
+> [!TIP] In AWS, which traffic supports jumbo frames?
+>
+> - VPC Peering in same region
+> - Direct Connect
+> - TGW (up to 8500 bytes)
 
 ### Layer 7 Firewalls (7:44)
 
@@ -391,6 +449,23 @@ Traditional firewalls, such as packet filtering or stateful inspection firewalls
 
 ![Alt text](<images/Screenshot 2023-09-29 at 12.42.16 - Layer_7_Firewalls__learn.cantrill.io_and_3_more_pa.png>)
 In contrast, layer 7 firewalls have the ability to analyze the content of network traffic, including application protocols such as HTTP, FTP, and SMTP, and can make more granular decisions about which traffic should be allowed or blocked.
+
+> [!NOTE] Layer 7 Firewall
+>
+> | Feature                      | Traditional Firewalls (Packet Filtering/Stateful Inspection) | Layer 7 Firewalls (Application Firewalls)                     |
+> | ---------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
+> | **Layer of Operation**       | Network and Transport Layers (Layer 3 & 4)                   | Application Layer (Layer 7)                                   |
+> | **Filtering Criteria**       | IP addresses, Port numbers, Protocol types                   | Application data, HTTP/FTP/SMTP, user inputs                  |
+> | **Traffic Inspection**       | Basic packet-level inspection                                | Deep packet inspection of application data                    |
+> | **Granularity**              | Coarse-grained (limited to IP, port, protocol)               | Fine-grained (based on application content)                   |
+> | **Protection against**       | Basic network attacks (IP spoofing, SYN floods)              | Advanced threats (SQL injection, XSS, malware)                |
+> | **Policy Control**           | Limited to low-level network policies                        | Application-specific policies (e.g., block specific URLs)     |
+> | **Performance**              | Higher throughput due to simpler inspection                  | Potentially slower due to deep inspection                     |
+> | **Complexity**               | Simpler to configure and manage                              | More complex, requires detailed understanding of applications |
+> | **Use Case**                 | Basic security for network and transport layers              | Protection of web and application services                    |
+> | **Examples of Applications** | Firewall rules based on IP, Port, and Protocol               | Web Application Firewall (WAF), API Gateways                  |
+
+See [Nord Security - Learning Center](https://nordlayer.com/learn/)
 
 ### IP Sec VPN Fundamentals (14:48)
 
@@ -635,6 +710,24 @@ DNSSEC Benefit Example
 ![Alt text](<images/Screenshot 2023-09-29 at 16.33.33 - DNSSEC_1_-_Why_do_we_need_DNSSEC__learn.cantrill..png>)
 DNS Disrupted
 
+![alt text](<images/Screenshot From 2024-10-15 16-41-13.png>)
+Example: Use dig to query A record for example.com
+
+![alt text](<images/Screenshot From 2024-10-15 17-40-25.png>)
+Example: Use dig to query A record and DNSSEC for example.com
+
+> [!NOTE]
+> To verify DNSSEC of a domain, you can use:
+>
+> - dig: if there's the flag `ad`
+> - delv
+> - Web Tools: DNS Viz, DNSSEC Debugger
+
+See
+
+- [Troubleshoot DNSSEC | CloudFlare Docs](https://developers.cloudflare.com/dns/dnssec/troubleshooting/):
+- [How to test and validate DNSSEC using dig command line](https://www.cyberciti.biz/faq/unix-linux-test-and-validate-dnssec-using-dig-command-line)
+
 ### DNSSEC #2 - How DNSSEC Works within a Zone (17:34)
 
 ![Alt text](<images/Screenshot 2023-09-29 at 18.04.45 - DNSSEC_2_-_How_DNSSEC_Works_within_a_Zone__learn..png>)
@@ -714,6 +807,8 @@ DNSSEC - The Signing Ceremony
 ![Alt text](<images/Screenshot 2023-09-30 at 19.54.30 - DNSSEC_4_-_DNSSEC_Root_Signing_Ceremony__learn.ca.png>)
 DNSSEC - Key Ceremony
 
+See [The Key to the Internet and Key Ceremonies: An Explainer | ICANN](https://www.icann.org/en/blogs/details/the-key-to-the-internet-and-key-ceremonies-an-explainer-11-07-2023-en)
+
 ## Containers & Virtualization (MORE COMING SOON)
 
 ### Kubernetes 101 (11:27)
@@ -723,77 +818,73 @@ K8s - Cluster Structure
 
 > [!NOTE] What is the basic structure of a K8s cluster?
 >
-> .
-
-> [!NOTE] What is a Node in K8s?
+> A K8s cluster contains:
 >
-> .
+> - Control Plane
+> - Worker Nodes
 
-> [!NOTE] What is the Control Plan in K8s?
+> [!NOTE] What is the Control Plane in K8s?
 >
-> .
+> The control plane manages the overall state of the cluster
 
-> [!NOTE] What is the `kubelet` in K8s?
->
-> .
+> [!NOTE] What is a Worker Node in K8s?
+> A worker node is the machine that actually run the containers
 
-> [!NOTE] What is the `containerd` in K8s?
+> [!NOTE] What are the core components of a worker node?
 >
-> .
+> - `kubelet`
+>
+>   - Ensures that Pods are running, including their containers.
+>
+> - **Container runtime**
+>
+>   - Software responsible for running containers.
+>
+> - `kube-proxy` (optional)
+>
+>   - Maintains network rules on nodes to implement Services.
 
-> [!NOTE] How does the container run in K8s?
+> [!NOTE] What is the core component of control plane?
 >
-> .
+> The core of Kubernetes' control plane is
+>
+> - the API server
+> - the HTTP API that it exposes, which is known as the Kubernetes API.
 
-> [!NOTE] What is the K8s API?
+> [!NOTE] What does the Kubernetes API do?
+> The Kubernetes API
 >
-> .
+> - lets end users, different parts of your cluster, and external components communicate with one another.
+> - let you query and manipulate the state of API objects in Kubernetes (for example: Pods, Namespaces, ConfigMaps, and Events).
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.06.24 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
 K8s - Cluster Detail
 
 > [!NOTE] What is a `Pod` in K8s?
+>
+> In Kubernetes, a _pod_ is the smallest unit of computing.
+>
+> - In Docker, it's the _container_.
 
-> [!NOTE] What is `kube-scheduler`?
-
-> [!NOTE] What is `etcd`?
-
-> [!NOTE] What is `cloud-controller-manager`?
+> [!NOTE] What are the components of the control plane in K8s?
+>
+> - `kube-apiserver`: The core component server that exposes the Kubernetes HTTP API
+> - `etcd`: Consistent and highly-available key value store for all API server data
+> - `kube-scheduler`: Looks for Pods not yet bound to a node, and assigns each Pod to a suitable node.
+> - `kube-controller-manager`: Core control loops of K8s: Runs controllers to implement Kubernetes API behavior.
+> - `cloud-controller-manager` (Optional): Integrates with underlying cloud provider(s).(AWS, Azure, GCP)
 
 > [!NOTE] What is `kube-controller-manager`?
-
-> [!NOTE] What is `kube-apiserver`
-
-> [!NOTE] What is `kube-proxy`
-
-> [!NOTE] What is the smallest units of computing in K8s?
-
-> [!NOTE] How does K8s know which Pods run on which Nodes?
-
-> [!NOTE] How does K8s stores the cluster state?
-
-> [!NOTE] How does K8s run on the clouds?
-
-> [!NOTE] How does K8s Pods communicate?
-
-> [!NOTE] How does K8s manages the cluster?
-
-> [!NOTE] What is the front end of K8s Control Plane?
+>
+> `kube-controller-manager` is the core control loops of K8s
+>
+> - Watches the shared state of the cluster through the `apiserver`
+> - Makes changes attempting to move the current state towards the desired state
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.08.44 - Kubernetes_101__learn.cantrill.io_-_Personal_-_Mic.png>)
 K8s - Summary
 
-> [!NOTE] What is K8s Cluster?
-
-> [!NOTE] What is K8s Service?
-
-> [!NOTE] What is K8s Job?
-
-> [!NOTE] What is K8s Ingress?
-
-> [!NOTE] What is K8s Ingress Controller?
-
-> [!NOTE] What is K8s Persistent Volume?
+See [Kubernetes Components | Kubernetes Documentation](https://kubernetes.io/docs/concepts/overview/components/)
 
 ## Backups & DR (MORE COMING SOON)
 
@@ -803,13 +894,19 @@ K8s - Summary
 Recovery Point Objective (RPO)
 
 > [!NOTE] What is RPO?
+> Recovery Point Objective (RPO) is the maximum (amount of) data (in time) can be lost.
 
 ![Alt text](<images/Screenshot 2023-09-30 at 20.43.54 - Recovery_Point_Objective_(RPO)_&_Recovery_Time_Obj.png>)
 Recovery Time Objective (RTO)
 
 > [!NOTE] What is RTO?
+> Recovery Time Objective (RTO) is the maximum of time that the system can be down.
 
 > [!NOTE] When does RTO begin and end?
+> RTO
+>
+> - begins at at momne of failure
+> - ends when the system is operational (and handled back to business)
 
 > [!NOTE] What need to be cautious about RTO?
 >
@@ -825,10 +922,16 @@ RPO & RTO - Summary
 ### YAML aint markup language (YAML) 101 (6:12)
 
 ![Alt text](<images/Screenshot 2023-09-30 at 21.04.25 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
-YAML - key:value
+A YAML document is an "unordered list" of key:value pairs.
+
+> [!TIP]
+> In YAML, an "unordered list" is called a _dictionary_
 
 ![Alt text](<images/Screenshot 2023-09-30 at 21.05.48 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
-YAML - List
+YAML - Ordered list
+
+> [!TIP]
+> In YAML, an "ordered list" is called _sequence_, which can contains values of different types.
 
 ![Alt text](<images/Screenshot 2023-09-30 at 21.07.27 - YAML_aint_markup_language_(YAML)_101__learn.cantri.png>)
 YAML - Structure
