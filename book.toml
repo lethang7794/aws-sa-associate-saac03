@@ -2,8 +2,8 @@
 authors      = [ "Le Quang Thang" ]
 language     = "en"
 multilingual = false
-src          = "src"                                        # Root of repo
-title        = "Notes for AWS Solution Architect Associate"
+src          = "src"
+title        = "Notes for AWS Solution Architect Associate (Cantrill course)"
 
 [preprocessor.callouts]
 
