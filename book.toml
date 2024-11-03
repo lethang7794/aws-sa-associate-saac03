@@ -1,0 +1,32 @@
+[book]
+authors = ["Le Quang Thang"]
+language = "en"
+multilingual = false
+src = "0000-notes"                     # Root of repo
+title = "DevOps Book"
+
+[preprocessor.callouts]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.pagetoc]
+
+[preprocessor.yml-header]
+
+[output.html]
+additional-css = ["theme/css/catppuccin.css", "theme/pagetoc.css"]
+default-theme = "latte"
+preferred-dark-theme = "macchiato"
+
+smart-punctuation = true
+
+site-url = "/devops-book/"
+git-repository-url = "https://github.com/lethang7794/devops-book"
+edit-url-template = "https://github.com/lethang7794/devops-book/edit/master{path}"
+
+additional-js = [
+  "theme/mermaid/mermaid.min.js",
+  "theme/mermaid/mermaid-init.js",
+  "theme/pagetoc.js",
+]
