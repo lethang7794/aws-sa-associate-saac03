@@ -2,7 +2,7 @@
 # Allows justfile to be executed like a script, e.g. `./justfile test`
 
 export project_root := `git rev-parse --show-toplevel`
-src_dir := "./0000-notes"
+src_dir := "./src"
 mdbook_summary_file := "SUMMARY.md"
 
 _default:
