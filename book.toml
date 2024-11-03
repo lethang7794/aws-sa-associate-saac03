@@ -5,6 +5,10 @@ multilingual = false
 src          = "src"
 title        = "Notes for AWS Solution Architect Associate (Cantrill course)"
 
+[build]
+build-dir      = "book"
+# create-missing = false
+
 [preprocessor.callouts]
 
 [preprocessor.mermaid]
@@ -30,3 +34,8 @@ additional-js = [
   "theme/mermaid/mermaid-init.js",
   "theme/pagetoc.js",
 ]
+
+# Fold chapter listing in the navigation sidebar
+[output.html.fold]
+enable = true
+level  = 0
