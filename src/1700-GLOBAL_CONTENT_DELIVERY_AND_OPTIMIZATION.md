@@ -2,16 +2,16 @@
 
 ## CloudFront Architecture (14:56)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-1.png)
 Which problems CloudFront solves?
 
 ![Alt text](<../0000-notes/images/Screenshot 2023-10-10 at 15.08.19 - [ASSOCIATESHARED]_Cloudfront_Architecture__learn.c.png>)
 CloudFront - Terms
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-2.png)
 CloudFront - Regional Edge Cache & Edge Location
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-3.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitecture-3.png)
 CloudFront - Distribution & Cache Behavior
 
 ## CloudFront (CF) - Behaviours (9:21)
@@ -20,10 +20,10 @@ CloudFront's [Cache behavior settings](https://docs.aws.amazon.com/AmazonCloudFr
 
 ## CloudFront - TTL and Invalidations (13:48)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFront-TTLandInvalidation-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFront-TTLandInvalidation-1.png)
 CloudFront - Cache Hit
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFront-TTLandInvalidation-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFront-TTLandInvalidation-2.png)
 CloudFront - Stale Object
 
 ![Alt text](<images/Screenshot 2023-10-10 at 15.39.46 - [SHAREDALL]_CloudFront_-_TTL_and_Invalidations__le.png>)
@@ -71,7 +71,7 @@ CloudFront & SNI
 >
 > Old browsers don't support SNI.
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitectureSSL-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontArchitectureSSL-1.png)
 CloudFront & SSL/SNI
 
 ## CloudFront (CF) - Origin Types & Origin Architecture (10:20)
@@ -88,20 +88,20 @@ CloudFront [Origin Settings](https://docs.aws.amazon.com/AmazonCloudFront/latest
 
 ## CloudFront - Security - OAI & Custom Origins (8:50)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-1.png)
 Securing CF Content Delivery Path
 
 ![Alt text](<images/Screenshot 2023-10-10 at 19.33.28 - [ASSOCIATESHARED]_Securing_CF_and_S3_using_OAI__le.png>)
 Origin Access Identity (OAI)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-2.png)
 OAI - In Action
 
 > [!NOTE] ⚠️ AWS has introduced [OAC](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-cloudfront-introduces-origin-access-control-oac/) to replace OAI.
 >
 > [Docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-restricting-access-to-s3-oai)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-3.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontSecuringOrigin-3.png)
 Securing Custom Origins
 
 ## CloudFront - Private Distribution & Behaviours (7:49)
@@ -112,7 +112,7 @@ Private Distributions (\*behaviours)
 ![Alt text](<images/Screenshot 2023-10-10 at 19.49.41 - CloudFront_-_Private_Distribution_&_Behaviours__le.png>)
 CloudFront Signed URLs 🔗 vs Cookies 🍪
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontPrivateDistributions.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontPrivateDistributions.png)
 Private Distributions - Architecture
 
 ## [_DEMO_] CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (11:21)
@@ -122,7 +122,7 @@ Private Distributions - Architecture
 ![Alt text](<images/Screenshot 2023-10-10 at 20.33.56 - [ASSOCIATESHARED]_Lambda@Edge__lea_—_Firefox_Devel.png>)
 Lambda@Edge - Overview
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontLambda%2540Edge.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontLambda%40Edge.png)
 Lambda@Edge - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-10 at 20.38.32 - [ASSOCIATESHARED]_Lambda@Edge__lea_—_Firefox_Devel.png>)
@@ -130,10 +130,10 @@ Lambda@Edge - Use Cases ([More](https://docs.aws.amazon.com/AmazonCloudFront/lat
 
 ## Global Accelerator (10:29)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/GlobalAccelerator-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/GlobalAccelerator-1.png)
 Global Accelerator - The Problem
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/GlobalAccelerator-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/GlobalAccelerator-2.png)
 Global Accelerator - Use Anycast to route traffic to AWS global backbone network
 
 > [!NOTE] What is anycast?
@@ -147,10 +147,10 @@ Global Accelerator - Key Concepts
 
 ## CloudFront Field-Level Encryption
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontFieldLevelEncryption-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontFieldLevelEncryption-1.png)
 CloudFront - Without Field-Level Encryption
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontFieldLevelEncryption-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontFieldLevelEncryption-2.png)
 CloudFront - With Field-Level Encryption
 
 > [!NOTE] What does Field-Level Encryption do?
@@ -161,10 +161,10 @@ CloudFront - With Field-Level Encryption
 
 ## [CloudFront Geo Restriction](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html) (Geo-blocking)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontGeoRestrictions-1.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontGeoRestrictions-1.png)
 [CloudFront Geo Restriction](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html#georestrictions-cloudfront)
 
-![Alt text](../1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontGeoRestrictions-2.png)
+![Alt text](./material/1700-GLOBAL_CONTENT_DELIVERY_AND_OPTIMIZATION/00_LEARNINGAIDS/CloudFrontGeoRestrictions-2.png)
 [3rd-Party GeoLocation Service](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html#georestrictions-geolocation-service)
 
 ## CDN and Optimisation Section Quiz

@@ -2,16 +2,16 @@
 
 ## [_ASSOCIATE_] IAM Identity Policies (15:52)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-1.png)
 IAM Policy Document
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-2.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-2.png)
 DENY - ALLOW - DENY
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-3.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-3.png)
 All policies for IAM Identities (User, Role, Group) & AWS Resources are evaluated at the same time.
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-4.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMPolicies-4.png)
 Inline Policy vs Managed Policy
 
 ## [_ASSOCIATE_] IAM Users and ARNs (13:49)
@@ -19,7 +19,7 @@ Inline Policy vs Managed Policy
 ![alt text](<images/Screenshot From 2024-10-17 17-21-36.png>)
 IAM User - What is it?
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-1.png)
 IAM - Principal and Authenticated Identity
 
 > [!NOTE] What is a principal?
@@ -36,7 +36,7 @@ IAM Users - Limitation
 >
 > 10 IAM groups per IAM User
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-2.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMUsers-2.png)
 ARNs
 
 > [!NOTE] What is the format of ARN?
@@ -58,7 +58,7 @@ ARNs
 
 ## [_ASSOCIATE_] IAM Groups (7:48)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAM-Groups-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAM-Groups-1.png)
 IAM Groups
 
 > [!NOTE] What is IAM Group?
@@ -83,10 +83,10 @@ IAM Group is not a true identity
 
 ## [_ASSOCIATE_] IAM Roles - The Tech (8:13)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-1.png)
 IAM Role and Assuming an IAM Role
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-2.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-2.png)
 Trust Policy vs Permission Policy
 
 > [!NOTE] What is Trust Policy in IAM?
@@ -100,19 +100,19 @@ Trust Policy vs Permission Policy
 
 ## [_ASSOCIATE_] When to use IAM Roles (15:27)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-3.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-3.png)
 Lambda Execute Role
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-4.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-4.png)
 Emergency Role
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-5.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-5.png)
 Existing Identities (e.g. Active Directory)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-6.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-6.png)
 Web Identities (e.g. Google, Facebook)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-7.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/IAMRoles-7.png)
 AWS Partner Accounts
 
 ## Service-linked Roles & PassRole (5:16)
@@ -142,10 +142,10 @@ Service-linked Roles
 >
 > See [Create a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole1.png)
 Permissions to allow create/edit the service-linked role
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole2.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceLinkedRole2.png)
 Pass an existing role to the service
 
 ## [_ASSOCIATE_] AWS Organizations (12:56)
@@ -192,7 +192,7 @@ Create an account in your organization
 
 ## [_ASSOCIATE_] Service Control Policies (SCPs) (12:44)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-1.png)
 Service Control Policies (SCP)
 
 ![Alt text](<images/Screenshot 2023-10-02 at 18.57.45 - [ASSOCIATESHARED]_Service_Control_Policies_(SCPs)_.png>)
@@ -236,7 +236,7 @@ SCP - Allow List
 >   - remove the default `FullAWSAccess` policy
 >   - then attach additional policies that explicitly allow access to the wanted services and actions
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-2.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/ServiceControlPolicies-2.png)
 Identity Policies and SCPs
 
 > [!NOTE] Can SCP restrict management account?
@@ -276,7 +276,7 @@ CloudWatch Logs - Architecture
 
 > [!NOTE] In CloudTrail, what are Management Events / Data Events?
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/Cloudtrail-1.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/Cloudtrail-1.png)
 
 > [!NOTE] How to implement a central log store for AWS Organization?
 
@@ -290,7 +290,7 @@ CloudWatch Logs - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-03 at 10.33.04 - AWS_Control_Tower_101__learn.cantrill.io_-_Persona.png>)
 
-![Alt text](../0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/AWSControlTower.png)
+![Alt text](./material/0600-IAM_ACCOUNTS_ORGS/00_LEARNINGAIDS/AWSControlTower.png)
 
 ![Alt text](<images/Screenshot 2023-10-03 at 10.33.42 - AWS_Control_Tower_101__learn.cantrill.io_-_Persona.png>)
 

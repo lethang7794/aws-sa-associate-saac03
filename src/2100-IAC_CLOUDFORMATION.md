@@ -5,10 +5,10 @@
 ![Alt text](<images/Screenshot from 2023-10-13 10-10-03.png>)
 Physical Resource / Logical Resource - Template - Stack
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/Physical-and-Logical-Resources-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/Physical-and-Logical-Resources-1.png)
 CloudFormation - Architecture
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/Physical-and-Logical-Resources-2.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/Physical-and-Logical-Resources-2.png)
 CloudFormation - Stack Create/Update/Delete
 
 ## [_DEMO_] Simple Non Portable Template - PART1 (10:28)
@@ -20,10 +20,10 @@ CloudFormation - Stack Create/Update/Delete
 ![Alt text](<images/Screenshot from 2023-10-13 12-02-24.png>)
 Template/Pseudo Parameters - Overview
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/TemplateParameters-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/TemplateParameters-1.png)
 Template Parameters - Input for Cfn Template
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/PseudoParameters-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/PseudoParameters-1.png)
 [Pseudo Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html) - Provided by AWS based on the **Stack** environment
 
 ```mermaid
@@ -72,19 +72,19 @@ mindmap
 ![Alt text](<images/Screenshot from 2023-10-13 12-30-38.png>)
 Cfn - [Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-1.png)
 Cfn Intrinsic Functions: `Ref` & `Fn::GetAtt`
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-2.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-2.png)
 Cfn Intrinsic Functions: `Fn:GetAZs` & `Fn:Select`
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-3.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-3.png)
 Cfn Intrinsic Functions: `Fn:Join` & `Fn:Split`
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-4.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-4.png)
 Cfn Intrinsic Functions: `Fn:Base64` & `Fn:Sub`
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-5.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/IntrinsicFunctions-5.png)
 Cfn Intrinsic Functions: `Fn:Cidr`
 
 > [!NOTE]
@@ -157,7 +157,7 @@ Cfn Mappings (Template): [`Mappings` section](https://docs.aws.amazon.com/AWSClo
 > - Each mapping is a `key` of the `Mappings` section.
 > - Each mapping can have 2 level of keys.
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationMappings.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationMappings.png)
 Cfn Mappings: [`Fn::FindInMap`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
 
 > [!NOTE] FindInMap syntax
@@ -173,7 +173,7 @@ Cfn Mappings: [`Fn::FindInMap`](https://docs.aws.amazon.com/AWSCloudFormation/la
 ![Alt text](<images/Screenshot from 2023-10-13 13-22-47.png>)
 Cfn [Outputs (Template)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html): Views in CLI/Console - Used by parent-stack, cross-stack
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationOutputs.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationOutputs.png)
 Cfn Outputs: Example
 
 ## [_DEMO_] Template v2 - Portable (13:34)
@@ -196,7 +196,7 @@ Cfn Conditions (Template): Only create resources if conditions meet
 >
 > e.g. a `test` environment versus a `production` environment
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationConditions.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationConditions.png)
 Cfn Conditions: Example
 
 ## CloudFormation DependsOn (7:14)
@@ -204,7 +204,7 @@ Cfn Conditions: Example
 ![Alt text](<images/Screenshot from 2023-10-13 14-52-57.png>)
 Cfn [DependsOn (Resource)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html): Explicitly define resources dependency order
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationDependsOn.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationDependsOn.png)
 Cfn DependsOn: Example
 
 ## CloudFormation Wait Conditions, CreationPolicy & cfn-signal (11:52)
@@ -218,10 +218,10 @@ Cfn Provisioning - How do Cfn know that a resource successfully created/update?
 >
 > 👉 The stack creation/updating will be finished before all of its resources are ready to used.
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationWaitConditions.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationWaitConditions.png)
 Cfn [Wait Conditions (Template)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-waitcondition.html): Tell Cfn to pause the creation of a stack and wait for a signal before it continues to create the stack
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCreationPolicy.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCreationPolicy.png)
 Cfn [Creation Policy (Resource)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html): Tell Cfn to wait on resource configuration actions before stack creation proceeds.
 
 > [!NOTE] When to use Wait Conditions & Create Policy?
@@ -235,10 +235,10 @@ Cfn [Creation Policy (Resource)](https://docs.aws.amazon.com/AWSCloudFormation/l
 
 ## CloudFormation Nested Stacks (13:55)
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationNestedStacks-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationNestedStacks-1.png)
 Single Stack - The Problem
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationNestedStacks-2.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationNestedStacks-2.png)
 Cfn [Nested Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html): Stacks created as part of other stacks 👈️ Allow reusing template (code)
 
 > [!NOTE] `Nested Stack`, `Root Stack`, `Parent Stack`?
@@ -258,13 +258,13 @@ Cfn Nested Stacks - When?
 
 ## CloudFormation Cross-Stack References (10:05)
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCrossStackReferences-1.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCrossStackReferences-1.png)
 Cfn Stacks are isolated and self-contained
 
 ![Alt text](<images/Screenshot from 2023-10-13 16-23-04.png>)
 Cfn `Outputs` `Export`: Make a stack visible to other stacks ([Cross-Stack References](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkthrough-crossstackref.html))
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCrossStackReferences-2.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCrossStackReferences-2.png)
 Cfn Cross-Stack References - `Fn::ImportValue:` Import another stack's Outputs Export
 
 ## CloudFormation Deletion Policy (5:24)
@@ -272,7 +272,7 @@ Cfn Cross-Stack References - `Fn::ImportValue:` Import another stack's Outputs E
 ![Alt text](<images/Screenshot from 2023-10-13 20-47-57.png>)
 Cfn DeletionPolicy - What happen to physical resource when its logical resource deleted?
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationDeletionPolicy.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationDeletionPolicy.png)
 Cfn DeletionPolicy - Delete (Default) / Retain / Snapshot (If supported)
 
 ## CloudFormation Stack Sets (9:12)
@@ -280,7 +280,7 @@ Cfn DeletionPolicy - Delete (Default) / Retain / Snapshot (If supported)
 ![Alt text](<images/Screenshot from 2023-10-13 20-21-11.png>)
 Cfn StackSets - [Concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationStackSets.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationStackSets.png)
 Cfn StackSets - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-13 20-25-45.png>)
@@ -298,7 +298,7 @@ Cfn Stack Roles - Overview
 > - creating the stack
 > - `PassRole` to give Cfn the role with permissions for creating resources.
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationStackRoles.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationStackRoles.png)
 Cfn Stack Roles - Example
 
 ## CloudFormation Init (cfn-init) (8:48)
@@ -311,7 +311,7 @@ Cfn Stack Roles - Example
 > - `AWS::CloudFormation::Init`: a part of the logical resource for EC2 (`Metadata` key)
 > - `cfn-init`: a helper script in the `Properties`'s `UserData`, will run by the EC2 instance
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationInit-and-Cfninit.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationInit-and-Cfninit.png)
 cfn-init: **config keys** - _configsets_
 
 See:
@@ -324,7 +324,7 @@ See:
 ![Alt text](<images/Screenshot from 2023-10-14 00-49-29.png>)
 cfn-init: The problem
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCfnHUP.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCfnHUP.png)
 [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html): Rerun config when change detected
 
 > [!NOTE] What cfn-hup stands for?
@@ -342,7 +342,7 @@ See [Update behaviors of stack resources](https://docs.aws.amazon.com/AWSCloudFo
 ![Alt text](<images/Screenshot from 2023-10-14 16-22-54.png>)
 Cfn ChangeSets: Preview changes before execute
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationChangeSets.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationChangeSets.png)
 Cfn ChangeSets: Example
 
 ## CloudFormation Custom Resources (11:03)
@@ -350,7 +350,7 @@ Cfn ChangeSets: Example
 ![Alt text](<images/Screenshot from 2023-10-14 16-36-54.png>)
 Cfn Custom Resources: Let Cfn integrate with not-natively-support things
 
-![Alt text](../2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCustomResources.png)
+![Alt text](./material/2100-IAC_CLOUDFORMATION/00_LEARNINGAIDS/CloudFormationCustomResources.png)
 Cfn Custom Resources: Example
 
 ## [_DEMO_] CloudFormation Custom Resources-PART1 (9:12)

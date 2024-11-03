@@ -2,19 +2,19 @@
 
 ## Introduction to Containers (17:13)
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-1.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-1.png)
 Virtualization Problems
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-2.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-2.png)
 Containerization
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-3.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-3.png)
 Image Anatomy
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-4.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-4.png)
 Container Anatomy
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-5.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Containers101-5.png)
 Container Registry
 
 ![Alt text](<images/Screenshot 2023-10-05 at 22.42.17 - [ASSOCIATESHARED]_Introduction_to_Containers__lear.png>)
@@ -30,10 +30,10 @@ Container Key Concepts
 
 ## ECS - Cluster Mode (13:09)
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/ECS-ClusterMode-1.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/ECS-ClusterMode-1.png)
 ECS - EC2 Mode
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/ECS-ClusterMode-2.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/ECS-ClusterMode-2.png)
 ECS - Fargate Mode
 
 ![Alt text](<images/Screenshot 2023-10-05 at 23.53.44 - [ASSOCIATESHARED]_ECS_-_Cluster_Mode__learn.cantri.png>)
@@ -51,10 +51,10 @@ ECR is integrated with many AWS services
 
 ## Kubernetes 101 (11:27)
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Kubernetes101-1.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Kubernetes101-1.png)
 K8s - Cluster - Control Plane - Worker Nodes
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Kubernetes101-2.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/Kubernetes101-2.png)
 K8s - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-06 at 10.43.05 - [SHAREDALL]_Kubernetes_101__lea_—_Firefox_Develope.png>)
@@ -65,7 +65,7 @@ K8s - Summary
 ![Alt text](<images/Screenshot 2023-10-06 at 10.49.36 - [SHAREDALL]_Elastic_Kubernetes_Service_(EKS)_101__.png>)
 EKS - AWS managed K8s
 
-![Alt text](../1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/EKS101-1.png)
+![Alt text](./material/1000-CONTAINERS_and_ECS/00_LEARNINGAIDS/EKS101-1.png)
 EKS - Architecture
 
 ## Containers Section Quiz

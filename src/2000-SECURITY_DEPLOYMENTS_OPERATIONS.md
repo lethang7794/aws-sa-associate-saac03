@@ -5,12 +5,12 @@
 ![Alt text](<images/Screenshot from 2023-10-12 15-56-41.png>)
 Secrets Manager vs System Manager's Parameter Store
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/SecretsManager-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/SecretsManager-1.png)
 AWS Secrets Manager - Architecture
 
 ## Application Layer (L7) Firewall (7:44)
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-1.png)
 Firewall - Layer 3-4-5
 
 > [!NOTE] What is the drawback of Firewall Layer 3-4?
@@ -23,7 +23,7 @@ Firewall - Layer 3-4-5
 >
 > Firewall Layer 5 understand REQUEST & RESPONSE's **session**, it can know which REQUEST and RESPONSE is a pair.
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-2.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/L7Firewalls-2.png)
 Firewall - Layer 7
 
 > [!NOTE] What does Firewall Layer 7 do?
@@ -40,7 +40,7 @@ Firewall - Layer 7
 
 ## Web Application Firewall (WAF), WEBACLs, Rule Groups and Rules (19:18)
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/Web-Application-Firewall-WAF-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/Web-Application-Firewall-WAF-1.png)
 WAF - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-12 19-26-21.png>)
@@ -74,7 +74,7 @@ AWS Shield - Advanced - WAF Integration (L7) - Realtime + Health-based
 ![Alt text](<images/Screenshot from 2023-10-12 20-23-56.png>)
 CloudHSM - Overview
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/CloudHSM-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/CloudHSM-1.png)
 CloudHSM - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-12 20-29-06.png>)
@@ -85,7 +85,7 @@ CloudHSM - Use Cases
 ![Alt text](<images/Screenshot from 2023-10-12 20-46-24.png>)
 AWS Config - Record config changes over time on resources
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AWSConfig-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AWSConfig-1.png)
 AWS Config - Architecture
 
 ## Amazon Macie (12:04)
@@ -93,7 +93,7 @@ AWS Config - Architecture
 ![Alt text](<images/Screenshot from 2023-10-12 20-54-30.png>)
 Amazon Macie - Data Security for S3
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AmazonMacie-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AmazonMacie-1.png)
 Amazon Macie - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-12 20-57-03.png>)
@@ -120,7 +120,7 @@ Amazon Inspector - CVE, CIS, Security Best Practices
 ![Alt text](<images/Screenshot from 2023-10-13 00-07-29.png>)
 Amazon GuardDuty - Security Monitoring Service (with AI/ML)
 
-![Alt text](../2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AmazonGuardduty-1.png)
+![Alt text](./material/2000-SECURITY_DEPLOYMENTS_OPERATIONS/00_LEARNINGAIDS/AmazonGuardduty-1.png)
 Amazon GuardDuty - Architecture
 
 ## Section Quiz

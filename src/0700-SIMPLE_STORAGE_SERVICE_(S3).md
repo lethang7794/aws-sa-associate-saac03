@@ -8,7 +8,7 @@ S3 is private by default
 ![Alt text](<images/Screenshot 2023-10-03 at 10.40.51 - [ASSOCIATESHARED]_S3_Security_(Resource_Policies_&.png>)
 S3 Bucket Policies
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Security-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Security-1.png)
 S3 Bucket Polices support _different accounts_ & _anonymous_ principles
 
 ![Alt text](<images/Screenshot 2023-10-03 at 10.44.48 - [ASSOCIATESHARED]_S3_Security_(Resource_Policies_&.png>)
@@ -20,7 +20,7 @@ S3 Bucket Polices - Deny - Allow - Deny
 ![Alt text](<images/Screenshot 2023-10-03 at 10.46.00 - [ASSOCIATESHARED]_S3_Security_(Resource_Policies_&.png>)
 [Legacy] Access Control Lists (ACLS)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Security-2.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Security-2.png)
 Block Public Access
 
 ![Alt text](<images/Screenshot 2023-10-03 at 10.48.29 - [ASSOCIATESHARED]_S3_Security_(Resource_Policies_&.png>)
@@ -38,7 +38,7 @@ Identity Policies - Bucket Polices - ACLs
 >
 > The endpoint to access the S3 bucket via HTTP.
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StaticHosting-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StaticHosting-1.png)
 Out-of-band pages
 
 ## [_DEMO_] Creating a static website with S3 (17:55)
@@ -64,16 +64,16 @@ Object Versioning: MFA for suspending bucket versioning and deleting object vers
 
 ## S3 Performance Optimization (11:42)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-1.png)
 Global Architecture
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-2.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-2.png)
 Single PUT Upload
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-3.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-3.png)
 Multipart Upload
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-4.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Performance-4.png)
 S3 Transfer Acceleration
 
 > [!NOTE] What is S3 Transfer Acceleration?
@@ -100,7 +100,7 @@ Data Encryption Keys (DEKs)
 ![Alt text](<images/Screenshot 2023-10-03 at 12.43.51 - [ASSOCIATESHARED]_Key_Management_Service_(KMS)__le.png>)
 KMS Keys - Key Concepts
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/KMS-3.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/KMS-3.png)
 Key Policies and Security
 
 ## [_DEMO_] KMS - Encrypting the battleplans with KMS (12:43)
@@ -110,7 +110,7 @@ Key Policies and Security
 ![Alt text](<images/Screenshot 2023-10-03 at 13.31.21 - [SHAREDALL]_S3_Object_Encryption_CSESSE__learn.c_-.png>)
 S3 Bucket aren't encrypted
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Encryption-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3Encryption-1.png)
 CSE vs SSE
 
 ![Alt text](<images/Screenshot 2023-10-03 at 13.44.27 - [SHAREDALL]_S3_Object_Encryption_CSESSE__learn.can.png>)
@@ -147,27 +147,27 @@ S3 Bucket Keys - Notes
 
 ## S3 Object Storage Classes - PART1 (9:23)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-1.png)
 S3 Storage Classes - S3 Standard
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-2.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-2.png)
 S3 Storage Classes - S3 Standard - IA
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-3.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-3.png)
 S3 Storage Classes - S3 One Zone - IA
 
 ## S3 Object Storage Classes - PART2 (11:41)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-4.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-4.png)
 S3 Storage Classes - S3 Glacier - Instant
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-5.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-5.png)
 S3 Storage Classes - S3 Glacier - Flexible
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-6.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3StorageClasses-6.png)
 S3 Storage Classes - S3 Glacier - Deep Archive
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3IntelligentTiering.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3IntelligentTiering.png)
 S3 Storage Classes - S3 Intelligent-Tiering
 
 ## S3 Lifecycle Configuration (8:13)
@@ -175,7 +175,7 @@ S3 Storage Classes - S3 Intelligent-Tiering
 ![Alt text](<images/Screenshot 2023-10-03 at 15.27.18 - [ASSOCIATESHARED]_S3_Lifecycle_Configuration__lear.png>)
 S3 Lifecycle Configuration
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3LifeCycle.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3LifeCycle.png)
 S3 Lifecycle Configuration - Transition
 
 ## S3 Replication (13:59)
@@ -199,13 +199,13 @@ Why use S3 replication?
 
 ## S3 PreSigned URLs (11:11)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-1.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-1.png)
 Why use Presigned URL?
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-2.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-2.png)
 Presigned URL works with both Upload and Download
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-3.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3PresignedURL-3.png)
 Apps can use Presigned URL to provide access to Media Bucket
 
 ![Alt text](<images/Screenshot 2023-10-03 at 16.07.12 - [ASSOCIATESHARED]_S3_PreSigned_URLs__learn.cantril.png>)
@@ -217,17 +217,17 @@ Presigned URL - Gotchas
 
 ![Alt text](<images/Screenshot 2023-10-03 at 18.46.38 - [ASSOCIATESHARED]_S3_Select_and_Glacier_Select__le.png>)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3andGlacierSelect.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3andGlacierSelect.png)
 
 ## S3 Events (4:32)
 
 ![Alt text](<images/Screenshot 2023-10-03 at 18.51.54 - [ASSOCIATESHARED]_S3_Events__learn.cantrill.i_-_Pe.png>)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3EventNotifications.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3EventNotifications.png)
 
 ## S3 Access Logs (3:05)
 
-![Alt text](<../0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3AccessLogs.png>)
+![Alt text](./material/0700-SIMPLE_STORAGE_SERVICE(S3)/00_LEARNINGAIDS/S3AccessLogs.png)
 S3 Access Logs
 
 ## S3 Object Lock (9:52)

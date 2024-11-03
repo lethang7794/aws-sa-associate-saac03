@@ -2,24 +2,24 @@
 
 ## Architecture Deep Dive - PART1 (8:52)
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-1.png)
 CatTube - Monolithic Architecture
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-2.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-2.png)
 CatTube - Tiered Architecture
 
 ## Architecture Deep Dive - PART2 (13:09)
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-3.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-3.png)
 Evolving with Queues
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-4.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-4.png)
 Evolving with Queues
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-5.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-5.png)
 Microservices Architecture
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-6.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Architecture-6.png)
 Event Driven Architecture - Event Producer / Event Consumer
 
 ![Alt text](<images/Screenshot 2023-10-09 at 16.00.30 - [ASSOCIATESHARED]_Architecture_Deep_Dive_-_PART2__.png>)
@@ -30,7 +30,7 @@ Event Driven Architecture - Only consumes resources while handling events
 ![Alt text](<images/Screenshot 2023-10-09 at 16.05.47 - [SHAREDALL]_AWS_Lambda_-_PART1__learn.cantrill.io_.png>)
 AWS Lambda - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-1.png)
 AWS Lambda - Architecture
 
 > [!NOTE] What is the maximum execution time of an AWS Lambda?
@@ -42,16 +42,16 @@ AWS Lambda - Common Uses
 
 ## AWS Lambda - PART2 (13:59)
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-2.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-2.png)
 Public Lambda
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-3.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-3.png)
 Private Lambda - Old Way
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-4.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-4.png)
 Private Lambda - New Way
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-5.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-5.png)
 Lambda - Security
 
 ![Alt text](<images/Screenshot 2023-10-09 at 16.23.21 - [SHAREDALL]_AWS_Lambda_-_PART2__learn.cantrill.io_.png>)
@@ -65,16 +65,16 @@ Lambda - 3 Types of Invocation
 ![Alt text](<images/Screenshot 2023-10-09 at 16.31.31 - [SHAREDALL]_AWS_Lambda_-_PART3__learn.cantrill.io_.png>)
 Lambda - Synchronous Invocation
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-6.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-6.png)
 Lambda - Asynchronous Invocation
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-7.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-7.png)
 Lambda - Event Source Mapping
 
 ![Alt text](<images/Screenshot 2023-10-09 at 16.38.40 - [SHAREDALL]_AWS_Lambda_-_PART3__learn.cantrill.io_.png>)
 Lambda - Versions
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-8.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Lambda-8.png)
 Lambda - Execution Context: Cold start ☃️ - Warm start 🌞
 
 ## CloudWatch Events and EventBridge (6:54)
@@ -98,7 +98,7 @@ EventBridge = CloudWatch Events v2
 >
 >     In additional to the defaut event bus, EventBridge can have other event buses.
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/EventBridge-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/EventBridge-1.png)
 Rule & Target
 
 > [!NOTE] Which types of rules do CloudWatch Events and EventBridge support?
@@ -115,7 +115,7 @@ Rule & Target
 ![Alt text](<images/Screenshot 2023-10-09 at 19.06.06 - Serverless_Architecture_—_Firefox_Developer_Editio.png>)
 What is serverless?
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Serverless-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Serverless-1.png)
 Serverless Architecture Example - PetTube
 
 ## Simple Notification Service (7:49)
@@ -127,7 +127,7 @@ SNS - Pub-Sub Service
 >
 > 256KB
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SNS-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SNS-1.png)
 SNS - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-09 at 19.38.22 - [ASSOCIATESHARED]_Simple_Notification_Service_—_Fi.png>)
@@ -167,22 +167,22 @@ Step Functions - Example Architecture
 ![Alt text](<images/Screenshot 2023-10-09 at 20.43.21 - [SHAREDALL]_API_Gateway_101_—_Firefox_Developer_Ed.png>)
 API Gateway - 101
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-1.png)
 API Gateway - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-2.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-2.png)
 API Gateway - Authentication
 
 ![Alt text](<images/Screenshot 2023-10-09 at 20.49.07 - [SHAREDALL]_API_Gateway_101_—_Firefox_Developer_Ed.png>)
 API Gateway - Endpoint Types
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-3.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-3.png)
 API Gateway - Stages
 
 ![Alt text](<images/Screenshot 2023-10-09 at 20.53.26 - [SHAREDALL]_API_Gateway_101_—_Firefox_Developer_Ed.png>)
 API Gateway - Errors
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-4.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/APIGateway-4.png)
 API Gateway - Caching
 
 ## [_MINI_PROJECT_] Build A Serverless App - Pet-Cuddle-o-Tron - PART1 (5:01)
@@ -204,10 +204,10 @@ API Gateway - Caching
 ![Alt text](<images/Screenshot 2023-10-10 at 11.02.59 - [ASSOCIATESHARED]_Simple_Queue_Service__lea_—_Fire.png>)
 SQS - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-1.png)
 SQS - Architecture
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-2.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/SQS-2.png)
 SQS & SNS - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-10 at 11.12.55 - [ASSOCIATESHARED]_Simple_Queue_Service__lea_—_Fire.png>)
@@ -258,7 +258,7 @@ SQS Dead-Letter Queues
 ![Alt text](<images/Screenshot 2023-10-10 at 11.46.12 - [ASSOCIATESHARED]_Kinesis_Data_Streams__lea_—_Fire.png>)
 Kinesis - Concept
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Kinesis.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Kinesis.png)
 Kinesis - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-10 at 11.49.42 - [ASSOCIATESHARED]_Kinesis_Data_Streams__lea_—_Fire.png>)
@@ -269,7 +269,7 @@ SQS vs Kinesis
 ![Alt text](<images/Screenshot 2023-10-10 at 12.09.35 - [ASSOCIATESHARED]_Kinesis_Data_Firehose__lea_—_Fir.png>)
 Kinesis Data Firehose - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisFirehose-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisFirehose-1.png)
 Kinesis Data Firehose - Architecture
 
 > [!NOTE] Can Kinesis Data Firehose offer real-time delivery?
@@ -286,7 +286,7 @@ Kinesis Data Firehose - Architecture
 ![Alt text](<images/Screenshot 2023-10-10 at 12.22.19 - [ASSOCIATESHARED]_Kinesis_Data_Analytics__lea_—_Fi.png>)
 Kinesis Data Analytics - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisDataAnalytics-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisDataAnalytics-1.png)
 Kinesis Data Analytics - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-10 at 12.28.19 - [ASSOCIATESHARED]_Kinesis_Data_Analytics__lea_—_Fi.png>)
@@ -297,7 +297,7 @@ Kinesis Data Analytics - When & Where?
 ![Alt text](<images/Screenshot 2023-10-10 at 12.32.52 - Kinesis_Video_Streams__lea_—_Firefox_Developer_Edi.png>)
 Kinesis Video Streams - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisVideoStreams.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/KinesisVideoStreams.png)
 Kinesis Video Streams - Architecture
 
 ## Amazon Cognito - User and Identity Pools (14:44)
@@ -305,13 +305,13 @@ Kinesis Video Streams - Architecture
 ![Alt text](<images/Screenshot 2023-10-10 at 13.54.24 - [ASSOCIATESHARED]_Amazon_Cognito_-_User_and_Identi.png>)
 Cognito - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-1.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-1.png)
 Cognito - User Pool (authenticate & authorize users to your _app_ or _API_)
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-2.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-2.png)
 Cognito - Identity Pool (authorize authenticated/anonymous users to access your _AWS resources_)
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-3.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Cognito-3.png)
 Cognito - User Pool & Identity Pool
 
 ## AWS Glue 101 (6:23)
@@ -322,7 +322,7 @@ AWS Glue - Serverless ETL
 ![Alt text](<images/Screenshot 2023-10-10 at 14.15.52 - AWS_Glue_101__learn.can_—_Firefox_Developer_Editio.png>)
 AWS Glue - Data Catalog
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Glue.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/Glue.png)
 AWS Glue - Architecture
 
 ## Amazon MQ 101 (8:15)
@@ -333,7 +333,7 @@ Amazon MQ - Why?
 ![Alt text](<images/Screenshot 2023-10-10 at 14.26.20 - Amazon_MQ_101__learn.can_—_Firefox_Developer_Editi.png>)
 Amazon MQ - What?
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonMQ.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonMQ.png)
 Amazon MQ - How?
 
 ![Alt text](<images/Screenshot 2023-10-10 at 14.29.09 - Amazon_MQ_101__learn.can_—_Firefox_Developer_Editi.png>)
@@ -344,7 +344,7 @@ Amazon MQ - When?
 ![Alt text](<images/Screenshot 2023-10-10 at 14.33.48 - Amazon_AppFlow__learn.can_—_Firefox_Developer_Edit.png>)
 Amazon AppFlow - Overview
 
-![Alt text](../1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonAppFlow.png)
+![Alt text](./material/1600-SERVERLESS_and_APPLICATION_SERVICES/00_LEARNINGAIDS/AmazonAppFlow.png)
 Amazon AppFlow - Architecture
 
 ## Serverless and App Services Section Quiz

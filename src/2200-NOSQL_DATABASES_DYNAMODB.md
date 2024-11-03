@@ -9,7 +9,7 @@ DynamoDB Concepts
 
 > [!NOTE] What is the selling point of DynamoDB?
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-1.png)
 DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes) -  [Primary Key (PK)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey): Partition Key & Sort Key (PK & SK)
 
 > [!NOTE] What is a *primary key*?
@@ -33,10 +33,10 @@ DynamoDB: [Tables - Items - Attributes](https://docs.aws.amazon.com/amazondynamo
 
 > [!NOTE] What is capacity of DynamoDB?
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-2.png)
 DynamoDB On-Demand Backups
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-3.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBArch-3.png)
 DynamoDB PITR
 
 ![Alt text](<images/Screenshot from 2023-10-15 15-19-45.png>)
@@ -49,15 +49,15 @@ DynamoDB Considerations
 ![Alt text](<images/Screenshot from 2023-10-15 16-43-53.png>)
 DynamoDB Reading & Writing: On-Demand / Provisioned
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Perf-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Perf-1.png)
 DynamoDB [Query](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html): Find items based on primary key values
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Perf-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Perf-2.png)
 DynamoDB [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html): Reads every item in a table or a secondary index.
 
 ## DynamoDB - Operations, Consistency and Performance - PART2 (11:24)
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Consistency.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Consistency.png)
 DynamoDB Consistency Model
 
 ![Alt text](<images/Screenshot from 2023-10-15 17-59-43.png>)
@@ -85,13 +85,13 @@ DynamoDB [Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/d
 ![Alt text](<images/Screenshot from 2023-10-15 18-12-20.png>)
 DynamoDB [Local Secondary Indexes (LSI)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html): Alternative Sort Key
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Indexes-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Indexes-1.png)
 DynamoDB LSI: Using the base table's primary key
 
 ![Alt text](<images/Screenshot from 2023-10-15 18-16-53.png>)
 DynamoDB [Global Secondary Indexes (GSI)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html): Alternative Partition Key & Sort Key
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Indexes-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Indexes-2.png)
 DynamoDB GSI: Always eventually consistent
 
 ![Alt text](<images/Screenshot from 2023-10-15 18-20-14.png>)
@@ -112,13 +112,13 @@ LSI & GSI Considerations
 ![Alt text](<images/Screenshot from 2023-10-15 20-31-44.png>)
 DynamoDB - Stream Concepts
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBStreams-and-Triggers-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBStreams-and-Triggers-1.png)
 DynamoDB - Stream Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-15 20-37-22.png>)
 DynamoDB - Trigger Concepts
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBStreams-and-Triggers-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDBStreams-and-Triggers-2.png)
 DynamoDB - Trigger Architecture
 
 ## DynamoDB - [Global Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html) (5:09)
@@ -126,7 +126,7 @@ DynamoDB - Trigger Architecture
 ![Alt text](<images/Screenshot from 2023-10-15 20-46-05.png>)
 DynamoDB - Global Tables: Overview
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Globaltables-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-Globaltables-1.png)
 DynamoDB - Global Tables: Architecture
 
 > [!NOTE] What are exactly a DynamoDB *global table*?
@@ -145,10 +145,10 @@ DynamoDB - Global Tables: Architecture
 
 ## DynamoDB - Accelerator (DAX) (10:58)
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-DAX-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-DAX-1.png)
 Traditional Caches vs DAX
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-DAX-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-DAX-2.png)
 DAX - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-15 21-23-10.png>)
@@ -156,7 +156,7 @@ DAX - Considerations
 
 ## DynamoDB - [TTL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html) (4:49)
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-TTL-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/DynamoDB-TTL-1.png)
 DynamoDB - TTL: Expiring items
 
 ## Amazon Athena (8:19)
@@ -164,7 +164,7 @@ DynamoDB - TTL: Expiring items
 ![Alt text](<images/Screenshot from 2023-10-15 23-47-09.png>)
 Amazon Athena: Interactive SQL - Serverless Query Service
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/AmazonAthena.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/AmazonAthena.png)
 Amazon Athena - Architecture
 
 ![Alt text](<images/Screenshot from 2023-10-15 23-56-14.png>)
@@ -182,10 +182,10 @@ Athena Demo - Architecture
 ![Alt text](<images/Screenshot from 2023-10-16 10-21-12.png>)
 Elasticache - Managed in-memory database: Cache data & Reduce database load
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Elasticache-1.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Elasticache-1.png)
 Elasticache - Caching
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Elasticache-2.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Elasticache-2.png)
 Elasticache - Session State Data
 
 ![Alt text](<images/Screenshot from 2023-10-16 10-56-15.png>)
@@ -199,12 +199,12 @@ Redshift: Column based, Petabyte-scale Data warehouse (OLAP)
 ![Alt text](<images/Screenshot from 2023-10-16 11-31-44.png>)
 Redshift: Server based
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Redshift-Architecture.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Redshift-Architecture.png)
 Redshift: Architecture
 
 ## Redshift DR and Resilience (3:40)
 
-![Alt text](../2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Redshift-DRandResilience.png)
+![Alt text](./material/2200-NOSQL_DATABASES_DYNAMODB/00_LEARNINGAIDS/Redshift-DRandResilience.png)
 Redshift: DR & Resilience
 
 ## NoSQL Section Quiz

@@ -56,7 +56,7 @@ Amazon Rekognition: Analyze image and video
 >
 > Image & video processing with ML
 
-![Alt text](../2300-MACHINE_LEARNING/00_LEARNINGAIDS/AmazonRekognition.png)
+![Alt text](./material/2300-MACHINE_LEARNING/00_LEARNINGAIDS/AmazonRekognition.png)
 Amazon Rekognition: How is work?
 
 ## [Amazon Textract](https://aws.amazon.com/textract/) (8:42)

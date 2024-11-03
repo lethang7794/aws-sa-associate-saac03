@@ -16,7 +16,7 @@ EFS - Overview
 > - inside a VPC.
 > - from on-premises: via VPN or DX.
 
-![Alt text](../1400-NETWORK_STORAGE_and_DATA_LIFECYCLE/00_LEARNINGAIDS/EFS-1.png)
+![Alt text](./material/1400-NETWORK_STORAGE_and_DATA_LIFECYCLE/00_LEARNINGAIDS/EFS-1.png)
 EFS - Architecture
 
 ![Alt text](<images/Screenshot 2023-10-08 at 16.59.39 - [ASSOCIATESHARED]_EFS_Architecture__learn.cantrill.png>)
@@ -52,7 +52,7 @@ EFS - Performance
 
 ## AWS Backup (6:36)
 
-![Alt text](../1400-NETWORK_STORAGE_and_DATA_LIFECYCLE/00_LEARNINGAIDS/AWSBackup.png)
+![Alt text](./material/1400-NETWORK_STORAGE_and_DATA_LIFECYCLE/00_LEARNINGAIDS/AWSBackup.png)
 AWS Backup supports a wide range of [AWS services](https://aws.amazon.com/backup-restore/services)
 
 ![Alt text](<images/Screenshot 2023-10-08 at 18.15.13 - AWS_Backup__learn.cantrill.io_—_Firefox_Developer_.png>)

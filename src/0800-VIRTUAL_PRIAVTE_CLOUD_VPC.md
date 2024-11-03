@@ -14,20 +14,20 @@ IP Ranges to Avoid
 ![Alt text](<images/Screenshot 2023-10-03 at 20.41.31 - [ASSOCIATESHARED]_VPC_Sizing_and_Structure_-_PART1.png>)
 VPC - More Considerations
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCSizing-1.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCSizing-1.png)
 VPC Sizing
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCSizing-2.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCSizing-2.png)
 VPC Structure
 
 ## VPC Sizing and Structure - PART2 (11:16)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCStucture-1.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/VPCStucture-1.png)
 VPC Design - End State
 
 ## Custom VPCs - PART1 - THEORY (10:10)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/CustomVPC.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/CustomVPC.png)
 VPC Design - Basic
 
 ![Alt text](<images/Screenshot from 2023-11-08 14-38-56.png>)
@@ -103,10 +103,10 @@ Internat Gateway (IGW)
 ![Alt text](<images/Screenshot 2023-10-04 at 12.28.33 - [ASSOCIATESHARED]_VPC_Routing,_Internet_Gateway_&_.png>)
 Using an IGW
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/IGW.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/IGW.png)
 IPv4 Addresses with an IGW - Outbound Traffic
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/IGW-2.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/IGW-2.png)
 IPv4 Addresses with an IGW - Inbound Traffic
 
 ![Alt text](<images/Screenshot 2023-10-04 at 12.33.11 - [ASSOCIATESHARED]_VPC_Routing,_Internet_Gateway_&_.png>)
@@ -118,28 +118,28 @@ Bastion Host / Jumpbox
 
 ## Stateful vs Stateless Firewalls (14:04)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-1.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-1.png)
 TCP
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-2.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-2.png)
 Every "Connection" has 2 parts: REQUEST & RESPONSE
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-3.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-3.png)
 Directionality (Inbound or Outbound) depends on perspective (Client/Server)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-4.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-4.png)
 With Stateless Firewall, a connection needs 2 rules (1 IN, 1 OUT) to go through
 
 > [!NOTE] With Stateless Firewall, ephemeral port is not the well known port (e.g. 443, 80)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-5.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-5.png)
 Stateful firewall is intelligent enough to identify the REQUEST and RESPONSE components of a connection as being related
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-6.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/StatefulvsStateless-6.png)
 
 ## Network Access Control Lists (NACLs) (12:38)
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-1.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-1.png)
 NACLs filter traffic across the subnet's boundary
 
 > [!NOTE] What is NACL?
@@ -161,24 +161,24 @@ NACLs filter traffic across the subnet's boundary
 > - Once a match occurs, processing STOPS. 🛑
 > - If nothing else matched, `*` is process 👈 implicit DENY ❌
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-2.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-2.png)
 NACLs are stateless firewall
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-3.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-3.png)
 Rule-pairs (`app port` & `ephemeral port`) are needed on each NACL for each communication type which occurs:
 
 - 🔄️ _within_ a VPC
 - ➡️ _to_ a VPC
 - ⬅️ _from_ a VPC
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-4.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-4.png)
 Default NACL - The NACL created with a VPC
 
 > [!NOTE] What does Default NACL do?
 >
 > Default NACL does NOTHING. It has an ALLOW ALL rule.
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-5.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/NACL-5.png)
 Custom NACL DENIED ALL traffic after created
 
 ![Alt text](<images/Screenshot 2023-10-04 at 14.47.37 - [ASSOCIATESHARED]_Network_Access_Control_Lists_(NA.png>)
@@ -227,16 +227,16 @@ Security Group (SG) is STATEFUL firewall
 >
 > SGs are attached to ENI, not the instances.
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-1.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-1.png)
 SG is applied to all traffic entering or leaving the ENI
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-2.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-2.png)
 An SG reference applies to anything which has the SG attached
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-3.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-3.png)
 With SG reference, any new instances uses a SG has that SG reference ALLOW rule
 
-![Alt text](<../0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-4.png>)
+![Alt text](./material/0800-VIRTUAL_PRIVATE_CLOUD(VPC)/00_LEARNINGAIDS/SG-4.png)
 With SG Self reference, the instances can scale easily
 
 ## Network Address Translation (NAT) & NAT Gateway - PART1 (13:43)

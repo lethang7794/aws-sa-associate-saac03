@@ -19,7 +19,7 @@ EC2 User Data
 
 > [!NOTE] How many times does the EC2 user data be executed?
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2Bootstrapping-1.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2Bootstrapping-1.png)
 EC2 Bootstrapping
 
 ![Alt text](<images/Screenshot 2023-10-06 at 11.26.46 - [ASSOCIATESHARED]_Bootstrapping_EC2_using_User_Dat.png>)
@@ -31,7 +31,7 @@ User Data - Key Points
 > - NOT secure.
 > - Limited to 16KB.
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2Bootstrapping-2.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2Bootstrapping-2.png)
 Boot-Time-To-Service-Time
 
 ## [_DEMO_] Bootstrapping Wordpress Installation - PART1 (15:00)
@@ -47,10 +47,10 @@ AWS::CloudFormation::Init
 >
 > A powerful desired-state-like configuration engine which is part of the CFN suite of products.
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/CFN-INIT-1.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/CFN-INIT-1.png)
 `cfn-init` works with stack updates
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/CFN-INIT-2.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/CFN-INIT-2.png)
 CreatePolicy & Signals
 
 > [!NOTE] What does `CloudFormation`'s `CreatePolicy` do?
@@ -65,7 +65,7 @@ CreatePolicy & Signals
 
 ## EC2 Instance Roles & Profile (4:18)
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2InstanceRoles-1.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2InstanceRoles-1.png)
 EC2 Instance Role & Instance Profile
 
 ![Alt text](<images/Screenshot 2023-10-06 at 13.16.52 - [ASSOCIATESHARED]_EC2_Instance_Roles_&_Profile__le.png>)
@@ -88,7 +88,7 @@ SSM Paremeter Store - Overview
 >
 > [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html), a capability of [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html), provides secure, hierarchical storage for configuration data management and secrets management.
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/SSMParameterStore.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/SSMParameterStore.png)
 SSM Paremeter Store - Example
 
 ## [_DEMO_] Parameter Store (16:11)
@@ -98,7 +98,7 @@ SSM Paremeter Store - Example
 ![Alt text](<images/Screenshot 2023-10-06 at 15.15.27 - [ASSOCIATESHARED]_System_and_Application_Logging_o.png>)
 Logging on EC2
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/LoggingonEC2CWAgent.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/LoggingonEC2CWAgent.png)
 CloudWatch Agent - internal instance metrics and logging collection
 
 ## [_DEMO_] Logging and Metrics with CloudWatch Agent-PART1 (11:51)
@@ -110,19 +110,19 @@ CloudWatch Agent - internal instance metrics and logging collection
 ![Alt text](<images/Screenshot 2023-10-06 at 15.42.39 - [ASSOCIATESHARED]_EC2_Placement_Groups__lea_—_Fire.png>)
 EC2 Placement Groups - Placement strategies
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-1.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-1.png)
 Cluster Placement Groups
 
 ![Alt text](<images/Screenshot 2023-10-06 at 15.45.49 - [ASSOCIATESHARED]_EC2_Placement_Groups__lea_—_Fire.png>)
 Cluster Placement Groups - Pros and Cons
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-2.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-2.png)
 Spread Placement Groups
 
 ![Alt text](<images/Screenshot 2023-10-06 at 15.47.49 - [ASSOCIATESHARED]_EC2_Placement_Groups__lea_—_Fire.png>)
 Spread Placement Groups - Pros and Cons
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-3.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/PlacementGroups-3.png)
 Partition Placement Groups
 
 ![Alt text](<images/Screenshot 2023-10-06 at 15.51.54 - [ASSOCIATESHARED]_EC2_Placement_Groups__lea_—_Fire.png>)
@@ -133,10 +133,10 @@ Partition Placement Groups - Pros and Cons
 ![Alt text](<images/Screenshot 2023-10-06 at 15.59.41 - Dedicated_Hosts__lea_—_Firefox_Developer_Edition.png>)
 EC2 Dedicated Hosts
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/DedicatedHosts-1.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/DedicatedHosts-1.png)
 Instance capacity configurations - Single instance type support
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/DedicatedHosts-2.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/DedicatedHosts-2.png)
 Instance capacity configurations - Multiple instance type support
 
 ![Alt text](<images/Screenshot 2023-10-06 at 16.04.19 - Dedicated_Hosts__lea_—_Firefox_Developer_Edition.png>)
@@ -144,7 +144,7 @@ EC2 Dedicated Hosts - Limitations & Features
 
 ## [Enhanced Networking](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/enhanced-networking.html) & [EBS Optimized](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html) (6:57)
 
-![Alt text](../1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2EnhancedNetworking.png)
+![Alt text](./material/1100-ADVANCED_EC2/00_LEARNINGAIDS/EC2EnhancedNetworking.png)
 
 > [!NOTE] What is AWS Enhanced networking?
 >
